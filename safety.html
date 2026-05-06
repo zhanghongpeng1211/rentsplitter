@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safety Information | RentSplitter</title>
+    <meta name="description" content="RentSplitter safety guidelines. How to protect yourself when renting with roommates and when to seek professional legal help.">
+    <link rel="canonical" href="https://rentsplitter.org/safety.html">
+    <style>
+
+:root {
+    --primary: #2a9d8f;
+    --primary-light: #4ecdc4;
+    --primary-dark: #1d7a6e;
+    --secondary: #264653;
+    --accent: #e9c46a;
+    --bg: #f8f9fa;
+    --card: #ffffff;
+    --text: #1a1a2e;
+    --text-light: #5a5a6e;
+    --text-muted: #8a8a9e;
+    --border: #e8e8ee;
+    --shadow: 0 2px 12px rgba(0,0,0,0.06);
+    --shadow-md: 0 6px 24px rgba(0,0,0,0.08);
+    --shadow-lg: 0 12px 40px rgba(0,0,0,0.1);
+    --radius: 16px;
+    --radius-sm: 10px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.65;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+.container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+img { max-width: 100%; height: auto; }
+
+.site-header {
+    background: var(--card);
+    border-bottom: 1px solid var(--border);
+    padding: 14px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 800;
+    font-size: 1.25rem;
+    color: var(--secondary);
+    text-decoration: none;
+    letter-spacing: -0.5px;
+}
+.logo-icon {
+    width: 34px; height: 34px;
+    background: var(--primary);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.1rem;
+}
+.nav-links { display: flex; gap: 28px; align-items: center; }
+.nav-links a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+    position: relative;
+}
+.nav-links a:hover { color: var(--primary); }
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px; left: 0;
+    width: 0; height: 2px;
+    background: var(--primary);
+    transition: width 0.2s;
+}
+.nav-links a:hover::after { width: 100%; }
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--secondary);
+}
+
+.site-footer {
+    background: var(--secondary);
+    color: rgba(255,255,255,0.65);
+    padding: 48px 0 24px;
+    font-size: 0.88rem;
+}
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 32px;
+}
+.footer-brand { color: rgba(255,255,255,0.9); }
+.footer-brand .logo { color: white; margin-bottom: 12px; }
+.footer-brand p { line-height: 1.7; }
+.footer-col h4 {
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 16px;
+}
+.footer-col a {
+    display: block;
+    color: rgba(255,255,255,0.6);
+    text-decoration: none;
+    padding: 4px 0;
+    transition: color 0.2s;
+    font-size: 0.88rem;
+}
+.footer-col a:hover { color: white; }
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 20px;
+    text-align: center;
+    color: rgba(255,255,255,0.45);
+}
+
+.ad-slot {
+    background: #f0f0f5;
+    border: 2px dashed #d0d0d8;
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    font-weight: 500;
+    min-height: 90px;
+    margin: 24px 0;
+}
+.ad-slot.leaderboard { min-height: 90px; }
+.ad-slot.rectangle { min-height: 250px; max-width: 300px; margin: 24px auto; }
+
+.page-header {
+    padding: 48px 0 32px;
+    text-align: center;
+}
+.page-header h1 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--secondary);
+    margin-bottom: 12px;
+    letter-spacing: -0.5px;
+}
+.page-header p {
+    color: var(--text-light);
+    font-size: 1.05rem;
+    max-width: 560px;
+    margin: 0 auto;
+}
+
+.content-section {
+    padding: 40px 0;
+}
+.content-card {
+    background: var(--card);
+    border-radius: var(--radius);
+    padding: 40px;
+    box-shadow: var(--shadow);
+    margin-bottom: 24px;
+}
+.content-card h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--secondary);
+    margin-bottom: 16px;
+}
+.content-card h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--secondary);
+    margin: 28px 0 12px;
+}
+.content-card p {
+    color: var(--text-light);
+    margin-bottom: 16px;
+    font-size: 1rem;
+}
+.content-card ul, .content-card ol {
+    margin: 12px 0 12px 24px;
+    color: var(--text-light);
+}
+.content-card li { margin-bottom: 8px; }
+.content-card a { color: var(--primary); text-decoration: none; }
+.content-card a:hover { text-decoration: underline; }
+
+.breadcrumb {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+}
+.breadcrumb a { color: var(--text-light); text-decoration: none; }
+.breadcrumb a:hover { color: var(--primary); }
+
+.cta-banner {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    border-radius: var(--radius);
+    padding: 40px;
+    text-align: center;
+    color: white;
+    margin: 40px 0;
+}
+.cta-banner h3 { font-size: 1.5rem; font-weight: 700; margin-bottom: 10px; }
+.cta-banner p { font-size: 1rem; opacity: 0.9; margin-bottom: 20px; }
+.cta-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: white;
+    color: var(--primary);
+    text-decoration: none;
+    border-radius: var(--radius-sm);
+    font-weight: 700;
+    font-size: 0.95rem;
+    transition: transform 0.2s;
+}
+.cta-btn:hover { transform: translateY(-2px); }
+
+@media (max-width: 768px) {
+    .nav-links { display: none; }
+    .mobile-menu-btn { display: block; }
+    .footer-grid { grid-template-columns: 1fr; gap: 24px; }
+    .page-header h1 { font-size: 1.7rem; }
+    .content-card { padding: 24px; }
+}
+
+
+    </style>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="/" class="logo">
+            <div class="logo-icon">🏠</div>
+            RentSplitter
+        </a>
+        <nav class="nav-links"><a href="/">Home</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/faq.html">FAQ</a><a href="/contact.html">Contact</a></nav>
+        <button class="mobile-menu-btn" aria-label="Menu">☰</button>
+    </div>
+</header>
+
+<main>
+    <section class="page-header">
+        <div class="container">
+            <h1>Safety & Responsible Use</h1>
+            <p>A calculator is not a lawyer. Here is when to know the difference.</p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <div class="content-card">
+                
+            <h2>This Is a Calculator, Not a Legal Document</h2>
+            <p>Let me be very clear: RentSplitter helps you divide rent mathematically. It does not create legally binding agreements. It does not replace a lease. It does not protect you if your roommate stops paying.</p>
+            <p>If you are in a serious dispute about rent, security deposits, or lease obligations, talk to a lawyer or your local tenant rights organization. A web calculator cannot help you in small claims court.</p>
+
+            <h2>Protecting Yourself as a Roommate</h2>
+            <p>Here are practical steps to avoid getting screwed:</p>
+            <ul>
+                <li><strong>Get on the lease:</strong> If you are not on the lease, you have no legal standing. The person on the lease can evict you with minimal notice in most jurisdictions. Do not accept "just pay me and I will handle the landlord."</li>
+                <li><strong>Document everything:</strong> Text messages about rent amounts, Venmo payments with descriptions, emails about agreements. If it is not written down, it did not happen.</li>
+                <li><strong>Use traceable payments:</strong> Venmo, PayPal, bank transfers. Not cash. Cash disappears and nobody can prove you paid.</li>
+                <li><strong>Know your local tenant laws:</strong> Every state and city is different. Some places require 30-day notice for rent changes. Others have specific rules about subletting. Google "[your city] tenant rights" and read the actual government website.</li>
+                <li><strong>Have a roommate agreement:</strong> Even a simple Google Doc signed by everyone helps. Include rent amounts, due dates, utility splits, move-out notice, and what happens if someone breaks the lease early.</li>
+            </ul>
+
+            <h2>Red Flags to Watch For</h2>
+            <p>Some roommate situations are disasters waiting to happen. Watch out for:</p>
+            <ul>
+                <li>Someone who refuses to sign anything or put agreements in writing</li>
+                <li>A "master tenant" who will not show you the lease or let you talk to the landlord</li>
+                <li>Rent amounts that seem too good to be true (they usually are)</li>
+                <li>Pressure to move in immediately without seeing the place</li>
+                <li>Requests to pay in cash, gift cards, or wire transfers</li>
+                <li>Someone who already owes other roommates money</li>
+            </ul>
+            <p>If multiple red flags are present, run. A cheap apartment is not worth living with a scammer or a financial disaster.</p>
+
+            <h2>When to Seek Legal Help</h2>
+            <ul>
+                <li>Your roommate stopped paying rent and refuses to leave</li>
+                <li>Your landlord is threatening eviction over your roommate's behavior</li>
+                <li>Someone forged your signature on a lease modification</li>
+                <li>You paid a security deposit and the "landlord" disappeared</li>
+                <li>You are being illegally evicted (no notice, locks changed, utilities shut off)</li>
+            </ul>
+            <p>Many cities have free tenant rights hotlines. Use them. Legal aid societies often help low-income renters for free. Do not try to handle serious legal issues alone.</p>
+
+            <h2>Financial Safety</h2>
+            <p>Never pay more than you can afford to lose. If your share of rent is 50% of your income, you are one emergency away from disaster. General rule: rent should not exceed 30% of gross income. If it does, consider finding a cheaper place or more roommates.</p>
+            <p>Keep an emergency fund. Even $500 helps if a roommate bails and you need to cover their share for a month while finding a replacement.</p>
+
+            <h2>Mental Health</h2>
+            <p>Living with bad roommates is genuinely stressful. It affects sleep, work, relationships, everything. If your housing situation is making you miserable, prioritize getting out over being "nice." Your wellbeing matters more than avoiding an awkward conversation.</p>
+            <p style="margin-top: 24px; font-style: italic; color: var(--text-muted);">Your safety and stability matter more than a calculator. When in doubt, talk to a professional. We are here for the math. They are here for the legal protection.</p>
+        
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="/" class="logo">
+                    <div class="logo-icon">🏠</div>
+                    RentSplitter
+                </a>
+                <p>Fair rent splitting for roommates since 2026. Because money fights ruin friendships, and math should not be one of them.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Tools</h4>
+                <a href="/">Rent Calculator</a>
+                <a href="/">Bill Splitter</a>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <a href="/about.html">About Us</a>
+                <a href="/blog/">Blog</a>
+                <a href="/contact.html">Contact</a>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <a href="/privacy.html">Privacy Policy</a>
+                <a href="/terms.html">Terms of Service</a>
+                <a href="/safety.html">Safety</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 RentSplitter.org · <a href="mailto:rentsplitter@gmail.com" style="color:rgba(255,255,255,0.5)">rentsplitter@gmail.com</a></p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

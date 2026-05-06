@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+
+Sitemap: https://rentsplitter.org/sitemap.xml
+
+# RentSplitter robots.txt
+# Built for search engines and curious humans
+# If you are a bot: welcome, index away
+# If you are a human: go clean your room, your roommate is judging you

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | Rent Splitting Questions Answered</title>
+    <meta name="description" content="Common questions about splitting rent with roommates. How to divide fairly, handle couples, utilities, security deposits, and awkward money conversations.">
+    <link rel="canonical" href="https://rentsplitter.org/faq.html">
+    <style>
+
+:root {
+    --primary: #2a9d8f;
+    --primary-light: #4ecdc4;
+    --primary-dark: #1d7a6e;
+    --secondary: #264653;
+    --accent: #e9c46a;
+    --bg: #f8f9fa;
+    --card: #ffffff;
+    --text: #1a1a2e;
+    --text-light: #5a5a6e;
+    --text-muted: #8a8a9e;
+    --border: #e8e8ee;
+    --shadow: 0 2px 12px rgba(0,0,0,0.06);
+    --shadow-md: 0 6px 24px rgba(0,0,0,0.08);
+    --shadow-lg: 0 12px 40px rgba(0,0,0,0.1);
+    --radius: 16px;
+    --radius-sm: 10px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.65;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+.container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+img { max-width: 100%; height: auto; }
+
+.site-header {
+    background: var(--card);
+    border-bottom: 1px solid var(--border);
+    padding: 14px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 800;
+    font-size: 1.25rem;
+    color: var(--secondary);
+    text-decoration: none;
+    letter-spacing: -0.5px;
+}
+.logo-icon {
+    width: 34px; height: 34px;
+    background: var(--primary);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.1rem;
+}
+.nav-links { display: flex; gap: 28px; align-items: center; }
+.nav-links a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+    position: relative;
+}
+.nav-links a:hover { color: var(--primary); }
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px; left: 0;
+    width: 0; height: 2px;
+    background: var(--primary);
+    transition: width 0.2s;
+}
+.nav-links a:hover::after { width: 100%; }
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--secondary);
+}
+
+.site-footer {
+    background: var(--secondary);
+    color: rgba(255,255,255,0.65);
+    padding: 48px 0 24px;
+    font-size: 0.88rem;
+}
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 32px;
+}
+.footer-brand { color: rgba(255,255,255,0.9); }
+.footer-brand .logo { color: white; margin-bottom: 12px; }
+.footer-brand p { line-height: 1.7; }
+.footer-col h4 {
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 16px;
+}
+.footer-col a {
+    display: block;
+    color: rgba(255,255,255,0.6);
+    text-decoration: none;
+    padding: 4px 0;
+    transition: color 0.2s;
+    font-size: 0.88rem;
+}
+.footer-col a:hover { color: white; }
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 20px;
+    text-align: center;
+    color: rgba(255,255,255,0.45);
+}
+
+.ad-slot {
+    background: #f0f0f5;
+    border: 2px dashed #d0d0d8;
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    font-weight: 500;
+    min-height: 90px;
+    margin: 24px 0;
+}
+.ad-slot.leaderboard { min-height: 90px; }
+.ad-slot.rectangle { min-height: 250px; max-width: 300px; margin: 24px auto; }
+
+.page-header {
+    padding: 48px 0 32px;
+    text-align: center;
+}
+.page-header h1 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--secondary);
+    margin-bottom: 12px;
+    letter-spacing: -0.5px;
+}
+.page-header p {
+    color: var(--text-light);
+    font-size: 1.05rem;
+    max-width: 560px;
+    margin: 0 auto;
+}
+
+.content-section {
+    padding: 40px 0;
+}
+.content-card {
+    background: var(--card);
+    border-radius: var(--radius);
+    padding: 40px;
+    box-shadow: var(--shadow);
+    margin-bottom: 24px;
+}
+.content-card h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--secondary);
+    margin-bottom: 16px;
+}
+.content-card h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--secondary);
+    margin: 28px 0 12px;
+}
+.content-card p {
+    color: var(--text-light);
+    margin-bottom: 16px;
+    font-size: 1rem;
+}
+.content-card ul, .content-card ol {
+    margin: 12px 0 12px 24px;
+    color: var(--text-light);
+}
+.content-card li { margin-bottom: 8px; }
+.content-card a { color: var(--primary); text-decoration: none; }
+.content-card a:hover { text-decoration: underline; }
+
+.breadcrumb {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+}
+.breadcrumb a { color: var(--text-light); text-decoration: none; }
+.breadcrumb a:hover { color: var(--primary); }
+
+.cta-banner {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    border-radius: var(--radius);
+    padding: 40px;
+    text-align: center;
+    color: white;
+    margin: 40px 0;
+}
+.cta-banner h3 { font-size: 1.5rem; font-weight: 700; margin-bottom: 10px; }
+.cta-banner p { font-size: 1rem; opacity: 0.9; margin-bottom: 20px; }
+.cta-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: white;
+    color: var(--primary);
+    text-decoration: none;
+    border-radius: var(--radius-sm);
+    font-weight: 700;
+    font-size: 0.95rem;
+    transition: transform 0.2s;
+}
+.cta-btn:hover { transform: translateY(-2px); }
+
+@media (max-width: 768px) {
+    .nav-links { display: none; }
+    .mobile-menu-btn { display: block; }
+    .footer-grid { grid-template-columns: 1fr; gap: 24px; }
+    .page-header h1 { font-size: 1.7rem; }
+    .content-card { padding: 24px; }
+}
+
+
+.faq-item { background: var(--card); border-radius: var(--radius); padding: 28px; margin-bottom: 16px; box-shadow: var(--shadow); transition: box-shadow 0.2s; }
+.faq-item:hover { box-shadow: var(--shadow-md); }
+.faq-item h3 { font-size: 1.1rem; font-weight: 700; color: var(--secondary); margin-bottom: 12px; cursor: pointer; }
+.faq-item p { color: var(--text-light); font-size: 0.98rem; line-height: 1.7; margin: 0; }
+.faq-item p + p { margin-top: 12px; }
+.faq-item a { color: var(--primary); text-decoration: none; }
+.faq-item a:hover { text-decoration: underline; }
+.faq-section-title { font-size: 1.3rem; font-weight: 700; color: var(--secondary); margin: 36px 0 20px; padding-bottom: 10px; border-bottom: 2px solid var(--border); }
+
+    </style>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="/" class="logo">
+            <div class="logo-icon">🏠</div>
+            RentSplitter
+        </a>
+        <nav class="nav-links"><a href="/">Home</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/faq.html">FAQ</a><a href="/contact.html">Contact</a></nav>
+        <button class="mobile-menu-btn" aria-label="Menu">☰</button>
+    </div>
+</header>
+
+<main>
+    <section class="page-header">
+        <div class="container">
+            <h1>Frequently Asked Questions</h1>
+            <p>The questions we get asked most. If yours is not here, email us and we will probably add it.</p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <div class="content-card">
+                
+            <div class="faq-section-title">🧮 About the Calculator</div>
+
+            <div class="faq-item">
+                <h3>Is the calculator really free?</h3>
+                <p>Yes. Completely free. No signup, no credit card, no "free trial that turns into a subscription you forget to cancel." We make money through ads and affiliate links, not by charging users.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Does the calculator store my rent information?</h3>
+                <p>No. Everything happens in your browser. We do not have a server storing your inputs. We do not know how much your apartment costs. We do not know your roommate names. We do not want to know.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How accurate is the square footage method?</h3>
+                <p>It is mathematically sound but not perfect. It assumes all square footage is equally valuable, which is not quite true — a room with a great view might be worth more than a larger room facing a brick wall. Use it as a starting point, not a final verdict.</p>
+                <p>We add a 15% premium for private bathrooms because that is what most roommate groups seem to agree on. You can adjust this mentally if your bathroom situation is different.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Can I use this for more than just rent?</h3>
+                <p>Technically yes, though it is designed for rent. You could use it to split vacation Airbnb costs, shared office space, or any situation where people share space unevenly. Just enter the total cost and adjust the weights.</p>
+            </div>
+
+            <div class="faq-section-title">🏠 Roommate Situations</div>
+
+            <div class="faq-item">
+                <h3>How should a couple split rent with single roommates?</h3>
+                <p>The eternal question. Here is the math: a couple sharing one room should pay more than a single person but less than two single people in separate rooms. The fair range is usually 1.4x to 1.6x what a single person pays.</p>
+                <p>Why not double? Because they are still only using one bedroom. The common space is shared, but the private space is the same. Why more than single? Because they use more hot water, more electricity, more fridge space, more everything.</p>
+                <p>Our calculator handles this automatically. Just set "People in Room" to 2.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>What if one person has a parking spot and the others do not?</h3>
+                <p>Parking has real value. In cities like San Francisco or New York, a parking spot can be worth $200-400 per month. If one roommate gets included parking and the others do not, that roommate should pay more or the parking benefit should be factored into the split.</p>
+                <p>Use the custom weights mode and assign a dollar value to the parking spot. Or just have the person with parking pay $100-200 more. It depends on your local parking market.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How do you split utilities fairly?</h3>
+                <p>For most groups, splitting evenly is fine. The differences are small. But if someone works from home and runs AC all day, or has a gaming PC that pulls 500 watts, or takes 45-minute showers, consider usage-based splitting for those specific items.</p>
+                <p>Apps like Splitwise make ongoing utility tracking easy. Settle up monthly. Do not let $15 debts accumulate for six months — that is how resentment builds.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>What about the security deposit?</h3>
+                <p>Split it the same way you split rent. If someone pays more rent, they pay more deposit. When you move out, everyone gets back proportional to what they put in, minus any damages they caused.</p>
+                <p>Document the apartment condition when you move in. Photos, videos, written notes. Landlords will try to keep deposits for "normal wear and tear" which is illegal in most places. Evidence protects you.</p>
+            </div>
+
+            <div class="faq-section-title">💬 The Awkward Stuff</div>
+
+            <div class="faq-item">
+                <h3>How do I bring up rent splitting without seeming greedy?</h3>
+                <p>Frame it as fairness, not money. "Hey, I want to make sure we are all paying what is fair given the room differences" sounds way better than "I think you should pay more because your room is bigger."</p>
+                <p>Use the calculator as a neutral tool. "I found this calculator online, let us plug in our numbers and see what it says." This removes the personal element. The math becomes the "bad guy," not you.</p>
+                <p>Have the conversation before you move in, not after. It is way easier to negotiate when nobody has emotional attachment to "their" room yet.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>What if my roommate refuses to pay their fair share?</h3>
+                <p>First, make sure "fair" is actually defined. Vague complaints about "paying too much" go nowhere. Specific numbers with justification are harder to argue with.</p>
+                <p>If they still refuse, you have options: cover the difference yourself (expensive), find a new roommate (logistically annoying), or talk to your landlord about removing them from the lease (legally complicated).</p>
+                <p>The best prevention is getting everything in writing before move-in. A signed roommate agreement is not legally bulletproof, but it makes disputes much clearer.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Should we put the rent split in the lease?</h3>
+                <p>The lease should show the total rent owed to the landlord. Individual roommate splits are typically handled separately in a roommate agreement. The landlord usually does not care how you divide it internally as long as the total is paid on time.</p>
+                <p>However, if you are all co-signers on the lease, you are all jointly liable for the full amount. If one person bails, the landlord can come after any of you for the total. This is why choosing roommates carefully matters more than any calculator.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>My roommate wants to move out early. Now what?</h3>
+                <p>Check your lease. Some leases allow subletting with landlord approval. Others prohibit it entirely. If subletting is allowed, the departing roommate is responsible for finding a replacement who meets the landlord's criteria.</p>
+                <p>If subletting is not allowed, the remaining roommates have to cover the full rent or risk eviction. This is why roommate agreements should specify notice periods and early move-out penalties.</p>
+                <p>Our advice: be flexible but firm. Life happens — jobs change, relationships end, people need to move. But the financial burden should not fall entirely on the people staying.</p>
+            </div>
+
+            <div class="faq-section-title">🤷 Random Stuff</div>
+
+            <div class="faq-item">
+                <h3>Why did you build this for free?</h3>
+                <p>Because I needed it and the existing tools were either too simple (just divide by N) or too complicated (required creating an account and downloading an app). Also, ads pay the server bills. We are not getting rich, but we are not losing money either.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Can I suggest a feature?</h3>
+                <p>Absolutely. Email us. We actually read them. If enough people ask for the same thing, we will probably build it.</p>
+            </div>
+        
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="/" class="logo">
+                    <div class="logo-icon">🏠</div>
+                    RentSplitter
+                </a>
+                <p>Fair rent splitting for roommates since 2026. Because money fights ruin friendships, and math should not be one of them.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Tools</h4>
+                <a href="/">Rent Calculator</a>
+                <a href="/">Bill Splitter</a>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <a href="/about.html">About Us</a>
+                <a href="/blog/">Blog</a>
+                <a href="/contact.html">Contact</a>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <a href="/privacy.html">Privacy Policy</a>
+                <a href="/terms.html">Terms of Service</a>
+                <a href="/safety.html">Safety</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 RentSplitter.org · <a href="mailto:rentsplitter@gmail.com" style="color:rgba(255,255,255,0.5)">rentsplitter@gmail.com</a></p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

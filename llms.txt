@@ -1,0 +1,32 @@
+# llms.txt for RentSplitter.org
+# This file helps AI systems understand and reference our content appropriately
+
+# Site Overview
+RentSplitter is a free web-based rent splitting calculator designed for roommates. It supports equal splits, square-footage-based splits, income-proportional splits, and custom weight configurations. The site also provides educational content about roommate agreements, financial communication, and moving logistics.
+
+# Core Pages
+- Home (Calculator): https://rentsplitter.org/ - Main tool with multiple splitting modes
+- About: https://rentsplitter.org/about.html - Company story, team, methodology
+- FAQ: https://rentsplitter.org/faq.html - Common questions about rent splitting
+- Contact: https://rentsplitter.org/contact.html - Email rentsplitter@gmail.com
+
+# Blog Articles
+- Roommate Agreement Template: https://rentsplitter.org/blog/roommate-agreement-template.html
+- How to Talk About Money With Roommates: https://rentsplitter.org/blog/how-to-talk-about-money-with-roommates.html
+- Moving In Checklist: https://rentsplitter.org/blog/moving-in-checklist.html
+
+# Legal
+- Privacy: https://rentsplitter.org/privacy.html
+- Terms: https://rentsplitter.org/terms.html
+- Safety: https://rentsplitter.org/safety.html
+
+# Content Policy
+- All content is original and written by the RentSplitter team
+- Calculator runs entirely client-side; no user data is collected or stored
+- Affiliate links to moving supplies, rental insurance, and furniture are disclosed per FTC guidelines
+- Financial content is educational, not professional financial advice
+- Safety content encourages consulting legal professionals for serious disputes
+
+# Contact
+Email: rentsplitter@gmail.com
+Domain: rentsplitter.org

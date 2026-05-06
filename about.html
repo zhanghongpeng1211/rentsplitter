@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | RentSplitter - The Story Behind the Calculator</title>
+    <meta name="description" content="RentSplitter was built by roommates who were tired of awkward rent conversations. We make fair rent splitting simple, transparent, and drama-free.">
+    <link rel="canonical" href="https://rentsplitter.org/about.html">
+    <style>
+
+:root {
+    --primary: #2a9d8f;
+    --primary-light: #4ecdc4;
+    --primary-dark: #1d7a6e;
+    --secondary: #264653;
+    --accent: #e9c46a;
+    --bg: #f8f9fa;
+    --card: #ffffff;
+    --text: #1a1a2e;
+    --text-light: #5a5a6e;
+    --text-muted: #8a8a9e;
+    --border: #e8e8ee;
+    --shadow: 0 2px 12px rgba(0,0,0,0.06);
+    --shadow-md: 0 6px 24px rgba(0,0,0,0.08);
+    --shadow-lg: 0 12px 40px rgba(0,0,0,0.1);
+    --radius: 16px;
+    --radius-sm: 10px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.65;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+.container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+img { max-width: 100%; height: auto; }
+
+.site-header {
+    background: var(--card);
+    border-bottom: 1px solid var(--border);
+    padding: 14px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 800;
+    font-size: 1.25rem;
+    color: var(--secondary);
+    text-decoration: none;
+    letter-spacing: -0.5px;
+}
+.logo-icon {
+    width: 34px; height: 34px;
+    background: var(--primary);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.1rem;
+}
+.nav-links { display: flex; gap: 28px; align-items: center; }
+.nav-links a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+    position: relative;
+}
+.nav-links a:hover { color: var(--primary); }
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px; left: 0;
+    width: 0; height: 2px;
+    background: var(--primary);
+    transition: width 0.2s;
+}
+.nav-links a:hover::after { width: 100%; }
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--secondary);
+}
+
+.site-footer {
+    background: var(--secondary);
+    color: rgba(255,255,255,0.65);
+    padding: 48px 0 24px;
+    font-size: 0.88rem;
+}
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 32px;
+}
+.footer-brand { color: rgba(255,255,255,0.9); }
+.footer-brand .logo { color: white; margin-bottom: 12px; }
+.footer-brand p { line-height: 1.7; }
+.footer-col h4 {
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 16px;
+}
+.footer-col a {
+    display: block;
+    color: rgba(255,255,255,0.6);
+    text-decoration: none;
+    padding: 4px 0;
+    transition: color 0.2s;
+    font-size: 0.88rem;
+}
+.footer-col a:hover { color: white; }
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 20px;
+    text-align: center;
+    color: rgba(255,255,255,0.45);
+}
+
+.ad-slot {
+    background: #f0f0f5;
+    border: 2px dashed #d0d0d8;
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    font-weight: 500;
+    min-height: 90px;
+    margin: 24px 0;
+}
+.ad-slot.leaderboard { min-height: 90px; }
+.ad-slot.rectangle { min-height: 250px; max-width: 300px; margin: 24px auto; }
+
+.page-header {
+    padding: 48px 0 32px;
+    text-align: center;
+}
+.page-header h1 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--secondary);
+    margin-bottom: 12px;
+    letter-spacing: -0.5px;
+}
+.page-header p {
+    color: var(--text-light);
+    font-size: 1.05rem;
+    max-width: 560px;
+    margin: 0 auto;
+}
+
+.content-section {
+    padding: 40px 0;
+}
+.content-card {
+    background: var(--card);
+    border-radius: var(--radius);
+    padding: 40px;
+    box-shadow: var(--shadow);
+    margin-bottom: 24px;
+}
+.content-card h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--secondary);
+    margin-bottom: 16px;
+}
+.content-card h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--secondary);
+    margin: 28px 0 12px;
+}
+.content-card p {
+    color: var(--text-light);
+    margin-bottom: 16px;
+    font-size: 1rem;
+}
+.content-card ul, .content-card ol {
+    margin: 12px 0 12px 24px;
+    color: var(--text-light);
+}
+.content-card li { margin-bottom: 8px; }
+.content-card a { color: var(--primary); text-decoration: none; }
+.content-card a:hover { text-decoration: underline; }
+
+.breadcrumb {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+}
+.breadcrumb a { color: var(--text-light); text-decoration: none; }
+.breadcrumb a:hover { color: var(--primary); }
+
+.cta-banner {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    border-radius: var(--radius);
+    padding: 40px;
+    text-align: center;
+    color: white;
+    margin: 40px 0;
+}
+.cta-banner h3 { font-size: 1.5rem; font-weight: 700; margin-bottom: 10px; }
+.cta-banner p { font-size: 1rem; opacity: 0.9; margin-bottom: 20px; }
+.cta-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: white;
+    color: var(--primary);
+    text-decoration: none;
+    border-radius: var(--radius-sm);
+    font-weight: 700;
+    font-size: 0.95rem;
+    transition: transform 0.2s;
+}
+.cta-btn:hover { transform: translateY(-2px); }
+
+@media (max-width: 768px) {
+    .nav-links { display: none; }
+    .mobile-menu-btn { display: block; }
+    .footer-grid { grid-template-columns: 1fr; gap: 24px; }
+    .page-header h1 { font-size: 1.7rem; }
+    .content-card { padding: 24px; }
+}
+
+
+.team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin: 32px 0; }
+.team-card { background: var(--card); border-radius: var(--radius); padding: 28px; text-align: center; box-shadow: var(--shadow); }
+.team-avatar { width: 72px; height: 72px; border-radius: 50%; background: linear-gradient(135deg, var(--primary-light), var(--accent)); display: flex; align-items: center; justify-content: center; font-size: 2rem; margin: 0 auto 14px; }
+.team-card h4 { font-size: 1.05rem; font-weight: 700; color: var(--secondary); margin-bottom: 4px; }
+.team-card .role { font-size: 0.85rem; color: var(--primary); font-weight: 600; margin-bottom: 10px; }
+.team-card p { font-size: 0.9rem; color: var(--text-light); line-height: 1.6; }
+.values-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin: 28px 0; }
+.value-item { background: var(--card); border-radius: var(--radius); padding: 24px; box-shadow: var(--shadow); }
+.value-item h4 { font-size: 1.1rem; font-weight: 700; color: var(--secondary); margin-bottom: 8px; }
+.value-item p { font-size: 0.95rem; color: var(--text-light); line-height: 1.6; margin: 0; }
+@media (max-width: 768px) { .team-grid { grid-template-columns: 1fr; } .values-grid { grid-template-columns: 1fr; } }
+
+    </style>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="/" class="logo">
+            <div class="logo-icon">🏠</div>
+            RentSplitter
+        </a>
+        <nav class="nav-links"><a href="/">Home</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/faq.html">FAQ</a><a href="/contact.html">Contact</a></nav>
+        <button class="mobile-menu-btn" aria-label="Menu">☰</button>
+    </div>
+</header>
+
+<main>
+    <section class="page-header">
+        <div class="container">
+            <h1>About RentSplitter</h1>
+            <p>We started this because dividing rent should not require a math degree.</p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <div class="content-card">
+                
+            <h2>How We Got Here</h2>
+            <p>It was a Sunday afternoon and my three roommates and I were sitting on the floor of our new apartment, surrounded by boxes, trying to figure out who owed what. The master bedroom had a private bathroom and a closet the size of my last apartment. My room was... cozy. Let us call it cozy.</p>
+            <p>We had been avoiding this conversation for a week. Everyone knew it was coming. Everyone dreaded it. We tried to be casual about it. "So, uh, how should we split this?" someone asked. Cue an hour of polite negotiation, passive-aggressive comments, and someone saying "I am fine with whatever" while clearly not being fine with whatever.</p>
+            <p>We eventually settled on a number. I do not remember how we got there. I think someone just threw out a figure and everyone was too tired to argue. But the resentment lingered. For months, the person in the master bedroom felt guilty. The person in the cozy room felt cheated. And nobody wanted to bring it up again because the conversation had been so uncomfortable the first time.</p>
+            <p>That was when I realized: this is a solved problem. There are formulas for fair division. There are principles for proportional splitting. The only reason it feels hard is because nobody wants to be the person who says "you should pay more." A calculator can say it. A calculator has no feelings. A calculator does not worry about hurting friendships.</p>
+            <p>So I built one.</p>
+
+            <h2>What We Actually Do</h2>
+            <p>RentSplitter is a free web tool that helps roommates divide rent fairly based on actual factors — room size, private bathrooms, income differences, couples sharing rooms, whatever your situation is. We do not store your data. We do not sell your information. We do not even have user accounts.</p>
+            <p>The calculator runs in your browser. You type in numbers, you get results, you screenshot them and send them to your group chat. Done. No email required. No signup. No "create an account to see your results."</p>
+            <p>We also write guides about roommate life. How to talk about money without crying. What to put in a roommate agreement. How to handle the couple who wants to move into the living room (do not let them). Real advice from real people who have lived through it.</p>
+
+            <h2>Our Values</h2>
+            <div class="values-grid">
+                <div class="value-item">
+                    <h4>🎯 Fairness Over Everything</h4>
+                    <p>The math should be transparent. Everyone should understand how their number was calculated. No black boxes. No hidden formulas. If someone asks "why do I pay $50 more?" the answer should be obvious.</p>
+                </div>
+                <div class="value-item">
+                    <h4>🔒 Privacy by Default</h4>
+                    <p>We do not collect your rent amounts, your roommate names, or anything else you type into the calculator. It stays in your browser. We could not sell your data if we wanted to because we literally do not have it.</p>
+                </div>
+                <div class="value-item">
+                    <h4>🤝 Friendship Protection</h4>
+                    <p>The whole point is to prevent money fights from destroying friendships. The calculator is a neutral arbiter. It removes the emotional burden from one person having to ask another to pay more.</p>
+                </div>
+                <div class="value-item">
+                    <h4>📖 No Gatekeeping</h4>
+                    <p>All our tools and guides are free. We make money through ads and affiliate links to products we actually use or have researched. We will never charge for basic rent splitting. That would be ridiculous.</p>
+                </div>
+            </div>
+
+            <h2>Who We Are</h2>
+            <p>RentSplitter is run by a small team of former roommates, current homeowners, and people who just really hate awkward conversations. We are not a startup. We do not have investors. We do not do pitch decks.</p>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-avatar">👨‍💻</div>
+                    <h4>Alex</h4>
+                    <div class="role">Founder & Developer</div>
+                    <p>Built the first version after a particularly painful roommate negotiation involving a parking spot and hurt feelings. Has lived with 11 different roommates over 8 years. Survived most of them.</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">👩‍💼</div>
+                    <h4>Maya</h4>
+                    <div class="role">Content & Community</div>
+                    <p>Former property manager who has seen every roommate disaster imaginable. Writes the guides and answers emails. Has a zero-tolerance policy for people who do not do their dishes.</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">📊</div>
+                    <h4>Jordan</h4>
+                    <div class="role">Math & Logic</div>
+                    <p>Economics grad who got way too into fair division algorithms. Ensures our calculators are mathematically sound and not just vibes-based. Has strong opinions about the Shapley value.</p>
+                </div>
+            </div>
+
+            <h2>What Is Next</h2>
+            <p>We are working on a few things. A bill-splitting tracker for ongoing expenses. A move-out cost estimator for security deposit disputes. Maybe a "is this apartment worth it" calculator that factors in commute time, amenities, and neighborhood safety.</p>
+            <p>If you have ideas, we want to hear them. Seriously. Email us. We read everything.</p>
+            <p style="margin-top: 24px;"><a href="/contact.html">Get in touch →</a></p>
+        
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="/" class="logo">
+                    <div class="logo-icon">🏠</div>
+                    RentSplitter
+                </a>
+                <p>Fair rent splitting for roommates since 2026. Because money fights ruin friendships, and math should not be one of them.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Tools</h4>
+                <a href="/">Rent Calculator</a>
+                <a href="/">Bill Splitter</a>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <a href="/about.html">About Us</a>
+                <a href="/blog/">Blog</a>
+                <a href="/contact.html">Contact</a>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <a href="/privacy.html">Privacy Policy</a>
+                <a href="/terms.html">Terms of Service</a>
+                <a href="/safety.html">Safety</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 RentSplitter.org · <a href="mailto:rentsplitter@gmail.com" style="color:rgba(255,255,255,0.5)">rentsplitter@gmail.com</a></p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

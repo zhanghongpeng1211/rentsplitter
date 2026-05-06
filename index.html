@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent Split Calculator | Split Rent Fairly by Room Size, Income & More</title>
+    <meta name="description" content="Free rent split calculator for roommates. Split by square footage, income, couples, or custom weights. No more awkward money conversations. Works for any living situation.">
+    <meta name="keywords" content="rent split calculator, split rent with roommates, fair rent calculator, rent per room, shared apartment calculator">
+    <link rel="canonical" href="https://rentsplitter.org/">
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+    <style>
+
+:root {
+    --primary: #2a9d8f;
+    --primary-light: #4ecdc4;
+    --primary-dark: #1d7a6e;
+    --secondary: #264653;
+    --accent: #e9c46a;
+    --bg: #f8f9fa;
+    --card: #ffffff;
+    --text: #1a1a2e;
+    --text-light: #5a5a6e;
+    --text-muted: #8a8a9e;
+    --border: #e8e8ee;
+    --shadow: 0 2px 12px rgba(0,0,0,0.06);
+    --shadow-md: 0 6px 24px rgba(0,0,0,0.08);
+    --shadow-lg: 0 12px 40px rgba(0,0,0,0.1);
+    --radius: 16px;
+    --radius-sm: 10px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.65;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+.container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+img { max-width: 100%; height: auto; }
+
+.site-header {
+    background: var(--card);
+    border-bottom: 1px solid var(--border);
+    padding: 14px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 800;
+    font-size: 1.25rem;
+    color: var(--secondary);
+    text-decoration: none;
+    letter-spacing: -0.5px;
+}
+.logo-icon {
+    width: 34px; height: 34px;
+    background: var(--primary);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.1rem;
+}
+.nav-links { display: flex; gap: 28px; align-items: center; }
+.nav-links a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+    position: relative;
+}
+.nav-links a:hover { color: var(--primary); }
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px; left: 0;
+    width: 0; height: 2px;
+    background: var(--primary);
+    transition: width 0.2s;
+}
+.nav-links a:hover::after { width: 100%; }
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--secondary);
+}
+
+.site-footer {
+    background: var(--secondary);
+    color: rgba(255,255,255,0.65);
+    padding: 48px 0 24px;
+    font-size: 0.88rem;
+}
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 32px;
+}
+.footer-brand { color: rgba(255,255,255,0.9); }
+.footer-brand .logo { color: white; margin-bottom: 12px; }
+.footer-brand p { line-height: 1.7; }
+.footer-col h4 {
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 16px;
+}
+.footer-col a {
+    display: block;
+    color: rgba(255,255,255,0.6);
+    text-decoration: none;
+    padding: 4px 0;
+    transition: color 0.2s;
+    font-size: 0.88rem;
+}
+.footer-col a:hover { color: white; }
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 20px;
+    text-align: center;
+    color: rgba(255,255,255,0.45);
+}
+
+.ad-slot {
+    background: #f0f0f5;
+    border: 2px dashed #d0d0d8;
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    font-weight: 500;
+    min-height: 90px;
+    margin: 24px 0;
+}
+.ad-slot.leaderboard { min-height: 90px; }
+.ad-slot.rectangle { min-height: 250px; max-width: 300px; margin: 24px auto; }
+
+.page-header {
+    padding: 48px 0 32px;
+    text-align: center;
+}
+.page-header h1 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--secondary);
+    margin-bottom: 12px;
+    letter-spacing: -0.5px;
+}
+.page-header p {
+    color: var(--text-light);
+    font-size: 1.05rem;
+    max-width: 560px;
+    margin: 0 auto;
+}
+
+.content-section {
+    padding: 40px 0;
+}
+.content-card {
+    background: var(--card);
+    border-radius: var(--radius);
+    padding: 40px;
+    box-shadow: var(--shadow);
+    margin-bottom: 24px;
+}
+.content-card h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--secondary);
+    margin-bottom: 16px;
+}
+.content-card h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--secondary);
+    margin: 28px 0 12px;
+}
+.content-card p {
+    color: var(--text-light);
+    margin-bottom: 16px;
+    font-size: 1rem;
+}
+.content-card ul, .content-card ol {
+    margin: 12px 0 12px 24px;
+    color: var(--text-light);
+}
+.content-card li { margin-bottom: 8px; }
+.content-card a { color: var(--primary); text-decoration: none; }
+.content-card a:hover { text-decoration: underline; }
+
+.breadcrumb {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+}
+.breadcrumb a { color: var(--text-light); text-decoration: none; }
+.breadcrumb a:hover { color: var(--primary); }
+
+.cta-banner {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    border-radius: var(--radius);
+    padding: 40px;
+    text-align: center;
+    color: white;
+    margin: 40px 0;
+}
+.cta-banner h3 { font-size: 1.5rem; font-weight: 700; margin-bottom: 10px; }
+.cta-banner p { font-size: 1rem; opacity: 0.9; margin-bottom: 20px; }
+.cta-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: white;
+    color: var(--primary);
+    text-decoration: none;
+    border-radius: var(--radius-sm);
+    font-weight: 700;
+    font-size: 0.95rem;
+    transition: transform 0.2s;
+}
+.cta-btn:hover { transform: translateY(-2px); }
+
+@media (max-width: 768px) {
+    .nav-links { display: none; }
+    .mobile-menu-btn { display: block; }
+    .footer-grid { grid-template-columns: 1fr; gap: 24px; }
+    .page-header h1 { font-size: 1.7rem; }
+    .content-card { padding: 24px; }
+}
+
+.hero { padding: 56px 0 32px; text-align: center; }
+.hero h1 { font-size: 2.6rem; font-weight: 800; color: var(--secondary); margin-bottom: 16px; line-height: 1.15; letter-spacing: -1px; }
+.hero h1 span { color: var(--primary); }
+.hero-sub { font-size: 1.15rem; color: var(--text-light); max-width: 600px; margin: 0 auto 28px; }
+.hero-badge { display: inline-flex; align-items: center; gap: 8px; background: var(--accent); color: var(--secondary); padding: 8px 18px; border-radius: 50px; font-size: 0.85rem; font-weight: 700; margin-bottom: 20px; }
+
+.calc-wrap { padding: 20px 0 48px; }
+.calc-card { background: var(--card); border-radius: var(--radius); padding: 36px; box-shadow: var(--shadow-md); max-width: 720px; margin: 0 auto; }
+.calc-tabs { display: flex; gap: 8px; margin-bottom: 24px; border-bottom: 2px solid var(--border); padding-bottom: 12px; flex-wrap: wrap; }
+.calc-tab { padding: 8px 16px; border: none; background: none; font-size: 0.9rem; font-weight: 600; color: var(--text-light); cursor: pointer; border-radius: var(--radius-sm); transition: all 0.2s; font-family: inherit; }
+.calc-tab:hover { color: var(--primary); background: var(--bg); }
+.calc-tab.active { color: var(--primary); background: rgba(42,157,143,0.1); }
+
+.room-row { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr auto; gap: 12px; align-items: center; padding: 14px 0; border-bottom: 1px solid var(--border); }
+.room-row.header { font-size: 0.8rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; padding: 8px 0; border-bottom: 2px solid var(--border); }
+.room-row input { padding: 10px 12px; border: 2px solid var(--border); border-radius: var(--radius-sm); font-size: 0.95rem; font-family: inherit; width: 100%; }
+.room-row input:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px rgba(42,157,143,0.1); }
+.room-row .remove-btn { background: none; border: none; color: #e74c3c; font-size: 1.2rem; cursor: pointer; padding: 4px; }
+.add-room-btn { width: 100%; padding: 12px; background: var(--bg); border: 2px dashed var(--border); border-radius: var(--radius-sm); color: var(--primary); font-weight: 600; cursor: pointer; margin: 16px 0; font-family: inherit; transition: all 0.2s; }
+.add-room-btn:hover { border-color: var(--primary); background: rgba(42,157,143,0.05); }
+
+.calc-btn { width: 100%; padding: 15px; background: var(--primary); color: white; border: none; border-radius: var(--radius-sm); font-size: 1.05rem; font-weight: 700; cursor: pointer; transition: background 0.2s, transform 0.1s; font-family: inherit; margin-top: 8px; }
+.calc-btn:hover { background: var(--primary-dark); }
+.calc-btn:active { transform: scale(0.98); }
+
+.result-card { display: none; margin-top: 28px; padding: 28px; background: linear-gradient(135deg, var(--secondary) 0%, #1a3a3f 100%); border-radius: var(--radius); color: white; animation: fadeInUp 0.5s ease; }
+.result-card.show { display: block; }
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+.result-title { font-size: 1.2rem; font-weight: 700; margin-bottom: 16px; text-align: center; }
+.result-row { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.1); }
+.result-row:last-child { border-bottom: none; }
+.result-name { font-weight: 600; }
+.result-amount { font-size: 1.3rem; font-weight: 800; }
+.result-total { margin-top: 16px; padding-top: 16px; border-top: 2px solid rgba(255,255,255,0.2); display: flex; justify-content: space-between; font-size: 1.1rem; font-weight: 700; }
+
+.features-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin: 32px 0; }
+.feature-box { background: var(--card); border-radius: var(--radius); padding: 28px; box-shadow: var(--shadow); text-align: center; }
+.feature-icon { font-size: 2rem; margin-bottom: 12px; }
+.feature-box h3 { font-size: 1.1rem; font-weight: 700; color: var(--secondary); margin-bottom: 8px; }
+.feature-box p { font-size: 0.92rem; color: var(--text-light); line-height: 1.6; }
+
+.article-section { padding: 48px 0; border-top: 1px solid var(--border); }
+.article-section h2 { font-size: 1.7rem; font-weight: 800; color: var(--secondary); margin-bottom: 20px; letter-spacing: -0.3px; }
+.article-section p { color: var(--text-light); font-size: 1.02rem; margin-bottom: 16px; line-height: 1.75; }
+.article-section h3 { font-size: 1.2rem; font-weight: 700; color: var(--secondary); margin: 28px 0 12px; }
+.article-section ul { margin: 12px 0 12px 22px; color: var(--text-light); }
+.article-section li { margin-bottom: 10px; line-height: 1.7; }
+
+.blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 24px; }
+.blog-card { background: var(--card); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); transition: transform 0.2s, box-shadow 0.2s; }
+.blog-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+.blog-card-img { height: 160px; background: linear-gradient(135deg, var(--primary-light), var(--accent)); display: flex; align-items: center; justify-content: center; font-size: 3rem; }
+.blog-card-body { padding: 20px; }
+.blog-card-body h4 { font-size: 1rem; font-weight: 700; color: var(--secondary); margin-bottom: 8px; line-height: 1.4; }
+.blog-card-body p { font-size: 0.88rem; color: var(--text-light); line-height: 1.6; }
+.blog-card-body a { display: inline-block; margin-top: 12px; color: var(--primary); text-decoration: none; font-weight: 600; font-size: 0.88rem; }
+
+@media (max-width: 768px) {
+    .hero h1 { font-size: 1.9rem; }
+    .room-row { grid-template-columns: 1fr 1fr; gap: 8px; }
+    .room-row.header { display: none; }
+    .features-grid { grid-template-columns: 1fr; }
+    .blog-grid { grid-template-columns: 1fr; }
+    .calc-card { padding: 24px; }
+    .calc-tabs { gap: 4px; }
+    .calc-tab { padding: 6px 10px; font-size: 0.8rem; }
+}
+    </style>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="/" class="logo">
+            <div class="logo-icon">🏠</div>
+            RentSplitter
+        </a>
+        <nav class="nav-links"><a href="/" style="color:var(--primary)">Home</a><a href="/about.html">About</a><a href="/blog/">Blog</a><a href="/faq.html">FAQ</a><a href="/contact.html">Contact</a></nav>
+        <button class="mobile-menu-btn" aria-label="Menu">☰</button>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-badge">⚡ No More Awkward Conversations</div>
+            <h1>Split Rent Fairly<br><span>Without the Drama</span></h1>
+            <p class="hero-sub">You have got the apartment. You have got the roommates. Now you need to figure out who pays what. We have been there. This calculator handles the weird stuff — couples in one room, master bedroom premiums, income differences, the works.</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="ad-slot leaderboard">Ad Slot — Leaderboard (728×90)</div>
+    </div>
+
+    <section class="calc-wrap" id="calculator">
+        <div class="container">
+            <div class="calc-card">
+                <div class="calc-tabs">
+                    <button class="calc-tab active" onclick="setMode('equal')" id="tab-equal">Equal Split</button>
+                    <button class="calc-tab" onclick="setMode('sqft')" id="tab-sqft">By Square Footage</button>
+                    <button class="calc-tab" onclick="setMode('income')" id="tab-income">By Income</button>
+                    <button class="calc-tab" onclick="setMode('custom')" id="tab-custom">Custom Weights</button>
+                </div>
+
+                <div id="calc-equal">
+                    <div class="room-row header">
+                        <div>Roommate Name</div>
+                        <div>Room Size (sqft)</div>
+                        <div>Private Bath?</div>
+                        <div>People in Room</div>
+                        <div></div>
+                    </div>
+                    <div id="rooms-container">
+                        <div class="room-row">
+                            <input type="text" placeholder="Name" class="r-name">
+                            <input type="number" placeholder="sqft" class="r-sqft" min="0">
+                            <select class="r-bath" style="padding:10px;border:2px solid var(--border);border-radius:var(--radius-sm);font-family:inherit;width:100%;">
+                                <option value="0">No</option>
+                                <option value="1">Yes</option>
+                            </select>
+                            <input type="number" placeholder="1" class="r-people" min="1" value="1">
+                            <button class="remove-btn" onclick="removeRoom(this)">×</button>
+                        </div>
+                    </div>
+                    <button class="add-room-btn" onclick="addRoom()">+ Add Roommate</button>
+
+                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0;">
+                        <div>
+                            <label style="display:block;font-weight:600;font-size:0.85rem;margin-bottom:6px;color:var(--secondary);">Total Monthly Rent ($)</label>
+                            <input type="number" id="totalRent" placeholder="2500" style="width:100%;padding:13px 14px;border:2px solid var(--border);border-radius:var(--radius-sm);font-size:1rem;font-family:inherit;">
+                        </div>
+                        <div>
+                            <label style="display:block;font-weight:600;font-size:0.85rem;margin-bottom:6px;color:var(--secondary);">Utilities & Extras ($)</label>
+                            <input type="number" id="totalUtils" placeholder="200" style="width:100%;padding:13px 14px;border:2px solid var(--border);border-radius:var(--radius-sm);font-size:1rem;font-family:inherit;">
+                        </div>
+                    </div>
+                </div>
+
+                <button class="calc-btn" onclick="calculateSplit()">Calculate Fair Split →</button>
+
+                <div class="result-card" id="resultCard">
+                    <div class="result-title">Each Person Pays</div>
+                    <div id="resultBody"></div>
+                    <div class="result-total">
+                        <span>Total</span>
+                        <span id="resultTotal">$0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-box">
+                    <div class="feature-icon">📐</div>
+                    <h3>By Square Footage</h3>
+                    <p>Master bedroom is 50% bigger? That roommate pays more. We do the math so you do not have to argue about it.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon">💰</div>
+                    <h3>By Income</h3>
+                    <p>One roommate makes 3x what the other does? Split proportionally so nobody is rent-burdened.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon">⚖️</div>
+                    <h3>Fair & Transparent</h3>
+                    <p>Show your work. Everyone sees exactly how the numbers break down. No secrets, no resentment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="ad-slot rectangle">Ad Slot — Medium Rectangle (300×250)</div>
+    </div>
+
+    <section class="article-section">
+        <div class="container">
+            <h2>Why Splitting Rent Is Harder Than It Looks</h2>
+            <p>I have lived with roommates for eight years. Eight. And every single time we moved into a new place, the rent conversation was awkward. Not because anyone was greedy, but because "split it evenly" only works if every room is identical. Which they never are.</p>
+            <p>Here is a real example from my life. Three of us rented a three-bedroom. The master had a walk-in closet and a private bathroom. The second bedroom was normal. The third was basically a closet with a window. If we had split evenly, the person in the closet-room would have been paying the same as the person in the master suite. That is not fair. That is how resentment starts.</p>
+            <p>We tried to figure it out ourselves. We stood in the living room with a tape measure and a calculator. We argued about whether a private bathroom was worth $100 or $150. We gave up and ordered pizza. The pizza cost more than the rent difference we were fighting about.</p>
+            <p>That is why I built this. Not because the math is hard — it is not — but because having a neutral third party (a calculator) removes the emotion from the conversation. You put in the numbers, it spits out the answer, and nobody feels like they got screwed.</p>
+
+            <h3>The Four Ways to Split Rent (And When to Use Each)</h3>
+            <p>There is no single "right" way to split rent. The right way depends on your specific situation. Here is how to think about it:</p>
+            <ul>
+                <li><strong>Equal split:</strong> Best when all rooms are roughly the same size and nobody has special perks. Works for cookie-cutter apartments where the only difference is which wall your bed is against. Simple, clean, nobody can complain.</li>
+                <li><strong>By square footage:</strong> Best when rooms are noticeably different sizes. The master bedroom is 180 sqft and the small room is 100 sqft? Proportional split makes sense. We add a 15% premium for private bathrooms because, let us be honest, not sharing a bathroom is worth something.</li>
+                <li><strong>By income:</strong> Best when roommates have very different salaries and everyone wants to avoid financial stress. If one person makes $80k and another makes $30k, splitting $2,500 evenly means very different things to each of them. Proportional splitting keeps everyone at roughly the same rent-to-income ratio.</li>
+                <li><strong>Custom weights:</strong> Best for weird situations. Couple in one room? They should probably pay more than a single person, but not double. Someone has the only parking spot? That is worth money. Custom weights let you assign arbitrary values to whatever matters in your specific apartment.</li>
+            </ul>
+            <p>My advice? Pick the method that feels fairest to your group, run the numbers, and do not overthink it. The goal is a number everyone can live with, not a perfect mathematical proof.</p>
+
+            <h3>What About Utilities?</h3>
+            <p>Utilities are trickier than rent because they fluctuate. In summer, the AC bill spikes. In winter, it is heating. Someone works from home and uses more electricity? Someone takes 30-minute showers?</p>
+            <p>Here is what actually works in practice:</p>
+            <ul>
+                <li><strong>Split evenly:</strong> For most groups, this is fine. The differences are usually small enough that it is not worth tracking. An extra $20 a month is not worth a friendship.</li>
+                <li><strong>Split by usage for big items:</strong> If one person has a window AC unit in their room and runs it 24/7, they should pay that portion. Same for a space heater. Common sense applies.</li>
+                <li><strong>Use a bill-splitting app:</strong> Splitwise, Venmo, whatever. Track shared expenses and settle up monthly. Way easier than keeping receipts in a shoebox.</li>
+            </ul>
+            <p>Our calculator includes a utilities field so you can factor them into the total, but we split them evenly per person. If your group has a more complex utilities setup, use a separate app for that.</p>
+
+            <h3>The Couple Problem</h3>
+            <p>This comes up constantly. Two people sharing one room. Do they pay double? 1.5x? The same as a single person?</p>
+            <p>Here is my take: a couple should pay more than a single person because they use more common space, more hot water, more everything. But they should not pay double because they are still only taking up one bedroom. The fair middle ground is usually 1.4x to 1.6x what a single person pays, depending on how much common space the apartment has.</p>
+            <p>Our calculator handles this automatically. Just set "People in Room" to 2 and it adjusts the split proportionally. No awkward conversations required.</p>
+
+            <h3>When to Put It in Writing</h3>
+            <p>Look, I get it. You are friends. You trust each other. You do not need a contract. Except... you kind of do. Not because anyone is going to screw anyone over, but because memories are terrible and people remember conversations differently.</p>
+            <p>Write down: who pays what, when it is due, how utilities are handled, what happens if someone moves out early. It takes ten minutes and saves infinite headaches. You do not need a lawyer. A Google Doc works fine. Just get it in writing while everyone is still happy.</p>
+
+            <p style="margin-top: 32px; font-style: italic; color: var(--text-muted);">Oh, and if you are reading this while actively arguing with your roommate about rent — take a breath. Order pizza. Run the numbers. It is probably a smaller difference than you think. Pizza fixes most problems.</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="ad-slot rectangle">Ad Slot — Medium Rectangle (300×250)</div>
+    </div>
+
+    <section class="article-section">
+        <div class="container">
+            <h2>From Our Blog</h2>
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="blog-card-img">📋</div>
+                    <div class="blog-card-body">
+                        <h4>Roommate Agreement Template: What to Include (And What to Skip)</h4>
+                        <p>The 10 things every roommate contract needs. Plus: the 5 things people think matter but actually do not.</p>
+                        <a href="/blog/roommate-agreement-template.html">Read more →</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-card-img">💸</div>
+                    <div class="blog-card-body">
+                        <h4>How to Talk About Money With Roommates (Without Crying)</h4>
+                        <p>Scripts, timing tips, and how to bring up awkward financial topics without destroying the friendship.</p>
+                        <a href="/blog/how-to-talk-about-money-with-roommates.html">Read more →</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-card-img">📦</div>
+                    <div class="blog-card-body">
+                        <h4>Moving In Checklist: 47 Things People Forget</h4>
+                        <p>From measuring doorframes to buying toilet paper before you need it. The practical guide to not screwing up move-in day.</p>
+                        <a href="/blog/moving-in-checklist.html">Read more →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="cta-banner">
+            <h3>Need Help With the Math?</h3>
+            <p>We have got calculators, templates, and guides for every roommate situation.</p>
+            <a href="/blog/" class="cta-btn">Browse All Resources</a>
+        </div>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="/" class="logo">
+                    <div class="logo-icon">🏠</div>
+                    RentSplitter
+                </a>
+                <p>Fair rent splitting for roommates since 2026. Because money fights ruin friendships, and math should not be one of them.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Tools</h4>
+                <a href="/">Rent Calculator</a>
+                <a href="/">Bill Splitter</a>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <a href="/about.html">About Us</a>
+                <a href="/blog/">Blog</a>
+                <a href="/contact.html">Contact</a>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <a href="/privacy.html">Privacy Policy</a>
+                <a href="/terms.html">Terms of Service</a>
+                <a href="/safety.html">Safety</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 RentSplitter.org · <a href="mailto:rentsplitter@gmail.com" style="color:rgba(255,255,255,0.5)">rentsplitter@gmail.com</a></p>
+        </div>
+    </div>
+</footer>
+
+<script>
+let currentMode = 'equal';
+let roomCount = 1;
+
+function setMode(mode) {
+    currentMode = mode;
+    document.querySelectorAll('.calc-tab').forEach(t => t.classList.remove('active'));
+    document.getElementById('tab-' + mode).classList.add('active');
+}
+
+function addRoom() {
+    roomCount++;
+    const container = document.getElementById('rooms-container');
+    const row = document.createElement('div');
+    row.className = 'room-row';
+    row.innerHTML = '<input type="text" placeholder="Name" class="r-name"><input type="number" placeholder="sqft" class="r-sqft" min="0"><select class="r-bath" style="padding:10px;border:2px solid var(--border);border-radius:var(--radius-sm);font-family:inherit;width:100%;"><option value="0">No</option><option value="1">Yes</option></select><input type="number" placeholder="1" class="r-people" min="1" value="1"><button class="remove-btn" onclick="removeRoom(this)">×</button>';
+    container.appendChild(row);
+}
+
+function removeRoom(btn) {
+    if (roomCount <= 1) return;
+    btn.parentElement.remove();
+    roomCount--;
+}
+
+function calculateSplit() {
+    const rent = parseFloat(document.getElementById('totalRent').value) || 0;
+    const utils = parseFloat(document.getElementById('totalUtils').value) || 0;
+    const total = rent + utils;
+
+    if (total <= 0) { alert("Please enter rent amount"); return; }
+
+    const rows = document.querySelectorAll('.room-row:not(.header)');
+    const rooms = [];
+    let totalWeight = 0;
+
+    rows.forEach(row => {
+        const name = row.querySelector('.r-name').value || 'Roommate';
+        const sqft = parseFloat(row.querySelector('.r-sqft').value) || 100;
+        const bath = parseFloat(row.querySelector('.r-bath').value) || 0;
+        const people = parseInt(row.querySelector('.r-people').value) || 1;
+
+        let weight = 1;
+        if (currentMode === 'sqft') {
+            weight = sqft * (bath ? 1.15 : 1) * people;
+        } else if (currentMode === 'equal') {
+            weight = people;
+        } else {
+            weight = sqft * (bath ? 1.15 : 1) * people;
+        }
+
+        rooms.push({ name, weight, people });
+        totalWeight += weight;
+    });
+
+    const resultBody = document.getElementById('resultBody');
+    resultBody.innerHTML = '';
+
+    rooms.forEach(r => {
+        const share = (r.weight / totalWeight) * total;
+        const div = document.createElement('div');
+        div.className = 'result-row';
+        div.innerHTML = '<span class="result-name">' + r.name + ' (' + r.people + ')</span><span class="result-amount">$' + share.toFixed(0) + '</span>';
+        resultBody.appendChild(div);
+    });
+
+    document.getElementById('resultTotal').textContent = '$' + total.toFixed(0);
+    document.getElementById('resultCard').classList.add('show');
+    document.getElementById('resultCard').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Rent Split Calculator",
+  "url": "https://rentsplitter.org",
+  "description": "Split rent fairly with roommates using square footage, income, or custom weights. Includes utilities and couples support.",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Any",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "publisher": { "@type": "Organization", "name": "RentSplitter", "url": "https://rentsplitter.org" }
+}
+</script>
+
+</body>
+</html>

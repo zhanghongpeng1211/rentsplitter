@@ -1,109 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
--<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-
--<url>
-
-<loc>https://rentsplitter.org/</loc>
-
-<lastmod>2026-05-06</lastmod>
-
-<changefreq>monthly</changefreq>
-
-<priority>1.0</priority>
-
-</url>
-
-
--<url>
-
-<loc>https://rentsplitter.org/blog/</loc>
-
-<lastmod>2026-05-06</lastmod>
-
-<changefreq>weekly</changefreq>
-
-<priority>0.8</priority>
-
-</url>
-
-
--<url>
-
-<loc>https://rentsplitter.org/blog/how-to-split-rent-fairly.html</loc>
-
-<lastmod>2026-05-06</lastmod>
-
-<changefreq>monthly</changefreq>
-
-<priority>0.7</priority>
-
-</url>
-
-
--<url>
-
-<loc>https://rentsplitter.org/blog/how-to-talk-about-money-with-roommates.html</loc>
-
-<lastmod>2026-05-06</lastmod>
-
-<changefreq>monthly</changefreq>
-
-<priority>0.7</priority>
-
-</url>
-
-
--<url>
-
-<loc>https://rentsplitter.org/blog/moving-in-checklist.html</loc>
-
-<lastmod>2026-05-06</lastmod>
-
-<changefreq>monthly</changefreq>
-
-<priority>0.7</priority>
-
-</url>
-
-
--<url>
-
-<loc>https://rentsplitter.org/blog/roommate-agreement-template.html</loc>
-
-<lastmod>2026-05-06</lastmod>
-
-<changefreq>monthly</changefreq>
-
-<priority>0.7</priority>
-
-</url>
-
-
--<url>
-
-<loc>https://rentsplitter.org/blog/rent-by-square-footage.html</loc>
-
-<lastmod>2026-05-06</lastmod>
-
-<changefreq>monthly</changefreq>
-
-<priority>0.7</priority>
-
-</url>
-
-
--<url>
-
-<loc>https://rentsplitter.org/blog/splitting-utilities-guide.html</loc>
-
-<lastmod>2026-05-06</lastmod>
-
-<changefreq>monthly</changefreq>
-
-<priority>0.7</priority>
-
-</url>
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://rentsplitter.org/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://rentsplitter.org/about.html</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rentsplitter.org/contact.html</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://rentsplitter.org/faq.html</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rentsplitter.org/privacy.html</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://rentsplitter.org/terms.html</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://rentsplitter.org/safety.html</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://rentsplitter.org/blog/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rentsplitter.org/blog/roommate-agreement-template.html</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://rentsplitter.org/blog/how-to-talk-about-money-with-roommates.html</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://rentsplitter.org/blog/moving-in-checklist.html</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>

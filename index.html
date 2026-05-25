@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RentSplitter — Split rent without the awkward conversation</title>
+<meta name="description" content="Free tools to split rent fairly by room size, income, and amenities. No signup required. Built by someone who's lived with roommates for 8 years.">
+<link rel="canonical" href="https://rentsplitter.org/">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "RentSplitter",
+  "url": "https://rentsplitter.org/",
+  "description": "Free rent split calculators and roommate guides"
+}
+</script>
+</head>
+<body class="rs-body">
+<header class="rs-header">
+  <div class="rs-header-inner">
+    <a href="index.html" class="rs-logo">RentSplitter</a>
+    <nav class="rs-nav">
+      <a href="index.html" class="rs-nav-link active">Home</a>
+      <a href="tools/rent-split.html" class="rs-nav-link">Calculator</a>
+      <a href="blog/index.html" class="rs-nav-link">Blog</a>
+      <a href="about.html" class="rs-nav-link">About</a>
+      <a href="faq.html" class="rs-nav-link">FAQ</a>
+    </nav>
+    <button class="rs-menu-btn" onclick="toggleMenu()" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<main class="rs-main">
+  <!-- Hero -->
+  <section class="rs-hero">
+    <div class="rs-hero-inner">
+      <h1 class="rs-hero-title">Split Rent Fairly.<br>No Awkward Conversations.</h1>
+      <p class="rs-hero-desc">Free calculators for roommates. By room size, income, or custom weights. Built by someone who's been there.</p>
+      <a href="tools/rent-split.html" class="rs-hero-btn">Try the Calculator</a>
+    </div>
+  </section>
+
+  <!-- 顶部广告位 -->
+  <div class="rs-ad-slot" data-ad="home-top">
+    <span class="rs-ad-label">Advertisement</span>
+  </div>
+
+  <!-- 工具卡片网格 -->
+  <section class="rs-tools-section">
+    <h2 class="rs-section-title">Tools</h2>
+    <div class="rs-tools-grid">
+      <a href="tools/rent-split.html" class="rs-tool-card" style="--card-color: #4f46e5">
+  <div class="rs-tool-icon">🏠</div>
+  <h3 class="rs-tool-card-title">Rent Split Calculator</h3>
+  <p class="rs-tool-card-desc">Split rent by room size, income, or custom weights. Handles couples, private baths, and weird situations.</p>
+  <span class="rs-tool-card-btn">Open Tool →</span>
+</a><a href="tools/utility-split.html" class="rs-tool-card" style="--card-color: #f59e0b">
+  <div class="rs-tool-icon">⚡</div>
+  <h3 class="rs-tool-card-title">Utility Split Calculator</h3>
+  <p class="rs-tool-card-desc">Fairly divide electricity, water, gas, and internet. Accounts for AC units, space heaters, and usage differences.</p>
+  <span class="rs-tool-card-btn">Open Tool →</span>
+</a><a href="tools/move-cost.html" class="rs-tool-card" style="--card-color: #10b981">
+  <div class="rs-tool-icon">📦</div>
+  <h3 class="rs-tool-card-title">Moving Cost Estimator</h3>
+  <p class="rs-tool-card-desc">Estimate truck rental, boxes, deposits, and first-month expenses. Don't get surprised by hidden costs.</p>
+  <span class="rs-tool-card-btn">Open Tool →</span>
+</a><a href="tools/roommate-compatibility.html" class="rs-tool-card" style="--card-color: #ec4899">
+  <div class="rs-tool-icon">🤝</div>
+  <h3 class="rs-tool-card-title">Roommate Compatibility Quiz</h3>
+  <p class="rs-tool-card-desc">Answer 12 questions and get a compatibility score. Better than finding out you're incompatible after signing the lease.</p>
+  <span class="rs-tool-card-btn">Open Tool →</span>
+</a><a href="tools/deposit-calc.html" class="rs-tool-card" style="--card-color: #8b5cf6">
+  <div class="rs-tool-icon">🔒</div>
+  <h3 class="rs-tool-card-title">Security Deposit Calculator</h3>
+  <p class="rs-tool-card-desc">Track what your landlord can and can't deduct. Know your rights before you move out.</p>
+  <span class="rs-tool-card-btn">Open Tool →</span>
+</a><a href="tools/budget-share.html" class="rs-tool-card" style="--card-color: #06b6d4">
+  <div class="rs-tool-icon">💰</div>
+  <h3 class="rs-tool-card-title">Shared Budget Planner</h3>
+  <p class="rs-tool-card-desc">Plan monthly shared expenses before you move in. Groceries, cleaning supplies, toilet paper — all of it.</p>
+  <span class="rs-tool-card-btn">Open Tool →</span>
+</a>
+    </div>
+  </section>
+
+  <!-- 中间广告位 -->
+  <div class="rs-ad-slot" data-ad="home-mid">
+    <span class="rs-ad-label">Advertisement</span>
+  </div>
+
+  <!-- 最新文章 -->
+  <section class="rs-articles-section">
+    <h2 class="rs-section-title">From the Blog</h2>
+    <div class="rs-home-articles">
+      <a href="blog/why-i-built-this-calculator.html" class="rs-home-article-link">
+  <span class="rs-home-article-cat">Stories</span>
+  <h4 class="rs-home-article-title">Why I Built This Calculator (And Why It Almost Didn't Happen)</h4>
+  <p class="rs-home-article-excerpt">It started as a Google Sheet in a no-closet room at 2am. Now it's a website. Here's the story.</p>
+</a><a href="blog/how-to-talk-about-money-without-crying.html" class="rs-home-article-link">
+  <span class="rs-home-article-cat">Guides</span>
+  <h4 class="rs-home-article-title">How to Talk About Money With Roommates (Without Anyone Crying)</h4>
+  <p class="rs-home-article-excerpt">Scripts, timing tips, and how to bring up awkward financial topics without destroying the friendship.</p>
+</a><a href="blog/security-deposits-are-a-scam.html" class="rs-home-article-link">
+  <span class="rs-home-article-cat">Guides</span>
+  <h4 class="rs-home-article-title">Security Deposits Are a Scam (And How to Get Yours Back Anyway)</h4>
+  <p class="rs-home-article-excerpt">I've lost $400 in deposits and fought for $1,200. Here's what landlords don't want you to know.</p>
+</a>
+    </div>
+    <a href="blog/index.html" class="rs-view-all">View all articles →</a>
+  </section>
+
+  <!-- 底部广告位 -->
+  <div class="rs-ad-slot" data-ad="home-bottom">
+    <span class="rs-ad-label">Advertisement</span>
+  </div>
+</main>
+
+<footer class="rs-footer">
+  <div class="rs-footer-inner">
+    <p class="rs-footer-copy">© 2026 RentSplitter. Built by someone who's been there.</p>
+    <div class="rs-footer-links">
+      <a href="privacy.html" class="rs-footer-link">Privacy</a>
+      <a href="terms.html" class="rs-footer-link">Terms</a>
+      <a href="contact.html" class="rs-footer-link">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+function toggleMenu() {
+  document.querySelector('.rs-nav').classList.toggle('active');
+}
+</script>
+</body>
+</html>

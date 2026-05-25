@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | RentSplitter</title>
+<meta name="description" content="Get in touch with Jake at RentSplitter. Questions, suggestions, and roommate horror stories welcome.">
+<link rel="canonical" href="https://rentsplitter.org/contact.html">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="rs-body">
+<header class="rs-header">
+  <div class="rs-header-inner">
+    <a href="index.html" class="rs-logo">RentSplitter</a>
+    <nav class="rs-nav">
+      <a href="index.html" class="rs-nav-link">Home</a>
+      <a href="tools/rent-split.html" class="rs-nav-link">Calculator</a>
+      <a href="blog/index.html" class="rs-nav-link">Blog</a>
+      <a href="about.html" class="rs-nav-link">About</a>
+      <a href="faq.html" class="rs-nav-link">FAQ</a>
+    </nav>
+    <button class="rs-menu-btn" onclick="toggleMenu()" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<main class="rs-main">
+  <div class="rs-contact-page">
+    <h1 class="rs-contact-title">Get in Touch</h1>
+    <p class="rs-contact-desc">Have a question? Found a bug? Want to share your own roommate story? I'd love to hear from you. I read every email, though Biscuit sometimes walks on my keyboard while I'm replying.</p>
+
+    <div class="rs-contact-info">
+      <div class="rs-contact-card">
+        <h3>Email</h3>
+        <p><a href="mailto:hello@rentsplitter.org" class="rs-contact-link">hello@rentsplitter.org</a></p>
+        <p class="rs-contact-note">Best way to reach me. I usually respond within 2-3 days.</p>
+      </div>
+
+      <div class="rs-contact-card">
+        <h3>Location</h3>
+        <p>Portland, Oregon</p>
+        <p class="rs-contact-note">Pacific Time. Don't expect a reply at 2am my time.</p>
+      </div>
+    </div>
+
+    <div class="rs-contact-faq-link">
+      <p>Before emailing, check the <a href="faq.html" class="rs-contact-link">FAQ</a> — your question might already be answered there.</p>
+    </div>
+  </div>
+
+  <div class="rs-ad-slot" data-ad="contact-bottom">
+    <span class="rs-ad-label">Advertisement</span>
+  </div>
+</main>
+
+<footer class="rs-footer">
+  <div class="rs-footer-inner">
+    <p class="rs-footer-copy">© 2026 RentSplitter. Built by someone who's been there.</p>
+    <div class="rs-footer-links">
+      <a href="privacy.html" class="rs-footer-link">Privacy</a>
+      <a href="terms.html" class="rs-footer-link">Terms</a>
+      <a href="contact.html" class="rs-footer-link">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+function toggleMenu() {
+  document.querySelector('.rs-nav').classList.toggle('active');
+}
+</script>
+</body>
+</html>

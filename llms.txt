@@ -1,0 +1,29 @@
+# RentSplitter
+
+> Split rent without the awkward conversation
+
+## Overview
+
+RentSplitter provides free tools to split rent fairly among roommates. Built by Jake Morrison, a Portland-based UX designer with 8 years of shared housing experience.
+
+## Key Tools
+
+- Rent Split Calculator — Split by room size, income, or equal shares
+- Utility Split Calculator — Divide bills fairly (coming soon)
+- Moving Cost Estimator — Plan your move budget (coming soon)
+- Roommate Compatibility Quiz — Check compatibility before moving in (coming soon)
+
+## Blog Topics
+
+- Roommate horror stories and lessons learned
+- How to split rent fairly (square footage, income-based, custom weights)
+- Utility bill tracking and fair division
+- Security deposit rights and recovery
+- Moving checklists and first-apartment guides
+- Money conversations with roommates
+
+## Contact
+
+- Email: hello@rentsplitter.org
+- Author: Jake Morrison, Portland Oregon
+- Site: https://rentsplitter.org/

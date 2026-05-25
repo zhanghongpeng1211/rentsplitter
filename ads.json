@@ -1,0 +1,61 @@
+{
+  "site": "rentsplitter.org",
+  "enabled": true,
+  "slots": {
+    "home_top": {
+      "enabled": false,
+      "type": "placeholder",
+      "size": "728x90"
+    },
+    "home_mid": {
+      "enabled": false,
+      "type": "placeholder",
+      "size": "728x90"
+    },
+    "home_bottom": {
+      "enabled": false,
+      "type": "placeholder",
+      "size": "728x90"
+    },
+    "article_bottom": {
+      "enabled": false,
+      "type": "placeholder",
+      "size": "300x250"
+    },
+    "blog_mid": {
+      "enabled": false,
+      "type": "placeholder",
+      "size": "728x90"
+    },
+    "tool_bottom": {
+      "enabled": false,
+      "type": "placeholder",
+      "size": "728x90"
+    },
+    "contact_bottom": {
+      "enabled": false,
+      "type": "placeholder",
+      "size": "728x90"
+    },
+    "about_bottom": {
+      "enabled": false,
+      "type": "placeholder",
+      "size": "728x90"
+    },
+    "faq_bottom": {
+      "enabled": false,
+      "type": "placeholder",
+      "size": "728x90"
+    }
+  },
+  "networks": {
+    "adsense": {
+      "enabled": false,
+      "client_id": ""
+    },
+    "amazon": {
+      "enabled": false,
+      "tracking_id": ""
+    }
+  }
+}

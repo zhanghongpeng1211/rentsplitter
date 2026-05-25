@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page Not Found | RentSplitter</title>
+<meta name="description" content="That page doesn't exist. But the rent split calculator does.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="rs-body">
+<header class="rs-header">
+  <div class="rs-header-inner">
+    <a href="index.html" class="rs-logo">RentSplitter</a>
+    <nav class="rs-nav">
+      <a href="index.html" class="rs-nav-link">Home</a>
+      <a href="tools/rent-split.html" class="rs-nav-link">Calculator</a>
+      <a href="blog/index.html" class="rs-nav-link">Blog</a>
+      <a href="about.html" class="rs-nav-link">About</a>
+      <a href="faq.html" class="rs-nav-link">FAQ</a>
+    </nav>
+    <button class="rs-menu-btn" onclick="toggleMenu()" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<main class="rs-main">
+  <div class="rs-notfound">
+    <div class="rs-notfound-code">404</div>
+    <h1 class="rs-notfound-title">Page Not Found</h1>
+    <p class="rs-notfound-desc">This page moved out without giving notice. Just like my third roommate.</p>
+    <a href="index.html" class="rs-notfound-btn">Go Home</a>
+    <a href="tools/rent-split.html" class="rs-notfound-btn secondary">Try the Calculator</a>
+  </div>
+</main>
+
+<footer class="rs-footer">
+  <div class="rs-footer-inner">
+    <p class="rs-footer-copy">© 2026 RentSplitter. Built by someone who's been there.</p>
+    <div class="rs-footer-links">
+      <a href="privacy.html" class="rs-footer-link">Privacy</a>
+      <a href="terms.html" class="rs-footer-link">Terms</a>
+      <a href="contact.html" class="rs-footer-link">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+function toggleMenu() {
+  document.querySelector('.rs-nav').classList.toggle('active');
+}
+</script>
+</body>
+</html>

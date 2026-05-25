@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | RentSplitter</title>
+<meta name="description" content="Meet Jake — 31, Portland-based UX designer, 8-year roommate veteran, and the person who built RentSplitter because he was tired of awkward rent conversations.">
+<meta name="author" content="Jake Morrison">
+<link rel="canonical" href="https://rentsplitter.org/about.html">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="rs-body">
+<header class="rs-header">
+  <div class="rs-header-inner">
+    <a href="index.html" class="rs-logo">RentSplitter</a>
+    <nav class="rs-nav">
+      <a href="index.html" class="rs-nav-link">Home</a>
+      <a href="tools/rent-split.html" class="rs-nav-link">Calculator</a>
+      <a href="blog/index.html" class="rs-nav-link">Blog</a>
+      <a href="about.html" class="rs-nav-link active">About</a>
+      <a href="faq.html" class="rs-nav-link">FAQ</a>
+    </nav>
+    <button class="rs-menu-btn" onclick="toggleMenu()" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<main class="rs-main">
+  <div class="rs-about-page">
+    <h1 class="rs-about-title">About RentSplitter</h1>
+
+    <div class="rs-about-content">
+      <p class="rs-about-lead">Hi, I'm Jake. I'm 31, I live in Portland, Oregon, and I've had roommates for 8 years. I've lived in 8 apartments, dealt with 3 terrible roommates, 2 great ones, and one situation that cost me $800 and a friendship.</p>
+
+      <p>I built RentSplitter because I was tired of having awkward conversations about money. Not because the math is hard — it's not — but because having a neutral third party (a calculator) removes the emotion from the conversation.</p>
+
+      <p>I'm not a financial advisor. I'm not a lawyer. I'm just someone who's made every roommate mistake so you don't have to. The tools on this site are based on real situations I've been in, and the blog posts are stories from my actual life. Some names have been changed to protect the guilty.</p>
+
+      <p>When I'm not building calculators or writing about roommates, I'm a freelance UX designer. I work from home most days, which means I'm very aware of how much electricity and internet bandwidth I use. My cat Biscuit sits on my keyboard when I'm trying to code, which explains some of the bugs.</p>
+
+      <p>This site is free. No ads (yet — maybe someday if it gets expensive to host). No signup. No data collection. Just tools that work.</p>
+
+      <p>If you have questions, suggestions, or just want to share your own roommate horror story, <a href="contact.html" class="rs-about-link">get in touch</a>. I read every email, even if I don't always respond quickly. Biscuit is very demanding of my attention.</p>
+
+      <div class="rs-about-contact">
+        <h3>Contact</h3>
+        <p>Email: <a href="mailto:hello@rentsplitter.org" class="rs-about-link">hello@rentsplitter.org</a></p>
+        <p>Location: Portland, Oregon</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="rs-ad-slot" data-ad="about-bottom">
+    <span class="rs-ad-label">Advertisement</span>
+  </div>
+</main>
+
+<footer class="rs-footer">
+  <div class="rs-footer-inner">
+    <p class="rs-footer-copy">© 2026 RentSplitter. Built by someone who's been there.</p>
+    <div class="rs-footer-links">
+      <a href="privacy.html" class="rs-footer-link">Privacy</a>
+      <a href="terms.html" class="rs-footer-link">Terms</a>
+      <a href="contact.html" class="rs-footer-link">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+function toggleMenu() {
+  document.querySelector('.rs-nav').classList.toggle('active');
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQ | RentSplitter</title>
+<meta name="description" content="Frequently asked questions about splitting rent, using the calculator, and roommate life in general.">
+<link rel="canonical" href="https://rentsplitter.org/faq.html">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="rs-body">
+<header class="rs-header">
+  <div class="rs-header-inner">
+    <a href="index.html" class="rs-logo">RentSplitter</a>
+    <nav class="rs-nav">
+      <a href="index.html" class="rs-nav-link">Home</a>
+      <a href="tools/rent-split.html" class="rs-nav-link">Calculator</a>
+      <a href="blog/index.html" class="rs-nav-link">Blog</a>
+      <a href="about.html" class="rs-nav-link">About</a>
+      <a href="faq.html" class="rs-nav-link active">FAQ</a>
+    </nav>
+    <button class="rs-menu-btn" onclick="toggleMenu()" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<main class="rs-main">
+  <div class="rs-faq-page">
+    <h1 class="rs-faq-title">Frequently Asked Questions</h1>
+
+    <div class="rs-faq-list">
+      <div class="rs-faq-item">
+        <h3 class="rs-faq-q">Is this calculator free?</h3>
+        <p class="rs-faq-a">Yes. Completely free. No signup, no ads (for now), no data collection. I built this because I needed it and figured other people might too.</p>
+      </div>
+
+      <div class="rs-faq-item">
+        <h3 class="rs-faq-q">How accurate is the square footage method?</h3>
+        <p class="rs-faq-a">It's as accurate as your measurements. The calculator splits rent proportionally based on the numbers you enter. If your measurements are off, the split will be off. Measure twice, argue once.</p>
+      </div>
+
+      <div class="rs-faq-item">
+        <h3 class="rs-faq-q">What if my roommate refuses to use the calculator?</h3>
+        <p class="rs-faq-a">That's a red flag. If someone won't even look at numbers, they probably don't want a fair split. Have the conversation anyway. Show them the results. If they still refuse, you might need different roommates.</p>
+      </div>
+
+      <div class="rs-faq-item">
+        <h3 class="rs-faq-q">Does the calculator handle couples?</h3>
+        <p class="rs-faq-a">Yes. Set "People" to 2 for a shared room. The calculator adjusts the split so couples pay fairly — more than a single person, but not double. See the blog post on <a href="blog/the-couple-problem-roommate-edition.html" class="rs-faq-link">The Couple Problem</a> for details.</p>
+      </div>
+
+      <div class="rs-faq-item">
+        <h3 class="rs-faq-q">Is this legally binding?</h3>
+        <p class="rs-faq-a">No. This is a calculator, not a contract. Use it to figure out fair numbers, then put those numbers in a written roommate agreement. The agreement is what matters legally, not the calculator.</p>
+      </div>
+
+      <div class="rs-faq-item">
+        <h3 class="rs-faq-q">Can I save my calculations?</h3>
+        <p class="rs-faq-a">The calculator saves your last 10 calculations to your browser's local storage. It never leaves your device. You can also copy the results and paste them into a text or email.</p>
+      </div>
+
+      <div class="rs-faq-item">
+        <h3 class="rs-faq-q">What about utilities?</h3>
+        <p class="rs-faq-a">Utilities are trickier than rent because they fluctuate. Most people split them evenly, but if someone has a window AC unit or works from home, consider splitting by usage. See the blog post on <a href="blog/i-tracked-every-utility-bill-for-a-year.html" class="rs-faq-link">tracking utility bills</a>.</p>
+      </div>
+
+      <div class="rs-faq-item">
+        <h3 class="rs-faq-q">Who built this?</h3>
+        <p class="rs-faq-a">Me. Jake. A 31-year-old UX designer in Portland who has lived with roommates for 8 years and made every mistake possible. Read more on the <a href="about.html" class="rs-faq-link">About page</a>.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="rs-ad-slot" data-ad="faq-bottom">
+    <span class="rs-ad-label">Advertisement</span>
+  </div>
+</main>
+
+<footer class="rs-footer">
+  <div class="rs-footer-inner">
+    <p class="rs-footer-copy">© 2026 RentSplitter. Built by someone who's been there.</p>
+    <div class="rs-footer-links">
+      <a href="privacy.html" class="rs-footer-link">Privacy</a>
+      <a href="terms.html" class="rs-footer-link">Terms</a>
+      <a href="contact.html" class="rs-footer-link">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+function toggleMenu() {
+  document.querySelector('.rs-nav').classList.toggle('active');
+}
+</script>
+</body>
+</html>

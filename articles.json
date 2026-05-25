@@ -1,0 +1,82 @@
+[
+  {
+    "slug": "my-worst-roommate-ever-cost-me-800",
+    "title": "My Worst Roommate Ever Cost Me $800 — And I Still Don't Know How",
+    "date": "2026-04-12",
+    "category": "Stories",
+    "excerpt": "The story of the roommate who 'borrowed' the rent money, disappeared for three days, and came back with a new tattoo.",
+    "url": "blog/my-worst-roommate-ever-cost-me-800.html"
+  },
+  {
+    "slug": "why-i-stopped-splitting-rent-evenly",
+    "title": "Why I Stopped Splitting Rent Evenly (And Why You Probably Should Too)",
+    "date": "2026-04-18",
+    "category": "Guides",
+    "excerpt": "Equal splits only work if every room is identical. Spoiler: they never are.",
+    "url": "blog/why-i-stopped-splitting-rent-evenly.html"
+  },
+  {
+    "slug": "the-couple-problem-roommate-edition",
+    "title": "The Couple Problem: When Two People Share One Room (And One Bathroom)",
+    "date": "2026-04-25",
+    "category": "Guides",
+    "excerpt": "Do they pay double? 1.5x? The same? Here's what actually works after 8 years of trial and error.",
+    "url": "blog/the-couple-problem-roommate-edition.html"
+  },
+  {
+    "slug": "i-tracked-every-utility-bill-for-a-year",
+    "title": "I Tracked Every Utility Bill for a Year. Here's What Actually Costs Money.",
+    "date": "2026-05-02",
+    "category": "Data",
+    "excerpt": "Spoiler: the person with the window AC unit was costing us $47 a month and didn't even know it.",
+    "url": "blog/i-tracked-every-utility-bill-for-a-year.html"
+  },
+  {
+    "slug": "roommate-agreement-template",
+    "title": "The Roommate Agreement Template I Wish I'd Had on Day One",
+    "date": "2026-05-08",
+    "category": "Tools",
+    "excerpt": "Not legally binding, but it'll save your friendship. Here's what to include and what to skip.",
+    "url": "blog/roommate-agreement-template.html"
+  },
+  {
+    "slug": "how-to-talk-about-money-without-crying",
+    "title": "How to Talk About Money With Roommates (Without Anyone Crying)",
+    "date": "2026-05-14",
+    "category": "Guides",
+    "excerpt": "Scripts, timing tips, and how to bring up awkward financial topics without destroying the friendship.",
+    "url": "blog/how-to-talk-about-money-without-crying.html"
+  },
+  {
+    "slug": "moving-in-checklist-47-things",
+    "title": "The Moving-In Checklist: 47 Things People Forget (I Forgot 12 of Them)",
+    "date": "2026-05-05",
+    "category": "Tools",
+    "excerpt": "From measuring doorframes to buying toilet paper before you need it. The practical guide to not screwing up move-in day.",
+    "url": "blog/moving-in-checklist-47-things.html"
+  },
+  {
+    "slug": "i-lived-in-8-apartments-in-8-years",
+    "title": "I Lived in 8 Apartments in 8 Years. Here's What I Learned About Rent.",
+    "date": "2026-04-28",
+    "category": "Stories",
+    "excerpt": "From $450 rooms in shared houses to $1,200 studios. The full spectrum of Portland rental hell.",
+    "url": "blog/i-lived-in-8-apartments-in-8-years.html"
+  },
+  {
+    "slug": "security-deposits-are-a-scam",
+    "title": "Security Deposits Are a Scam (And How to Get Yours Back Anyway)",
+    "date": "2026-05-11",
+    "category": "Guides",
+    "excerpt": "I've lost $400 in deposits and fought for $1,200. Here's what landlords don't want you to know.",
+    "url": "blog/security-deposits-are-a-scam.html"
+  },
+  {
+    "slug": "why-i-built-this-calculator",
+    "title": "Why I Built This Calculator (And Why It Almost Didn't Happen)",
+    "date": "2026-05-20",
+    "category": "Stories",
+    "excerpt": "It started as a Google Sheet in a no-closet room at 2am. Now it's a website. Here's the story.",
+    "url": "blog/why-i-built-this-calculator.html"
+  }
+]

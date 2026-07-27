@@ -1,82 +1,750 @@
 [
   {
+    "slug": "the-landlord-who-raised-our-rent-400-and-what-we-did",
+    "title": "The Landlord Who Raised Our Rent $400 And What We Did",
+    "description": "$400. That was the number staring back at me from my phone screen at 7:42 on a Tuesday morning. Not a typo. Not a prank. Just a single line in an email from our landlord saying that starting next mont",
+    "excerpt": "$400. That was the number staring back at me from my phone screen at 7:42 on a Tuesday morning. Not a typo. Not a prank. Just a single line in an email from our landlord saying that starting next mont",
+    "category": "Stories",
+    "tags": [
+      "Stories"
+    ],
+    "date_published": "2026-12-29",
+    "date": "2026-12-29",
+    "date_modified": "2026-12-29",
+    "word_count": 1258,
+    "has_image": true,
+    "image_path": "images/blog/the-landlord-who-raised-our-rent-400-and-what-we-did.jpg",
+    "tools_referenced": [
+      "rent-split",
+      "budget-share",
+      "move-cost"
+    ],
+    "author": {
+      "name": "Jake Morrison",
+      "job_title": "Freelance UX Designer",
+      "location": "Portland, Oregon"
+    },
+    "date_iso": "2026-12-29",
+    "readTime": "6 min read"
+  },
+  {
+    "slug": "i-tracked-my-roommates-electricity-usage-for-a-month",
+    "title": "I Tracked My Roommate's Electricity Usage for a Month. The Results Were Shocking.",
+    "date": "2026-12-15",
+    "date_published": "2026-12-15",
+    "date_modified": "2026-12-15",
+    "date_iso": "2026-12-15",
+    "category": "Guides",
+    "word_count": 2417,
+    "author": {
+      "name": "Jake Morrison",
+      "job_title": "Freelance UX Designer",
+      "location": "Portland, Oregon"
+    },
+    "description": "I put a smart plug on every major appliance and tracked usage for 30 days. One roommate was using 47% more electricity than the rest of us combined.",
+    "excerpt": "I put a smart plug on every major appliance and tracked usage for 30 days. One roommate was using 47% more electricity than the rest of us combined.",
+    "tags": [
+      "Guides"
+    ],
+    "has_image": true,
+    "image_path": "images/blog/i-tracked-my-roommates-electricity-usage-for-a-month.jpg",
+    "readTime": "12 min read",
+    "tools_referenced": []
+  },
+  {
+    "slug": "what-happens-when-one-roommate-wants-to-move-out-early",
+    "title": "What Happens When One Roommate Wants to Move Out Early? (A Survival Guide)",
+    "date": "2026-12-01",
+    "date_published": "2026-12-01",
+    "date_modified": "2026-12-01",
+    "date_iso": "2026-12-01",
+    "category": "Stories",
+    "word_count": 2189,
+    "author": {
+      "name": "Jake Morrison",
+      "job_title": "Freelance UX Designer",
+      "location": "Portland, Oregon"
+    },
+    "description": "Sarah wanted to move out four months before the lease ended. Here's how we handled it without anyone going broke or ending up in small claims court.",
+    "excerpt": "Sarah wanted to move out four months before the lease ended. Here's how we handled it without anyone going broke or ending up in small claims court.",
+    "tags": [
+      "Stories"
+    ],
+    "has_image": true,
+    "image_path": "images/blog/what-happens-when-one-roommate-wants-to-move-out-early.jpg",
+    "readTime": "10 min read",
+    "tools_referenced": []
+  },
+  {
+    "slug": "the-best-apps-for-roommate-communication",
+    "title": "The 5 Apps That Actually Help Roommates Communicate (And 3 That Don't)",
+    "date": "2026-11-21",
+    "date_published": "2026-11-21",
+    "date_modified": "2026-11-21",
+    "date_iso": "2026-11-21",
+    "category": "Tools",
+    "word_count": 2455,
+    "author": {
+      "name": "Jake Morrison",
+      "job_title": "Freelance UX Designer",
+      "location": "Portland, Oregon"
+    },
+    "description": "I've tested every roommate app on the market. Most are overcomplicated. These five actually made my shared housing life easier.",
+    "excerpt": "I've tested every roommate app on the market. Most are overcomplicated. These five actually made my shared housing life easier.",
+    "tags": [
+      "Tools"
+    ],
+    "has_image": true,
+    "image_path": "images/blog/the-best-apps-for-roommate-communication.jpg",
+    "readTime": "12 min read",
+    "tools_referenced": []
+  },
+  {
+    "slug": "how-to-split-groceries-fairly-with-roommates",
+    "title": "How to Split Groceries Fairly With Roommates (Without a Spreadsheet War)",
+    "date": "2026-11-12",
+    "date_published": "2026-11-12",
+    "date_modified": "2026-11-12",
+    "date_iso": "2026-11-12",
+    "category": "Data",
+    "word_count": 2010,
+    "author": {
+      "name": "Jake Morrison",
+      "job_title": "Freelance UX Designer",
+      "location": "Portland, Oregon"
+    },
+    "description": "We tried splitting groceries evenly, by person, and by a shared fund. Here's the system that actually worked for three very different eaters.",
+    "excerpt": "We tried splitting groceries evenly, by person, and by a shared fund. Here's the system that actually worked for three very different eaters.",
+    "tags": [
+      "Data"
+    ],
+    "has_image": true,
+    "image_path": "images/blog/how-to-split-groceries-fairly-with-roommates.jpg",
+    "readTime": "10 min read",
+    "tools_referenced": []
+  },
+  {
+    "slug": "roommate-red-flags-you-should-never-ignore",
+    "title": "15 Roommate Red Flags You Should Never Ignore (I Ignored 6 of Them)",
+    "date": "2026-10-27",
+    "date_published": "2026-10-27",
+    "date_modified": "2026-10-27",
+    "date_iso": "2026-10-27",
+    "category": "Guides",
+    "word_count": 2401,
+    "author": {
+      "name": "Jake Morrison",
+      "job_title": "Freelance UX Designer",
+      "location": "Portland, Oregon"
+    },
+    "description": "Looking back at my worst roommate experiences, the warning signs were always there. Here are the red flags I wish I'd seen sooner.",
+    "excerpt": "Looking back at my worst roommate experiences, the warning signs were always there. Here are the red flags I wish I'd seen sooner.",
+    "tags": [
+      "Guides"
+    ],
+    "has_image": true,
+    "image_path": "images/blog/roommate-red-flags-you-should-never-ignore.jpg",
+    "readTime": "12 min read",
+    "tools_referenced": []
+  },
+  {
+    "slug": "i-lived-with-a-couple-for-a-year-heres-the-real-math",
+    "title": "I Lived With a Couple for a Year. Here's the Real Math on What They Should Pay.",
+    "date": "2026-10-13",
+    "date_published": "2026-10-13",
+    "date_modified": "2026-10-13",
+    "date_iso": "2026-10-13",
+    "category": "Stories",
+    "word_count": 2439,
+    "author": {
+      "name": "Jake Morrison",
+      "job_title": "Freelance UX Designer",
+      "location": "Portland, Oregon"
+    },
+    "description": "Couples as roommates are controversial. I lived with one for 12 months and tracked every dollar. Here are the actual numbers.",
+    "excerpt": "Couples as roommates are controversial. I lived with one for 12 months and tracked every dollar. Here are the actual numbers.",
+    "tags": [
+      "Stories"
+    ],
+    "has_image": true,
+    "image_path": "images/blog/i-lived-with-a-couple-for-a-year-heres-the-real-math.jpg",
+    "readTime": "12 min read",
+    "tools_referenced": []
+  },
+  {
+    "slug": "how-much-should-you-budget-for-move-in-costs",
+    "title": "How Much Should You Budget for Move-In Costs? (The Real Numbers)",
+    "date": "2026-10-07",
+    "date_published": "2026-10-07",
+    "date_modified": "2026-10-07",
+    "date_iso": "2026-10-07",
+    "category": "Tools",
+    "word_count": 2006,
+    "author": {
+      "name": "Jake Morrison",
+      "job_title": "Freelance UX Designer",
+      "location": "Portland, Oregon"
+    },
+    "description": "First month's rent plus deposit is just the beginning. I tracked every move-in cost for my last three apartments. Here's the real total.",
+    "excerpt": "First month's rent plus deposit is just the beginning. I tracked every move-in cost for my last three apartments. Here's the real total.",
+    "tags": [
+      "Tools"
+    ],
+    "has_image": true,
+    "image_path": "images/blog/how-much-should-you-budget-for-move-in-costs.jpg",
+    "readTime": "10 min read",
+    "tools_referenced": []
+  },
+  {
+    "slug": "the-truth-about-craigslist-roommate-ads",
+    "title": "The Truth About Craigslist Roommate Ads (From Someone Who's Read 500 of Them)",
+    "date": "2026-09-21",
+    "date_published": "2026-09-21",
+    "date_modified": "2026-09-21",
+    "date_iso": "2026-09-21",
+    "category": "Data",
+    "word_count": 2253,
+    "author": {
+      "name": "Jake Morrison",
+      "job_title": "Freelance UX Designer",
+      "location": "Portland, Oregon"
+    },
+    "description": "I've read 500+ Craigslist roommate ads. Here's what the language actually means, and how to spot a bad situation before you waste your time.",
+    "excerpt": "I've read 500+ Craigslist roommate ads. Here's what the language actually means, and how to spot a bad situation before you waste your time.",
+    "tags": [
+      "Data"
+    ],
+    "has_image": true,
+    "image_path": "images/blog/the-truth-about-craigslist-roommate-ads.jpg",
+    "readTime": "11 min read",
+    "tools_referenced": []
+  },
+  {
+    "slug": "what-to-do-when-your-roommate-brings-home-a-pet",
+    "title": "What to Do When Your Roommate Brings Home a Pet (Without Losing Your Mind)",
+    "date": "2026-09-08",
+    "date_published": "2026-09-08",
+    "date_modified": "2026-09-08",
+    "date_iso": "2026-09-08",
+    "category": "Guides",
+    "word_count": 2356,
+    "author": {
+      "name": "Jake Morrison",
+      "job_title": "Freelance UX Designer",
+      "location": "Portland, Oregon"
+    },
+    "description": "My roommate brought home a dog without asking. Here's how we handled it without anyone moving out.",
+    "excerpt": "My roommate brought home a dog without asking. Here's how we handled it without anyone moving out.",
+    "tags": [
+      "Guides"
+    ],
+    "has_image": true,
+    "image_path": "images/blog/what-to-do-when-your-roommate-brings-home-a-pet.jpg",
+    "readTime": "11 min read",
+    "tools_referenced": []
+  },
+  {
+    "slug": "i-made-a-roommate-schedule-and-it-changed-everything",
+    "title": "I Made a Roommate Schedule and It Changed Everything (Even the Bathroom)",
+    "date": "2026-08-29",
+    "date_published": "2026-08-29",
+    "date_modified": "2026-08-29",
+    "date_iso": "2026-08-29",
+    "category": "Stories",
+    "word_count": 1940,
+    "author": {
+      "name": "Jake Morrison",
+      "job_title": "Freelance UX Designer",
+      "location": "Portland, Oregon"
+    },
+    "description": "We were fighting about the bathroom every morning. A simple Google Calendar fixed it in a week.",
+    "excerpt": "We were fighting about the bathroom every morning. A simple Google Calendar fixed it in a week.",
+    "tags": [
+      "Stories"
+    ],
+    "has_image": true,
+    "image_path": "images/blog/i-made-a-roommate-schedule-and-it-changed-everything.jpg",
+    "readTime": "9 min read",
+    "tools_referenced": []
+  },
+  {
+    "slug": "how-to-break-a-lease-without-losing-everything",
+    "title": "How to Break a Lease Without Losing Everything (I've Done It Twice)",
+    "date": "2026-08-16",
+    "date_published": "2026-08-16",
+    "date_modified": "2026-08-16",
+    "date_iso": "2026-08-16",
+    "category": "Tools",
+    "word_count": 2512,
+    "author": {
+      "name": "Jake Morrison",
+      "job_title": "Freelance UX Designer",
+      "location": "Portland, Oregon"
+    },
+    "description": "Breaking a lease doesn't have to mean losing your deposit and paying penalties. Here's what actually worked when I had to leave early.",
+    "excerpt": "Breaking a lease doesn't have to mean losing your deposit and paying penalties. Here's what actually worked when I had to leave early.",
+    "tags": [
+      "Tools"
+    ],
+    "has_image": true,
+    "image_path": "images/blog/how-to-break-a-lease-without-losing-everything.jpg",
+    "readTime": "12 min read",
+    "tools_referenced": []
+  },
+  {
+    "slug": "the-real-cost-of-living-alone-vs-with-roommates",
+    "title": "The Real Cost of Living Alone vs. With Roommates: A Year of Data",
+    "date": "2026-08-05",
+    "date_published": "2026-08-05",
+    "date_modified": "2026-08-05",
+    "date_iso": "2026-08-05",
+    "category": "Data",
+    "word_count": 1984,
+    "author": {
+      "name": "Jake Morrison",
+      "job_title": "Freelance UX Designer",
+      "location": "Portland, Oregon"
+    },
+    "description": "I tracked every dollar for a year of living alone and a year with roommates. The difference was bigger than I expected.",
+    "excerpt": "I tracked every dollar for a year of living alone and a year with roommates. The difference was bigger than I expected.",
+    "tags": [
+      "Data"
+    ],
+    "has_image": true,
+    "image_path": "images/blog/the-real-cost-of-living-alone-vs-with-roommates.jpg",
+    "readTime": "9 min read",
+    "tools_referenced": []
+  },
+  {
+    "slug": "is-it-legal-to-charge-different-rent-for-different-rooms",
+    "title": "Is It Legal to Charge Different Rent for Different Rooms? (I Asked a Lawyer)",
+    "date": "2026-07-21",
+    "date_published": "2026-07-21",
+    "date_modified": "2026-07-21",
+    "date_iso": "2026-07-21",
+    "category": "Guides",
+    "word_count": 1817,
+    "author": {
+      "name": "Jake Morrison",
+      "job_title": "Freelance UX Designer",
+      "location": "Portland, Oregon"
+    },
+    "description": "I always wondered if proportional rent splitting was actually legal. So I paid $150 for a 30-minute consultation with a landlord-tenant lawyer.",
+    "excerpt": "I always wondered if proportional rent splitting was actually legal. So I paid $150 for a 30-minute consultation with a landlord-tenant lawyer.",
+    "tags": [
+      "Guides"
+    ],
+    "has_image": true,
+    "image_path": "images/blog/is-it-legal-to-charge-different-rent-for-different-rooms.jpg",
+    "readTime": "9 min read",
+    "tools_referenced": []
+  },
+  {
+    "slug": "my-roommate-stole-my-food-for-3-months",
+    "title": "My Roommate Stole My Food for 3 Months and I Only Caught Him Because of a Spreadsheet",
+    "date": "2026-07-11",
+    "date_published": "2026-07-11",
+    "date_modified": "2026-07-11",
+    "date_iso": "2026-07-11",
+    "category": "Stories",
+    "word_count": 1847,
+    "author": {
+      "name": "Jake Morrison",
+      "job_title": "Freelance UX Designer",
+      "location": "Portland, Oregon"
+    },
+    "description": "I'm not proud of making a food theft spreadsheet. But I'm also not sorry, because the data was undeniable.",
+    "excerpt": "I'm not proud of making a food theft spreadsheet. But I'm also not sorry, because the data was undeniable.",
+    "tags": [
+      "Stories"
+    ],
+    "has_image": true,
+    "image_path": "images/blog/my-roommate-stole-my-food-for-3-months.jpg",
+    "readTime": "9 min read",
+    "tools_referenced": []
+  },
+  {
+    "slug": "how-to-handle-a-roommate-who-wont-clean",
+    "title": "How to Handle a Roommate Who Won't Clean (Without Starting a War)",
+    "date": "2026-06-30",
+    "date_published": "2026-06-30",
+    "date_modified": "2026-06-30",
+    "date_iso": "2026-06-30",
+    "category": "Tools",
+    "word_count": 2123,
+    "author": {
+      "name": "Jake Morrison",
+      "job_title": "Freelance UX Designer",
+      "location": "Portland, Oregon"
+    },
+    "description": "The dishes have been in the sink for five days. Here's the script that actually worked when I confronted my roommate about cleaning.",
+    "excerpt": "The dishes have been in the sink for five days. Here's the script that actually worked when I confronted my roommate about cleaning.",
+    "tags": [
+      "Tools"
+    ],
+    "has_image": true,
+    "image_path": "images/blog/how-to-handle-a-roommate-who-wont-clean.jpg",
+    "readTime": "10 min read",
+    "tools_referenced": []
+  },
+  {
+    "slug": "the-ultimate-roommate-interview-questions",
+    "title": "The 12 Roommate Interview Questions I Wish I'd Asked Before Moving In",
+    "date": "2026-06-16",
+    "date_published": "2026-06-16",
+    "date_modified": "2026-06-16",
+    "date_iso": "2026-06-16",
+    "category": "Data",
+    "word_count": 2302,
+    "author": {
+      "name": "Jake Morrison",
+      "job_title": "Freelance UX Designer",
+      "location": "Portland, Oregon"
+    },
+    "description": "Finding a roommate is like speed dating with higher stakes. These 12 questions would have saved me from two terrible situations.",
+    "excerpt": "Finding a roommate is like speed dating with higher stakes. These 12 questions would have saved me from two terrible situations.",
+    "tags": [
+      "Data"
+    ],
+    "has_image": true,
+    "image_path": "images/blog/the-ultimate-roommate-interview-questions.jpg",
+    "readTime": "11 min read",
+    "tools_referenced": []
+  },
+  {
+    "slug": "i-tried-splitting-rent-by-income-heres-what-happened",
+    "title": "I Tried Splitting Rent by Income for 6 Months. Here's What Actually Happened.",
+    "date": "2026-06-09",
+    "date_published": "2026-06-09",
+    "date_modified": "2026-06-09",
+    "date_iso": "2026-06-09",
+    "category": "Guides",
+    "word_count": 2021,
+    "author": {
+      "name": "Jake Morrison",
+      "job_title": "Freelance UX Designer",
+      "location": "Portland, Oregon"
+    },
+    "description": "Everyone says income-based rent splits are \"fair.\" I ran the numbers for six months with three roommates. The results were... complicated.",
+    "excerpt": "Everyone says income-based rent splits are \"fair.\" I ran the numbers for six months with three roommates. The results were... complicated.",
+    "tags": [
+      "Guides"
+    ],
+    "has_image": true,
+    "image_path": "images/blog/i-tried-splitting-rent-by-income-heres-what-happened.jpg",
+    "readTime": "10 min read",
+    "tools_referenced": []
+  },
+  {
+    "slug": "why-you-should-never-venmo-rent-money",
+    "title": "Why You Should Never Venmo Rent Money (And What Happened When I Did)",
+    "date": "2026-05-23",
+    "date_published": "2026-05-23",
+    "date_modified": "2026-05-23",
+    "date_iso": "2026-05-23",
+    "category": "Stories",
+    "word_count": 2430,
+    "author": {
+      "name": "Jake Morrison",
+      "job_title": "Freelance UX Designer",
+      "location": "Portland, Oregon"
+    },
+    "description": "Venmo rent money seems convenient until someone \"accidentally\" hits the wrong button. Here's why I switched to Zelle and never looked back.",
+    "excerpt": "Venmo rent money seems convenient until someone \"accidentally\" hits the wrong button. Here's why I switched to Zelle and never looked back.",
+    "tags": [
+      "Stories"
+    ],
+    "has_image": true,
+    "image_path": "images/blog/why-you-should-never-venmo-rent-money.jpg",
+    "readTime": "12 min read",
+    "tools_referenced": []
+  },
+  {
+    "slug": "the-guest-policy-that-saved-our-friendship",
+    "title": "The Guest Policy That Saved Our Friendship (And Our Security Deposit)",
+    "date": "2026-05-14",
+    "date_published": "2026-05-14",
+    "date_modified": "2026-05-14",
+    "date_iso": "2026-05-14",
+    "category": "Tools",
+    "word_count": 1967,
+    "author": {
+      "name": "Jake Morrison",
+      "job_title": "Freelance UX Designer",
+      "location": "Portland, Oregon"
+    },
+    "description": "We almost broke up as roommates over a boyfriend who \"wasn't really living here.\" Here's the one-page guest policy that fixed everything.",
+    "excerpt": "We almost broke up as roommates over a boyfriend who \"wasn't really living here.\" Here's the one-page guest policy that fixed everything.",
+    "tags": [
+      "Tools"
+    ],
+    "has_image": true,
+    "image_path": "images/blog/the-guest-policy-that-saved-our-friendship.jpg",
+    "readTime": "9 min read",
+    "tools_referenced": []
+  },
+  {
+    "slug": "how-i-got-my-1200-deposit-back-5-steps",
+    "title": "How I Got My $1,200 Deposit Back in 5 Steps (And Why Most People Don't Even Try)",
+    "date": "2026-05-01",
+    "date_published": "2026-05-01",
+    "date_modified": "2026-05-01",
+    "date_iso": "2026-05-01",
+    "category": "Data",
+    "word_count": 2069,
+    "author": {
+      "name": "Jake Morrison",
+      "job_title": "Freelance UX Designer",
+      "location": "Portland, Oregon"
+    },
+    "description": "I've lost deposits. I've fought for deposits. Here's the exact 5-step process that got me $1,200 back when my landlord said I owed $400 in damages.",
+    "excerpt": "I've lost deposits. I've fought for deposits. Here's the exact 5-step process that got me $1,200 back when my landlord said I owed $400 in damages.",
+    "tags": [
+      "Data"
+    ],
+    "has_image": true,
+    "image_path": "images/blog/how-i-got-my-1200-deposit-back-5-steps.jpg",
+    "readTime": "10 min read",
+    "tools_referenced": []
+  },
+  {
     "slug": "my-worst-roommate-ever-cost-me-800",
     "title": "My Worst Roommate Ever Cost Me $800 — And I Still Don't Know How",
-    "date": "2026-04-12",
-    "category": "Stories",
+    "date": "2026-04-18",
+    "date_published": "2026-04-18",
+    "date_modified": "2026-04-18",
+    "date_iso": "2026-04-18",
+    "category": "Guides",
+    "word_count": 2188,
+    "author": {
+      "name": "Jake Morrison",
+      "job_title": "Freelance UX Designer",
+      "location": "Portland, Oregon"
+    },
+    "description": "The story of the roommate who 'borrowed' the rent money, disappeared for three days, and came back with a new tattoo.",
     "excerpt": "The story of the roommate who 'borrowed' the rent money, disappeared for three days, and came back with a new tattoo.",
-    "url": "blog/my-worst-roommate-ever-cost-me-800.html"
+    "tags": [
+      "Guides"
+    ],
+    "has_image": true,
+    "image_path": "images/blog/my-worst-roommate-ever-cost-me-800.jpg",
+    "readTime": "10 min read",
+    "tools_referenced": []
   },
   {
     "slug": "why-i-stopped-splitting-rent-evenly",
     "title": "Why I Stopped Splitting Rent Evenly (And Why You Probably Should Too)",
-    "date": "2026-04-18",
-    "category": "Guides",
+    "date": "2026-04-09",
+    "date_published": "2026-04-09",
+    "date_modified": "2026-04-09",
+    "date_iso": "2026-04-09",
+    "category": "Stories",
+    "word_count": 1949,
+    "author": {
+      "name": "Jake Morrison",
+      "job_title": "Freelance UX Designer",
+      "location": "Portland, Oregon"
+    },
+    "description": "Equal splits only work if every room is identical. Spoiler: they never are.",
     "excerpt": "Equal splits only work if every room is identical. Spoiler: they never are.",
-    "url": "blog/why-i-stopped-splitting-rent-evenly.html"
+    "tags": [
+      "Stories"
+    ],
+    "has_image": true,
+    "image_path": "images/blog/why-i-stopped-splitting-rent-evenly.jpg",
+    "readTime": "9 min read",
+    "tools_referenced": []
   },
   {
     "slug": "the-couple-problem-roommate-edition",
     "title": "The Couple Problem: When Two People Share One Room (And One Bathroom)",
-    "date": "2026-04-25",
-    "category": "Guides",
+    "date": "2026-03-25",
+    "date_published": "2026-03-25",
+    "date_modified": "2026-03-25",
+    "date_iso": "2026-03-25",
+    "category": "Tools",
+    "word_count": 2199,
+    "author": {
+      "name": "Jake Morrison",
+      "job_title": "Freelance UX Designer",
+      "location": "Portland, Oregon"
+    },
+    "description": "Do they pay double? 1.5x? The same? Here's what actually works after 8 years of trial and error.",
     "excerpt": "Do they pay double? 1.5x? The same? Here's what actually works after 8 years of trial and error.",
-    "url": "blog/the-couple-problem-roommate-edition.html"
-  },
-  {
-    "slug": "i-tracked-every-utility-bill-for-a-year",
-    "title": "I Tracked Every Utility Bill for a Year. Here's What Actually Costs Money.",
-    "date": "2026-05-02",
-    "category": "Data",
-    "excerpt": "Spoiler: the person with the window AC unit was costing us $47 a month and didn't even know it.",
-    "url": "blog/i-tracked-every-utility-bill-for-a-year.html"
-  },
-  {
-    "slug": "roommate-agreement-template",
-    "title": "The Roommate Agreement Template I Wish I'd Had on Day One",
-    "date": "2026-05-08",
-    "category": "Tools",
-    "excerpt": "Not legally binding, but it'll save your friendship. Here's what to include and what to skip.",
-    "url": "blog/roommate-agreement-template.html"
-  },
-  {
-    "slug": "how-to-talk-about-money-without-crying",
-    "title": "How to Talk About Money With Roommates (Without Anyone Crying)",
-    "date": "2026-05-14",
-    "category": "Guides",
-    "excerpt": "Scripts, timing tips, and how to bring up awkward financial topics without destroying the friendship.",
-    "url": "blog/how-to-talk-about-money-without-crying.html"
-  },
-  {
-    "slug": "moving-in-checklist-47-things",
-    "title": "The Moving-In Checklist: 47 Things People Forget (I Forgot 12 of Them)",
-    "date": "2026-05-05",
-    "category": "Tools",
-    "excerpt": "From measuring doorframes to buying toilet paper before you need it. The practical guide to not screwing up move-in day.",
-    "url": "blog/moving-in-checklist-47-things.html"
+    "tags": [
+      "Tools"
+    ],
+    "has_image": true,
+    "image_path": "images/blog/the-couple-problem-roommate-edition.jpg",
+    "readTime": "10 min read",
+    "tools_referenced": []
   },
   {
     "slug": "i-lived-in-8-apartments-in-8-years",
     "title": "I Lived in 8 Apartments in 8 Years. Here's What I Learned About Rent.",
-    "date": "2026-04-28",
-    "category": "Stories",
+    "date": "2026-03-13",
+    "date_published": "2026-03-13",
+    "date_modified": "2026-03-13",
+    "date_iso": "2026-03-13",
+    "category": "Data",
+    "word_count": 2261,
+    "author": {
+      "name": "Jake Morrison",
+      "job_title": "Freelance UX Designer",
+      "location": "Portland, Oregon"
+    },
+    "description": "From $450 rooms in shared houses to $1,200 studios. The full spectrum of Portland rental hell.",
     "excerpt": "From $450 rooms in shared houses to $1,200 studios. The full spectrum of Portland rental hell.",
-    "url": "blog/i-lived-in-8-apartments-in-8-years.html"
+    "tags": [
+      "Data"
+    ],
+    "has_image": true,
+    "image_path": "images/blog/i-lived-in-8-apartments-in-8-years.jpg",
+    "readTime": "11 min read",
+    "tools_referenced": []
+  },
+  {
+    "slug": "i-tracked-every-utility-bill-for-a-year",
+    "title": "I Tracked Every Utility Bill for a Year. Here's What Actually Costs Money.",
+    "date": "2026-02-27",
+    "date_published": "2026-02-27",
+    "date_modified": "2026-02-27",
+    "date_iso": "2026-02-27",
+    "category": "Guides",
+    "word_count": 2580,
+    "author": {
+      "name": "Jake Morrison",
+      "job_title": "Freelance UX Designer",
+      "location": "Portland, Oregon"
+    },
+    "description": "Spoiler: the person with the window AC unit was costing us $47 a month and didn't even know it.",
+    "excerpt": "Spoiler: the person with the window AC unit was costing us $47 a month and didn't even know it.",
+    "tags": [
+      "Guides"
+    ],
+    "has_image": true,
+    "image_path": "images/blog/i-tracked-every-utility-bill-for-a-year.jpg",
+    "readTime": "12 min read",
+    "tools_referenced": []
+  },
+  {
+    "slug": "moving-in-checklist-47-things",
+    "title": "The Moving-In Checklist: 47 Things People Forget (I Forgot 12 of Them)",
+    "date": "2026-02-18",
+    "date_published": "2026-02-18",
+    "date_modified": "2026-02-18",
+    "date_iso": "2026-02-18",
+    "category": "Stories",
+    "word_count": 2523,
+    "author": {
+      "name": "Jake Morrison",
+      "job_title": "Freelance UX Designer",
+      "location": "Portland, Oregon"
+    },
+    "description": "From measuring doorframes to buying toilet paper before you need it. The practical guide to not screwing up move-in day.",
+    "excerpt": "From measuring doorframes to buying toilet paper before you need it. The practical guide to not screwing up move-in day.",
+    "tags": [
+      "Stories"
+    ],
+    "has_image": true,
+    "image_path": "images/blog/moving-in-checklist-47-things.jpg",
+    "readTime": "12 min read",
+    "tools_referenced": []
+  },
+  {
+    "slug": "roommate-agreement-template",
+    "title": "The Roommate Agreement Template I Wish I'd Had on Day One",
+    "date": "2026-02-06",
+    "date_published": "2026-02-06",
+    "date_modified": "2026-02-06",
+    "date_iso": "2026-02-06",
+    "category": "Tools",
+    "word_count": 1946,
+    "author": {
+      "name": "Jake Morrison",
+      "job_title": "Freelance UX Designer",
+      "location": "Portland, Oregon"
+    },
+    "description": "Not legally binding, but it'll save your friendship. Here's what to include and what to skip.",
+    "excerpt": "Not legally binding, but it'll save your friendship. Here's what to include and what to skip.",
+    "tags": [
+      "Tools"
+    ],
+    "has_image": true,
+    "image_path": "images/blog/roommate-agreement-template.jpg",
+    "readTime": "9 min read",
+    "tools_referenced": []
   },
   {
     "slug": "security-deposits-are-a-scam",
     "title": "Security Deposits Are a Scam (And How to Get Yours Back Anyway)",
-    "date": "2026-05-11",
-    "category": "Guides",
+    "date": "2026-01-28",
+    "date_published": "2026-01-28",
+    "date_modified": "2026-01-28",
+    "date_iso": "2026-01-28",
+    "category": "Data",
+    "word_count": 1914,
+    "author": {
+      "name": "Jake Morrison",
+      "job_title": "Freelance UX Designer",
+      "location": "Portland, Oregon"
+    },
+    "description": "I've lost $400 in deposits and fought for $1,200. Here's what landlords don't want you to know.",
     "excerpt": "I've lost $400 in deposits and fought for $1,200. Here's what landlords don't want you to know.",
-    "url": "blog/security-deposits-are-a-scam.html"
+    "tags": [
+      "Data"
+    ],
+    "has_image": true,
+    "image_path": "images/blog/security-deposits-are-a-scam.jpg",
+    "readTime": "9 min read",
+    "tools_referenced": []
+  },
+  {
+    "slug": "how-to-talk-about-money-without-crying",
+    "title": "How to Talk About Money With Roommates (Without Anyone Crying)",
+    "date": "2026-01-12",
+    "date_published": "2026-01-12",
+    "date_modified": "2026-01-12",
+    "date_iso": "2026-01-12",
+    "category": "Guides",
+    "word_count": 1802,
+    "author": {
+      "name": "Jake Morrison",
+      "job_title": "Freelance UX Designer",
+      "location": "Portland, Oregon"
+    },
+    "description": "Scripts, timing tips, and how to bring up awkward financial topics without destroying the friendship.",
+    "excerpt": "Scripts, timing tips, and how to bring up awkward financial topics without destroying the friendship.",
+    "tags": [
+      "Guides"
+    ],
+    "has_image": true,
+    "image_path": "images/blog/how-to-talk-about-money-without-crying.jpg",
+    "readTime": "9 min read",
+    "tools_referenced": []
   },
   {
     "slug": "why-i-built-this-calculator",
     "title": "Why I Built This Calculator (And Why It Almost Didn't Happen)",
-    "date": "2026-05-20",
+    "date": "2026-01-04",
+    "date_published": "2026-01-04",
+    "date_modified": "2026-01-04",
+    "date_iso": "2026-01-04",
     "category": "Stories",
+    "word_count": 2573,
+    "author": {
+      "name": "Jake Morrison",
+      "job_title": "Freelance UX Designer",
+      "location": "Portland, Oregon"
+    },
+    "description": "It started as a Google Sheet in a no-closet room at 2am. Now it's a website. Here's the story.",
     "excerpt": "It started as a Google Sheet in a no-closet room at 2am. Now it's a website. Here's the story.",
-    "url": "blog/why-i-built-this-calculator.html"
+    "tags": [
+      "Stories"
+    ],
+    "has_image": true,
+    "image_path": "images/blog/why-i-built-this-calculator.jpg",
+    "readTime": "12 min read",
+    "tools_referenced": []
   }
 ]

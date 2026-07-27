@@ -6,7 +6,16 @@
 <title>Roommate Compatibility Quiz | RentSplitter</title>
 <meta name="description" content="12 questions to check if you and your potential roommate are actually compatible.">
 <link rel="canonical" href="https://rentsplitter.org/tools/roommate-compatibility.html">
+<meta property="og:title" content="Roommate Compatibility Quiz | RentSplitter">
+<meta property="og:description" content="12 questions to check if you and your potential roommate are actually compatible.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rentsplitter.org/tools/roommate-compatibility.html">
+<meta property="og:image" content="https://rentsplitter.org/images/og-default.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="../style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Roommate Compatibility Quiz","applicationCategory":"FinanceApplication","author":{"@type":"Person","name":"Jake Morrison"}}
+</script>
 </head>
 <body class="rs-body">
 <header class="rs-header">
@@ -14,115 +23,111 @@
     <a href="../index.html" class="rs-logo">RentSplitter</a>
     <nav class="rs-nav">
       <a href="../index.html" class="rs-nav-link">Home</a>
-      <a href="rent-split.html" class="rs-nav-link">Calculator</a>
+      <div class="rs-nav-dropdown">
+        <a href="./index.html" class="rs-nav-link active">Tools</a>
+        <div class="rs-dropdown-menu">
+          <a href="./rent-split.html">Rent Split Calculator</a>
+          <a href="./utility-split.html">Utility Split Calculator</a>
+          <a href="./move-cost.html">Moving Cost Estimator</a>
+          <a href="./roommate-compatibility.html">Roommate Compatibility</a>
+          <a href="./deposit-calc.html">Security Deposit Calculator</a>
+          <a href="./budget-share.html">Shared Budget Planner</a>
+        </div>
+      </div>
       <a href="../blog/index.html" class="rs-nav-link">Blog</a>
       <a href="../about.html" class="rs-nav-link">About</a>
       <a href="../faq.html" class="rs-nav-link">FAQ</a>
+      <a href="../contact.html" class="rs-nav-link">Contact</a>
     </nav>
-    <button class="rs-menu-btn" onclick="toggleMenu()" aria-label="Menu">☰</button>
+    <button class="rs-menu-btn" onclick="toggleMenu()" aria-label="Menu">&#9776;</button>
   </div>
 </header>
 
 <main class="rs-main">
+  <div class="rs-ad-slot" data-ad-slot="tool_top">
+    <span class="rs-ad-label">Advertisement</span>
+  </div>
+
   <div class="rs-tool-page">
     <h1 class="rs-tool-page-title">Roommate Compatibility Quiz</h1>
     <p class="rs-tool-page-desc">12 questions to check if you and your potential roommate are actually compatible.</p>
 
     <div class="rs-placeholder-box">
-      <div class="rs-placeholder-icon">🔧</div>
+      <div class="rs-placeholder-icon">&#128295;</div>
       <h2 class="rs-placeholder-title">Coming Soon</h2>
-      <p class="rs-placeholder-text">This tool is being built. In the meantime, try our <a href="rent-split.html" class="rs-placeholder-link">Rent Split Calculator</a> — it's fully functional and handles most roommate math situations.</p>
+      <p class="rs-placeholder-text">This tool is being built. In the meantime, try our <a href="rent-split.html" class="rs-placeholder-link">Rent Split Calculator</a> — it&apos;s fully functional and handles most roommate math situations.</p>
     </div>
   </div>
 
-  <div class="rs-ad-slot" data-ad="tool-bottom">
+  <div class="rs-ad-slot" data-ad-slot="tool_middle">
+    <span class="rs-ad-label">Advertisement</span>
+  </div>
+
+  <div class="rs-tool-info">
+    <h3 class="rs-tool-info-title">How It Works</h3>
+    <div class="rs-tool-info-grid">
+      <div class="rs-tool-info-card">
+        <h4>Simple Inputs</h4>
+        <p>Enter your numbers and get instant results. No account needed.</p>
+      </div>
+      <div class="rs-tool-info-card">
+        <h4>Privacy First</h4>
+        <p>All calculations happen in your browser. Your data never leaves your device.</p>
+      </div>
+      <div class="rs-tool-info-card">
+        <h4>Share Results</h4>
+        <p>Copy or export your results to share with roommates.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="rs-ad-slot" data-ad-slot="tool_bottom">
     <span class="rs-ad-label">Advertisement</span>
   </div>
 </main>
 
-<!-- Sticky Features Bar -->
-<div class="rs-sticky-bar" id="stickyBar">
-  <div class="rs-sticky-bar-left">
-    <button class="rs-sticky-btn" onclick="saveCalculation()">
-      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21H5a2 2 0 01-2-2V5a2 2 0 012-2h11l5 5v11a2 2 0 01-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
-      Save
-    </button>
-    <button class="rs-sticky-btn" onclick="shareResult()">
-      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
-      Share
-    </button>
-    <button class="rs-sticky-btn" onclick="exportReport()">
-      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-      Export
-    </button>
-    <button class="rs-sticky-btn" onclick="comparePrevious()">
-      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 1l4 4-4 4"/><path d="M3 11V9a4 4 0 014-4h14"/><path d="M7 23l-4-4 4-4"/><path d="M21 13v2a4 4 0 01-4 4H3"/></svg>
-      Compare
-    </button>
-  </div>
-  <span style="color:var(--rs-muted); font-size:0.75rem;">Data stays on your device</span>
-</div>
-
 <footer class="rs-footer">
-  <div class="rs-footer-inner">
-    <p class="rs-footer-copy">© 2026 RentSplitter. Built by someone who's been there.</p>
-    <div class="rs-footer-links">
-      <a href="../privacy.html" class="rs-footer-link">Privacy</a>
-      <a href="../terms.html" class="rs-footer-link">Terms</a>
-      <a href="../contact.html" class="rs-footer-link">Contact</a>
+  <div class="rs-footer-grid">
+    <div>
+      <h4>Tools</h4>
+      <a href="../tools/rent-split.html">Rent Split Calculator</a>
+      <a href="../tools/utility-split.html">Utility Split Calculator</a>
+      <a href="../tools/move-cost.html">Moving Cost Estimator</a>
+      <a href="../tools/roommate-compatibility.html">Roommate Compatibility</a>
+      <a href="../tools/deposit-calc.html">Security Deposit Calculator</a>
+      <a href="../tools/budget-share.html">Shared Budget Planner</a>
+    </div>
+    <div>
+      <h4>Blog & Resources</h4>
+      <a href="../index.html">Home</a>
+      <a href="../blog/index.html">All Articles</a>
+      <a href="../faq.html">FAQ</a>
+      <a href="../sitemap.html">Sitemap</a>
+    </div>
+    <div>
+      <h4>Legal</h4>
+      <a href="../privacy.html">Privacy Policy</a>
+      <a href="../terms.html">Terms of Use</a>
+      <a href="../disclaimer.html">Disclaimer</a>
+      <a href="../disclosure.html">Ad Disclosure</a>
+    </div>
+    <div>
+      <h4>About</h4>
+      <a href="../about.html">About Us</a>
+      <a href="../contact.html">Contact</a>
+      <p>For educational purposes only. Not professional advice.</p>
     </div>
   </div>
+  <div class="rs-footer-bottom">
+    <p>&copy; 2026 RentSplitter. Built by someone who&apos;s been there.</p>
+    <p>This site contains affiliate links and advertisements.</p>
+  </div>
 </footer>
-
 <script>
 function toggleMenu() {
   document.querySelector('.rs-nav').classList.toggle('active');
 }
-
-function saveCalculation() {
-  const saved = JSON.parse(localStorage.getItem('rs_saved') || '[]');
-  const item = {
-    date: new Date().toISOString(),
-    type: 'roommate-compatibility',
-    url: window.location.href,
-    data: 'Roommate Compatibility Quiz - placeholder save'
-  };
-  saved.push(item);
-  localStorage.setItem('rs_saved', JSON.stringify(saved.slice(-20)));
-  alert('Saved! You have ' + saved.length + ' saved calculations.');
-}
-
-function shareResult() {
-  navigator.clipboard.writeText(window.location.href).then(() => alert('Link copied! Share with your roommates.'));
-}
-
-function exportReport() {
-  const html = `<!DOCTYPE html><html><head><title>Roommate Compatibility Quiz Report</title></head>
-  <body style="font-family:system-ui,sans-serif; max-width:600px; margin:40px auto; padding:20px;">
-  <h1 style="color:#4f46e5;">Roommate Compatibility Quiz Report</h1>
-  <p><strong>Generated:</strong> ${new Date().toLocaleDateString()}</p>
-  <p><strong>Tool:</strong> Roommate Compatibility Quiz</p>
-  <p><strong>Status:</strong> Coming Soon</p>
-  <hr><p style="color:#666; font-size:0.9rem;">For informational purposes only. Visit rentsplitter.org for full tools.</p>
-  </body></html>`;
-  const blob = new Blob([html], {type:'text/html'});
-  const a = document.createElement('a');
-  a.href = URL.createObjectURL(blob);
-  a.download = 'roommate-compatibility-report.html';
-  a.click();
-}
-
-function comparePrevious() {
-  const saved = JSON.parse(localStorage.getItem('rs_saved') || '[]').filter(s => s.type === 'roommate-compatibility');
-  if (saved.length < 2) { alert('Need at least 2 calculations. Save a few first!'); return; }
-  let html = '<h3>Roommate Compatibility Quiz History</h3><ul>';
-  saved.slice(-5).forEach((s, i) => {
-    html += `<li>${i+1}. ${s.type} - ${new Date(s.date).toLocaleDateString()}</li>`;
-  });
-  html += '</ul>';
-  const w = window.open('', '_blank');
-  w.document.write('<html><head><title>Comparison</title></head><body style="font-family:system-ui,sans-serif; padding:40px;">' + html + '</body></html>');
-}
 </script>
+<script src="../ads-loader.js"></script>
 </body>
 </html>

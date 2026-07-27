@@ -3,10 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Blog | RentSplitter — Roommate Stories & Guides</title>
-<meta name="description" content="Real stories and practical guides about splitting rent, finding roommates, and surviving shared housing. From someone who's lived it.">
+<title>Blog | RentSplitter &mdash; Roommate Stories &amp; Guides</title>
+<meta name="description" content="Real stories and practical guides about splitting rent, finding roommates, and surviving shared housing. From someone who&apos;s lived it.">
 <link rel="canonical" href="https://rentsplitter.org/blog/">
+<meta property="og:title" content="Blog | RentSplitter">
+<meta property="og:description" content="Real stories and practical guides about splitting rent and surviving shared housing.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rentsplitter.org/blog/">
+<meta property="og:image" content="https://rentsplitter.org/images/og-default.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="../style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Blog | RentSplitter",
+  "url": "https://rentsplitter.org/blog/",
+  "description": "Real stories and practical guides about splitting rent, finding roommates, and surviving shared housing."
+}
+</script>
 </head>
 <body class="rs-body">
 <header class="rs-header">
@@ -14,12 +29,23 @@
     <a href="../index.html" class="rs-logo">RentSplitter</a>
     <nav class="rs-nav">
       <a href="../index.html" class="rs-nav-link">Home</a>
-      <a href="../tools/rent-split.html" class="rs-nav-link">Calculator</a>
+      <div class="rs-nav-dropdown">
+        <a href="../tools/index.html" class="rs-nav-link">Tools</a>
+        <div class="rs-dropdown-menu">
+          <a href="../tools/rent-split.html">Rent Split Calculator</a>
+          <a href="../tools/utility-split.html">Utility Split Calculator</a>
+          <a href="../tools/move-cost.html">Moving Cost Estimator</a>
+          <a href="../tools/roommate-compatibility.html">Roommate Compatibility</a>
+          <a href="../tools/deposit-calc.html">Security Deposit Calculator</a>
+          <a href="../tools/budget-share.html">Shared Budget Planner</a>
+        </div>
+      </div>
       <a href="./index.html" class="rs-nav-link active">Blog</a>
       <a href="../about.html" class="rs-nav-link">About</a>
       <a href="../faq.html" class="rs-nav-link">FAQ</a>
+      <a href="../contact.html" class="rs-nav-link">Contact</a>
     </nav>
-    <button class="rs-menu-btn" onclick="toggleMenu()" aria-label="Menu">☰</button>
+    <button class="rs-menu-btn" onclick="toggleMenu()" aria-label="Menu">&#9776;</button>
   </div>
 </header>
 
@@ -28,132 +54,405 @@
     <h1 class="rs-blog-hero-title">Roommate Life Blog</h1>
     <p class="rs-blog-hero-desc">Real stories, hard lessons, and the occasional spreadsheet. From 8 years of shared housing in Portland.</p>
   </div>
+
+  <div class="rs-ad-slot" data-ad-slot="blog_top">
+    <span class="rs-ad-label">Advertisement</span>
+  </div>
+
+  <!-- BLOG_ARTICLES_START -->
   <div class="rs-blog-grid">
-    <article class="rs-blog-card">
-<a href="./why-i-built-this-calculator.html" class="rs-blog-card-link">
-  <span class="rs-blog-category">Stories</span>
-  <h3 class="rs-blog-card-title">Why I Built This Calculator (And Why It Almost Didn't Happen)</h3>
-  <p class="rs-blog-card-excerpt">It started as a Google Sheet in a no-closet room at 2am. Now it's a website. Here's the story.</p>
-  <div class="rs-blog-card-meta">
-    <span>2026-05-20</span>
-    <span>5 min read</span>
+  <article class="rs-blog-card">
+    <a href="./the-landlord-who-raised-our-rent-400-and-what-we-did.html" class="rs-blog-card-link">
+      <span class="rs-blog-category">Stories</span>
+      <h3 class="rs-blog-card-title">The Landlord Who Raised Our Rent $400 And What We Did</h3>
+      <p class="rs-blog-card-excerpt">$400. That was the number staring back at me from my phone screen at 7:42 on a Tuesday morning. Not a typo. Not a prank. Just a single line in an emai...</p>
+      <div class="rs-blog-card-meta">
+        <span>2026-12-29</span>
+        <span>6 min read</span>
+      </div>
+    </a>
+  </article>
+  <article class="rs-blog-card">
+    <a href="./i-tracked-my-roommates-electricity-usage-for-a-month.html" class="rs-blog-card-link">
+      <span class="rs-blog-category">Guides</span>
+      <h3 class="rs-blog-card-title">I Tracked My Roommate's Electricity Usage for a Month. The Results Were Shocking.</h3>
+      <p class="rs-blog-card-excerpt">I put a smart plug on every major appliance and tracked usage for 30 days. One roommate was using 47% more electricity than the rest of us combined.</p>
+      <div class="rs-blog-card-meta">
+        <span>2026-12-15</span>
+        <span>12 min read</span>
+      </div>
+    </a>
+  </article>
+  <article class="rs-blog-card">
+    <a href="./what-happens-when-one-roommate-wants-to-move-out-early.html" class="rs-blog-card-link">
+      <span class="rs-blog-category">Stories</span>
+      <h3 class="rs-blog-card-title">What Happens When One Roommate Wants to Move Out Early? (A Survival Guide)</h3>
+      <p class="rs-blog-card-excerpt">Sarah wanted to move out four months before the lease ended. Here's how we handled it without anyone going broke or ending up in small claims court.</p>
+      <div class="rs-blog-card-meta">
+        <span>2026-12-01</span>
+        <span>10 min read</span>
+      </div>
+    </a>
+  </article>
+  <article class="rs-blog-card">
+    <a href="./the-best-apps-for-roommate-communication.html" class="rs-blog-card-link">
+      <span class="rs-blog-category">Tools</span>
+      <h3 class="rs-blog-card-title">The 5 Apps That Actually Help Roommates Communicate (And 3 That Don't)</h3>
+      <p class="rs-blog-card-excerpt">I've tested every roommate app on the market. Most are overcomplicated. These five actually made my shared housing life easier.</p>
+      <div class="rs-blog-card-meta">
+        <span>2026-11-21</span>
+        <span>12 min read</span>
+      </div>
+    </a>
+  </article>
+  <article class="rs-blog-card">
+    <a href="./how-to-split-groceries-fairly-with-roommates.html" class="rs-blog-card-link">
+      <span class="rs-blog-category">Data</span>
+      <h3 class="rs-blog-card-title">How to Split Groceries Fairly With Roommates (Without a Spreadsheet War)</h3>
+      <p class="rs-blog-card-excerpt">We tried splitting groceries evenly, by person, and by a shared fund. Here's the system that actually worked for three very different eaters.</p>
+      <div class="rs-blog-card-meta">
+        <span>2026-11-12</span>
+        <span>10 min read</span>
+      </div>
+    </a>
+  </article>
+  <article class="rs-blog-card">
+    <a href="./roommate-red-flags-you-should-never-ignore.html" class="rs-blog-card-link">
+      <span class="rs-blog-category">Guides</span>
+      <h3 class="rs-blog-card-title">15 Roommate Red Flags You Should Never Ignore (I Ignored 6 of Them)</h3>
+      <p class="rs-blog-card-excerpt">Looking back at my worst roommate experiences, the warning signs were always there. Here are the red flags I wish I'd seen sooner.</p>
+      <div class="rs-blog-card-meta">
+        <span>2026-10-27</span>
+        <span>12 min read</span>
+      </div>
+    </a>
+  </article>
+  <article class="rs-blog-card">
+    <a href="./i-lived-with-a-couple-for-a-year-heres-the-real-math.html" class="rs-blog-card-link">
+      <span class="rs-blog-category">Stories</span>
+      <h3 class="rs-blog-card-title">I Lived With a Couple for a Year. Here's the Real Math on What They Should Pay.</h3>
+      <p class="rs-blog-card-excerpt">Couples as roommates are controversial. I lived with one for 12 months and tracked every dollar. Here are the actual numbers.</p>
+      <div class="rs-blog-card-meta">
+        <span>2026-10-13</span>
+        <span>12 min read</span>
+      </div>
+    </a>
+  </article>
+  <article class="rs-blog-card">
+    <a href="./how-much-should-you-budget-for-move-in-costs.html" class="rs-blog-card-link">
+      <span class="rs-blog-category">Tools</span>
+      <h3 class="rs-blog-card-title">How Much Should You Budget for Move-In Costs? (The Real Numbers)</h3>
+      <p class="rs-blog-card-excerpt">First month's rent plus deposit is just the beginning. I tracked every move-in cost for my last three apartments. Here's the real total.</p>
+      <div class="rs-blog-card-meta">
+        <span>2026-10-07</span>
+        <span>10 min read</span>
+      </div>
+    </a>
+  </article>
+  <article class="rs-blog-card">
+    <a href="./the-truth-about-craigslist-roommate-ads.html" class="rs-blog-card-link">
+      <span class="rs-blog-category">Data</span>
+      <h3 class="rs-blog-card-title">The Truth About Craigslist Roommate Ads (From Someone Who's Read 500 of Them)</h3>
+      <p class="rs-blog-card-excerpt">I've read 500+ Craigslist roommate ads. Here's what the language actually means, and how to spot a bad situation before you waste your time.</p>
+      <div class="rs-blog-card-meta">
+        <span>2026-09-21</span>
+        <span>11 min read</span>
+      </div>
+    </a>
+  </article>
+  <div class="rs-ad-slot" data-ad-slot="blog_mid"><span class="rs-ad-label">Advertisement</span></div>
+  <article class="rs-blog-card">
+    <a href="./what-to-do-when-your-roommate-brings-home-a-pet.html" class="rs-blog-card-link">
+      <span class="rs-blog-category">Guides</span>
+      <h3 class="rs-blog-card-title">What to Do When Your Roommate Brings Home a Pet (Without Losing Your Mind)</h3>
+      <p class="rs-blog-card-excerpt">My roommate brought home a dog without asking. Here's how we handled it without anyone moving out.</p>
+      <div class="rs-blog-card-meta">
+        <span>2026-09-08</span>
+        <span>11 min read</span>
+      </div>
+    </a>
+  </article>
+  <article class="rs-blog-card">
+    <a href="./i-made-a-roommate-schedule-and-it-changed-everything.html" class="rs-blog-card-link">
+      <span class="rs-blog-category">Stories</span>
+      <h3 class="rs-blog-card-title">I Made a Roommate Schedule and It Changed Everything (Even the Bathroom)</h3>
+      <p class="rs-blog-card-excerpt">We were fighting about the bathroom every morning. A simple Google Calendar fixed it in a week.</p>
+      <div class="rs-blog-card-meta">
+        <span>2026-08-29</span>
+        <span>9 min read</span>
+      </div>
+    </a>
+  </article>
+  <article class="rs-blog-card">
+    <a href="./how-to-break-a-lease-without-losing-everything.html" class="rs-blog-card-link">
+      <span class="rs-blog-category">Tools</span>
+      <h3 class="rs-blog-card-title">How to Break a Lease Without Losing Everything (I've Done It Twice)</h3>
+      <p class="rs-blog-card-excerpt">Breaking a lease doesn't have to mean losing your deposit and paying penalties. Here's what actually worked when I had to leave early.</p>
+      <div class="rs-blog-card-meta">
+        <span>2026-08-16</span>
+        <span>12 min read</span>
+      </div>
+    </a>
+  </article>
+  <article class="rs-blog-card">
+    <a href="./the-real-cost-of-living-alone-vs-with-roommates.html" class="rs-blog-card-link">
+      <span class="rs-blog-category">Data</span>
+      <h3 class="rs-blog-card-title">The Real Cost of Living Alone vs. With Roommates: A Year of Data</h3>
+      <p class="rs-blog-card-excerpt">I tracked every dollar for a year of living alone and a year with roommates. The difference was bigger than I expected.</p>
+      <div class="rs-blog-card-meta">
+        <span>2026-08-05</span>
+        <span>9 min read</span>
+      </div>
+    </a>
+  </article>
+  <article class="rs-blog-card">
+    <a href="./is-it-legal-to-charge-different-rent-for-different-rooms.html" class="rs-blog-card-link">
+      <span class="rs-blog-category">Guides</span>
+      <h3 class="rs-blog-card-title">Is It Legal to Charge Different Rent for Different Rooms? (I Asked a Lawyer)</h3>
+      <p class="rs-blog-card-excerpt">I always wondered if proportional rent splitting was actually legal. So I paid $150 for a 30-minute consultation with a landlord-tenant lawyer.</p>
+      <div class="rs-blog-card-meta">
+        <span>2026-07-21</span>
+        <span>9 min read</span>
+      </div>
+    </a>
+  </article>
+  <article class="rs-blog-card">
+    <a href="./my-roommate-stole-my-food-for-3-months.html" class="rs-blog-card-link">
+      <span class="rs-blog-category">Stories</span>
+      <h3 class="rs-blog-card-title">My Roommate Stole My Food for 3 Months and I Only Caught Him Because of a Spreadsheet</h3>
+      <p class="rs-blog-card-excerpt">I'm not proud of making a food theft spreadsheet. But I'm also not sorry, because the data was undeniable.</p>
+      <div class="rs-blog-card-meta">
+        <span>2026-07-11</span>
+        <span>9 min read</span>
+      </div>
+    </a>
+  </article>
+  <article class="rs-blog-card">
+    <a href="./how-to-handle-a-roommate-who-wont-clean.html" class="rs-blog-card-link">
+      <span class="rs-blog-category">Tools</span>
+      <h3 class="rs-blog-card-title">How to Handle a Roommate Who Won't Clean (Without Starting a War)</h3>
+      <p class="rs-blog-card-excerpt">The dishes have been in the sink for five days. Here's the script that actually worked when I confronted my roommate about cleaning.</p>
+      <div class="rs-blog-card-meta">
+        <span>2026-06-30</span>
+        <span>10 min read</span>
+      </div>
+    </a>
+  </article>
+  <article class="rs-blog-card">
+    <a href="./the-ultimate-roommate-interview-questions.html" class="rs-blog-card-link">
+      <span class="rs-blog-category">Data</span>
+      <h3 class="rs-blog-card-title">The 12 Roommate Interview Questions I Wish I'd Asked Before Moving In</h3>
+      <p class="rs-blog-card-excerpt">Finding a roommate is like speed dating with higher stakes. These 12 questions would have saved me from two terrible situations.</p>
+      <div class="rs-blog-card-meta">
+        <span>2026-06-16</span>
+        <span>11 min read</span>
+      </div>
+    </a>
+  </article>
+  <article class="rs-blog-card">
+    <a href="./i-tried-splitting-rent-by-income-heres-what-happened.html" class="rs-blog-card-link">
+      <span class="rs-blog-category">Guides</span>
+      <h3 class="rs-blog-card-title">I Tried Splitting Rent by Income for 6 Months. Here's What Actually Happened.</h3>
+      <p class="rs-blog-card-excerpt">Everyone says income-based rent splits are "fair." I ran the numbers for six months with three roommates. The results were... complicated.</p>
+      <div class="rs-blog-card-meta">
+        <span>2026-06-09</span>
+        <span>10 min read</span>
+      </div>
+    </a>
+  </article>
+  <article class="rs-blog-card">
+    <a href="./why-you-should-never-venmo-rent-money.html" class="rs-blog-card-link">
+      <span class="rs-blog-category">Stories</span>
+      <h3 class="rs-blog-card-title">Why You Should Never Venmo Rent Money (And What Happened When I Did)</h3>
+      <p class="rs-blog-card-excerpt">Venmo rent money seems convenient until someone "accidentally" hits the wrong button. Here's why I switched to Zelle and never looked back.</p>
+      <div class="rs-blog-card-meta">
+        <span>2026-05-23</span>
+        <span>12 min read</span>
+      </div>
+    </a>
+  </article>
+  <article class="rs-blog-card">
+    <a href="./the-guest-policy-that-saved-our-friendship.html" class="rs-blog-card-link">
+      <span class="rs-blog-category">Tools</span>
+      <h3 class="rs-blog-card-title">The Guest Policy That Saved Our Friendship (And Our Security Deposit)</h3>
+      <p class="rs-blog-card-excerpt">We almost broke up as roommates over a boyfriend who "wasn't really living here." Here's the one-page guest policy that fixed everything.</p>
+      <div class="rs-blog-card-meta">
+        <span>2026-05-14</span>
+        <span>9 min read</span>
+      </div>
+    </a>
+  </article>
+  <article class="rs-blog-card">
+    <a href="./how-i-got-my-1200-deposit-back-5-steps.html" class="rs-blog-card-link">
+      <span class="rs-blog-category">Data</span>
+      <h3 class="rs-blog-card-title">How I Got My $1,200 Deposit Back in 5 Steps (And Why Most People Don't Even Try)</h3>
+      <p class="rs-blog-card-excerpt">I've lost deposits. I've fought for deposits. Here's the exact 5-step process that got me $1,200 back when my landlord said I owed $400 in damages.</p>
+      <div class="rs-blog-card-meta">
+        <span>2026-05-01</span>
+        <span>10 min read</span>
+      </div>
+    </a>
+  </article>
+  <article class="rs-blog-card">
+    <a href="./my-worst-roommate-ever-cost-me-800.html" class="rs-blog-card-link">
+      <span class="rs-blog-category">Guides</span>
+      <h3 class="rs-blog-card-title">My Worst Roommate Ever Cost Me $800 &mdash; And I Still Don't Know How</h3>
+      <p class="rs-blog-card-excerpt">The story of the roommate who 'borrowed' the rent money, disappeared for three days, and came back with a new tattoo.</p>
+      <div class="rs-blog-card-meta">
+        <span>2026-04-18</span>
+        <span>10 min read</span>
+      </div>
+    </a>
+  </article>
+  <article class="rs-blog-card">
+    <a href="./why-i-stopped-splitting-rent-evenly.html" class="rs-blog-card-link">
+      <span class="rs-blog-category">Stories</span>
+      <h3 class="rs-blog-card-title">Why I Stopped Splitting Rent Evenly (And Why You Probably Should Too)</h3>
+      <p class="rs-blog-card-excerpt">Equal splits only work if every room is identical. Spoiler: they never are.</p>
+      <div class="rs-blog-card-meta">
+        <span>2026-04-09</span>
+        <span>9 min read</span>
+      </div>
+    </a>
+  </article>
+  <article class="rs-blog-card">
+    <a href="./the-couple-problem-roommate-edition.html" class="rs-blog-card-link">
+      <span class="rs-blog-category">Tools</span>
+      <h3 class="rs-blog-card-title">The Couple Problem: When Two People Share One Room (And One Bathroom)</h3>
+      <p class="rs-blog-card-excerpt">Do they pay double? 1.5x? The same? Here's what actually works after 8 years of trial and error.</p>
+      <div class="rs-blog-card-meta">
+        <span>2026-03-25</span>
+        <span>10 min read</span>
+      </div>
+    </a>
+  </article>
+  <article class="rs-blog-card">
+    <a href="./i-lived-in-8-apartments-in-8-years.html" class="rs-blog-card-link">
+      <span class="rs-blog-category">Data</span>
+      <h3 class="rs-blog-card-title">I Lived in 8 Apartments in 8 Years. Here's What I Learned About Rent.</h3>
+      <p class="rs-blog-card-excerpt">From $450 rooms in shared houses to $1,200 studios. The full spectrum of Portland rental hell.</p>
+      <div class="rs-blog-card-meta">
+        <span>2026-03-13</span>
+        <span>11 min read</span>
+      </div>
+    </a>
+  </article>
+  <article class="rs-blog-card">
+    <a href="./i-tracked-every-utility-bill-for-a-year.html" class="rs-blog-card-link">
+      <span class="rs-blog-category">Guides</span>
+      <h3 class="rs-blog-card-title">I Tracked Every Utility Bill for a Year. Here's What Actually Costs Money.</h3>
+      <p class="rs-blog-card-excerpt">Spoiler: the person with the window AC unit was costing us $47 a month and didn't even know it.</p>
+      <div class="rs-blog-card-meta">
+        <span>2026-02-27</span>
+        <span>12 min read</span>
+      </div>
+    </a>
+  </article>
+  <article class="rs-blog-card">
+    <a href="./moving-in-checklist-47-things.html" class="rs-blog-card-link">
+      <span class="rs-blog-category">Stories</span>
+      <h3 class="rs-blog-card-title">The Moving-In Checklist: 47 Things People Forget (I Forgot 12 of Them)</h3>
+      <p class="rs-blog-card-excerpt">From measuring doorframes to buying toilet paper before you need it. The practical guide to not screwing up move-in day.</p>
+      <div class="rs-blog-card-meta">
+        <span>2026-02-18</span>
+        <span>12 min read</span>
+      </div>
+    </a>
+  </article>
+  <article class="rs-blog-card">
+    <a href="./roommate-agreement-template.html" class="rs-blog-card-link">
+      <span class="rs-blog-category">Tools</span>
+      <h3 class="rs-blog-card-title">The Roommate Agreement Template I Wish I'd Had on Day One</h3>
+      <p class="rs-blog-card-excerpt">Not legally binding, but it'll save your friendship. Here's what to include and what to skip.</p>
+      <div class="rs-blog-card-meta">
+        <span>2026-02-06</span>
+        <span>9 min read</span>
+      </div>
+    </a>
+  </article>
+  <article class="rs-blog-card">
+    <a href="./security-deposits-are-a-scam.html" class="rs-blog-card-link">
+      <span class="rs-blog-category">Data</span>
+      <h3 class="rs-blog-card-title">Security Deposits Are a Scam (And How to Get Yours Back Anyway)</h3>
+      <p class="rs-blog-card-excerpt">I've lost $400 in deposits and fought for $1,200. Here's what landlords don't want you to know.</p>
+      <div class="rs-blog-card-meta">
+        <span>2026-01-28</span>
+        <span>9 min read</span>
+      </div>
+    </a>
+  </article>
+  <article class="rs-blog-card">
+    <a href="./how-to-talk-about-money-without-crying.html" class="rs-blog-card-link">
+      <span class="rs-blog-category">Guides</span>
+      <h3 class="rs-blog-card-title">How to Talk About Money With Roommates (Without Anyone Crying)</h3>
+      <p class="rs-blog-card-excerpt">Scripts, timing tips, and how to bring up awkward financial topics without destroying the friendship.</p>
+      <div class="rs-blog-card-meta">
+        <span>2026-01-12</span>
+        <span>9 min read</span>
+      </div>
+    </a>
+  </article>
+  <article class="rs-blog-card">
+    <a href="./why-i-built-this-calculator.html" class="rs-blog-card-link">
+      <span class="rs-blog-category">Stories</span>
+      <h3 class="rs-blog-card-title">Why I Built This Calculator (And Why It Almost Didn't Happen)</h3>
+      <p class="rs-blog-card-excerpt">It started as a Google Sheet in a no-closet room at 2am. Now it's a website. Here's the story.</p>
+      <div class="rs-blog-card-meta">
+        <span>2026-01-04</span>
+        <span>12 min read</span>
+      </div>
+    </a>
+  </article>
   </div>
-</a>
-</article><article class="rs-blog-card">
-<a href="./how-to-talk-about-money-without-crying.html" class="rs-blog-card-link">
-  <span class="rs-blog-category">Guides</span>
-  <h3 class="rs-blog-card-title">How to Talk About Money With Roommates (Without Anyone Crying)</h3>
-  <p class="rs-blog-card-excerpt">Scripts, timing tips, and how to bring up awkward financial topics without destroying the friendship.</p>
-  <div class="rs-blog-card-meta">
-    <span>2026-05-14</span>
-    <span>5 min read</span>
-  </div>
-</a>
-</article><article class="rs-blog-card">
-<a href="./security-deposits-are-a-scam.html" class="rs-blog-card-link">
-  <span class="rs-blog-category">Guides</span>
-  <h3 class="rs-blog-card-title">Security Deposits Are a Scam (And How to Get Yours Back Anyway)</h3>
-  <p class="rs-blog-card-excerpt">I've lost $400 in deposits and fought for $1,200. Here's what landlords don't want you to know.</p>
-  <div class="rs-blog-card-meta">
-    <span>2026-05-11</span>
-    <span>6 min read</span>
-  </div>
-</a>
-</article><div class="rs-ad-slot" data-ad="blog-mid">
-  <span class="rs-ad-label">Advertisement</span>
-</div><article class="rs-blog-card">
-<a href="./roommate-agreement-template.html" class="rs-blog-card-link">
-  <span class="rs-blog-category">Tools</span>
-  <h3 class="rs-blog-card-title">The Roommate Agreement Template I Wish I'd Had on Day One</h3>
-  <p class="rs-blog-card-excerpt">Not legally binding, but it'll save your friendship. Here's what to include and what to skip.</p>
-  <div class="rs-blog-card-meta">
-    <span>2026-05-08</span>
-    <span>6 min read</span>
-  </div>
-</a>
-</article><article class="rs-blog-card">
-<a href="./moving-in-checklist-47-things.html" class="rs-blog-card-link">
-  <span class="rs-blog-category">Tools</span>
-  <h3 class="rs-blog-card-title">The Moving-In Checklist: 47 Things People Forget (I Forgot 12 of Them)</h3>
-  <p class="rs-blog-card-excerpt">From measuring doorframes to buying toilet paper before you need it. The practical guide to not screwing up move-in day.</p>
-  <div class="rs-blog-card-meta">
-    <span>2026-05-05</span>
-    <span>5 min read</span>
-  </div>
-</a>
-</article><article class="rs-blog-card">
-<a href="./i-tracked-every-utility-bill-for-a-year.html" class="rs-blog-card-link">
-  <span class="rs-blog-category">Data</span>
-  <h3 class="rs-blog-card-title">I Tracked Every Utility Bill for a Year. Here's What Actually Costs Money.</h3>
-  <p class="rs-blog-card-excerpt">Spoiler: the person with the window AC unit was costing us $47 a month and didn't even know it.</p>
-  <div class="rs-blog-card-meta">
-    <span>2026-05-02</span>
-    <span>6 min read</span>
-  </div>
-</a>
-</article><div class="rs-ad-slot" data-ad="blog-mid">
-  <span class="rs-ad-label">Advertisement</span>
-</div><article class="rs-blog-card">
-<a href="./i-lived-in-8-apartments-in-8-years.html" class="rs-blog-card-link">
-  <span class="rs-blog-category">Stories</span>
-  <h3 class="rs-blog-card-title">I Lived in 8 Apartments in 8 Years. Here's What I Learned About Rent.</h3>
-  <p class="rs-blog-card-excerpt">From $450 rooms in shared houses to $1,200 studios. The full spectrum of Portland rental hell.</p>
-  <div class="rs-blog-card-meta">
-    <span>2026-04-28</span>
-    <span>7 min read</span>
-  </div>
-</a>
-</article><article class="rs-blog-card">
-<a href="./the-couple-problem-roommate-edition.html" class="rs-blog-card-link">
-  <span class="rs-blog-category">Guides</span>
-  <h3 class="rs-blog-card-title">The Couple Problem: When Two People Share One Room (And One Bathroom)</h3>
-  <p class="rs-blog-card-excerpt">Do they pay double? 1.5x? The same? Here's what actually works after 8 years of trial and error.</p>
-  <div class="rs-blog-card-meta">
-    <span>2026-04-25</span>
-    <span>6 min read</span>
-  </div>
-</a>
-</article><article class="rs-blog-card">
-<a href="./why-i-stopped-splitting-rent-evenly.html" class="rs-blog-card-link">
-  <span class="rs-blog-category">Guides</span>
-  <h3 class="rs-blog-card-title">Why I Stopped Splitting Rent Evenly (And Why You Probably Should Too)</h3>
-  <p class="rs-blog-card-excerpt">Equal splits only work if every room is identical. Spoiler: they never are.</p>
-  <div class="rs-blog-card-meta">
-    <span>2026-04-18</span>
-    <span>6 min read</span>
-  </div>
-</a>
-</article><div class="rs-ad-slot" data-ad="blog-mid">
-  <span class="rs-ad-label">Advertisement</span>
-</div><article class="rs-blog-card">
-<a href="./my-worst-roommate-ever-cost-me-800.html" class="rs-blog-card-link">
-  <span class="rs-blog-category">Stories</span>
-  <h3 class="rs-blog-card-title">My Worst Roommate Ever Cost Me $800 — And I Still Don't Know How</h3>
-  <p class="rs-blog-card-excerpt">The story of the roommate who 'borrowed' the rent money, disappeared for three days, and came back with a new tattoo.</p>
-  <div class="rs-blog-card-meta">
-    <span>2026-04-12</span>
-    <span>7 min read</span>
-  </div>
-</a>
-</article>
+  <!-- BLOG_ARTICLES_END -->
+
+  <div class="rs-ad-slot" data-ad-slot="blog_bottom">
+    <span class="rs-ad-label">Advertisement</span>
   </div>
 </main>
 
 <footer class="rs-footer">
-  <div class="rs-footer-inner">
-    <p class="rs-footer-copy">© 2026 RentSplitter. Built by someone who's been there.</p>
-    <div class="rs-footer-links">
-      <a href="../privacy.html" class="rs-footer-link">Privacy</a>
-      <a href="../terms.html" class="rs-footer-link">Terms</a>
-      <a href="../contact.html" class="rs-footer-link">Contact</a>
+  <div class="rs-footer-grid">
+    <div>
+      <h4>Tools</h4>
+      <a href="../tools/rent-split.html">Rent Split Calculator</a>
+      <a href="../tools/utility-split.html">Utility Split Calculator</a>
+      <a href="../tools/move-cost.html">Moving Cost Estimator</a>
+      <a href="../tools/roommate-compatibility.html">Roommate Compatibility</a>
+      <a href="../tools/deposit-calc.html">Security Deposit Calculator</a>
+      <a href="../tools/budget-share.html">Shared Budget Planner</a>
+    </div>
+    <div>
+      <h4>Blog & Resources</h4>
+      <a href="../index.html">Home</a>
+      <a href="../blog/index.html">All Articles</a>
+      <a href="../faq.html">FAQ</a>
+      <a href="../sitemap.html">Sitemap</a>
+    </div>
+    <div>
+      <h4>Legal</h4>
+      <a href="../privacy.html">Privacy Policy</a>
+      <a href="../terms.html">Terms of Use</a>
+      <a href="../disclaimer.html">Disclaimer</a>
+      <a href="../disclosure.html">Ad Disclosure</a>
+    </div>
+    <div>
+      <h4>About</h4>
+      <a href="../about.html">About Us</a>
+      <a href="../contact.html">Contact</a>
+      <p>For educational purposes only. Not professional advice.</p>
     </div>
   </div>
+  <div class="rs-footer-bottom">
+    <p>&copy; 2026 RentSplitter. Built by someone who&apos;s been there.</p>
+    <p>This site contains affiliate links and advertisements.</p>
+  </div>
 </footer>
-
 <script>
 function toggleMenu() {
   document.querySelector('.rs-nav').classList.toggle('active');
 }
 </script>
+<script src="../ads-loader.js"></script>
 </body>
 </html>

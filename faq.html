@@ -4,9 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>FAQ | RentSplitter</title>
-<meta name="description" content="Frequently asked questions about splitting rent, using the calculator, and roommate life in general.">
+<meta name="description" content="FAQ for RentSplitter.">
 <link rel="canonical" href="https://rentsplitter.org/faq.html">
+<meta property="og:title" content="FAQ | RentSplitter">
+<meta property="og:description" content="FAQ for RentSplitter.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rentsplitter.org/faq.html">
+<meta property="og:image" content="https://rentsplitter.org/images/og-default.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="style.css">
+
 </head>
 <body class="rs-body">
 <header class="rs-header">
@@ -14,82 +21,94 @@
     <a href="index.html" class="rs-logo">RentSplitter</a>
     <nav class="rs-nav">
       <a href="index.html" class="rs-nav-link">Home</a>
-      <a href="tools/rent-split.html" class="rs-nav-link">Calculator</a>
+      <div class="rs-nav-dropdown">
+        <a href="tools/index.html" class="rs-nav-link">Tools</a>
+        <div class="rs-dropdown-menu">
+          <a href="tools/rent-split.html">Rent Split Calculator</a>
+          <a href="tools/utility-split.html">Utility Split Calculator</a>
+          <a href="tools/move-cost.html">Moving Cost Estimator</a>
+          <a href="tools/roommate-compatibility.html">Roommate Compatibility</a>
+          <a href="tools/deposit-calc.html">Security Deposit Calculator</a>
+          <a href="tools/budget-share.html">Shared Budget Planner</a>
+        </div>
+      </div>
       <a href="blog/index.html" class="rs-nav-link">Blog</a>
       <a href="about.html" class="rs-nav-link">About</a>
-      <a href="faq.html" class="rs-nav-link active">FAQ</a>
+      <a href="faq.html" class="rs-nav-link">FAQ</a>
+      <a href="contact.html" class="rs-nav-link">Contact</a>
     </nav>
-    <button class="rs-menu-btn" onclick="toggleMenu()" aria-label="Menu">☰</button>
+    <button class="rs-menu-btn" onclick="toggleMenu()" aria-label="Menu">&#9776;</button>
   </div>
 </header>
 
 <main class="rs-main">
-  <div class="rs-faq-page">
-    <h1 class="rs-faq-title">Frequently Asked Questions</h1>
-
-    <div class="rs-faq-list">
-      <div class="rs-faq-item">
-        <h3 class="rs-faq-q">Is this calculator free?</h3>
-        <p class="rs-faq-a">Yes. Completely free. No signup, no ads (for now), no data collection. I built this because I needed it and figured other people might too.</p>
-      </div>
-
-      <div class="rs-faq-item">
-        <h3 class="rs-faq-q">How accurate is the square footage method?</h3>
-        <p class="rs-faq-a">It's as accurate as your measurements. The calculator splits rent proportionally based on the numbers you enter. If your measurements are off, the split will be off. Measure twice, argue once.</p>
-      </div>
-
-      <div class="rs-faq-item">
-        <h3 class="rs-faq-q">What if my roommate refuses to use the calculator?</h3>
-        <p class="rs-faq-a">That's a red flag. If someone won't even look at numbers, they probably don't want a fair split. Have the conversation anyway. Show them the results. If they still refuse, you might need different roommates.</p>
-      </div>
-
-      <div class="rs-faq-item">
-        <h3 class="rs-faq-q">Does the calculator handle couples?</h3>
-        <p class="rs-faq-a">Yes. Set "People" to 2 for a shared room. The calculator adjusts the split so couples pay fairly — more than a single person, but not double. See the blog post on <a href="blog/the-couple-problem-roommate-edition.html" class="rs-faq-link">The Couple Problem</a> for details.</p>
-      </div>
-
-      <div class="rs-faq-item">
-        <h3 class="rs-faq-q">Is this legally binding?</h3>
-        <p class="rs-faq-a">No. This is a calculator, not a contract. Use it to figure out fair numbers, then put those numbers in a written roommate agreement. The agreement is what matters legally, not the calculator.</p>
-      </div>
-
-      <div class="rs-faq-item">
-        <h3 class="rs-faq-q">Can I save my calculations?</h3>
-        <p class="rs-faq-a">The calculator saves your last 10 calculations to your browser's local storage. It never leaves your device. You can also copy the results and paste them into a text or email.</p>
-      </div>
-
-      <div class="rs-faq-item">
-        <h3 class="rs-faq-q">What about utilities?</h3>
-        <p class="rs-faq-a">Utilities are trickier than rent because they fluctuate. Most people split them evenly, but if someone has a window AC unit or works from home, consider splitting by usage. See the blog post on <a href="blog/i-tracked-every-utility-bill-for-a-year.html" class="rs-faq-link">tracking utility bills</a>.</p>
-      </div>
-
-      <div class="rs-faq-item">
-        <h3 class="rs-faq-q">Who built this?</h3>
-        <p class="rs-faq-a">Me. Jake. A 31-year-old UX designer in Portland who has lived with roommates for 8 years and made every mistake possible. Read more on the <a href="about.html" class="rs-faq-link">About page</a>.</p>
-      </div>
+  <div class="rs-breadcrumb"><a href="index.html">Home</a> <span>/</span> FAQ</div>
+  <div class="rs-legal-page">
+    <h1 class="rs-legal-title">FAQ</h1>
+    <p class="rs-legal-date">Last updated: July 27, 2026</p>
+    <div class="rs-legal-content">
+<h2>Is this calculator free?</h2>
+<p>Yes. Completely free. No signup, no ads (for now), no data collection. I built this because I needed it and figured other people might too.</p>
+<h2>How accurate is the square footage method?</h2>
+<p>It's as accurate as your measurements. The calculator splits rent proportionally based on the numbers you enter. If your measurements are off, the split will be off. Measure twice, argue once.</p>
+<h2>What if my roommate refuses to use the calculator?</h2>
+<p>That's a red flag. If someone won't even look at numbers, they probably don't want a fair split. Have the conversation anyway. Show them the results. If they still refuse, you might need different roommates.</p>
+<h2>Does the calculator handle couples?</h2>
+<p>Yes. Set "People" to 2 for a shared room. The calculator adjusts the split so couples pay fairly — more than a single person, but not double. See the blog post on <a href="blog/the-couple-problem-roommate-edition.html" class="rs-legal-link">The Couple Problem</a> for details.</p>
+<h2>Is this legally binding?</h2>
+<p>No. This is a calculator, not a contract. Use it to figure out fair numbers, then put those numbers in a written roommate agreement. The agreement is what matters legally, not the calculator.</p>
+<h2>Can I save my calculations?</h2>
+<p>The calculator saves your last 10 calculations to your browser's local storage. It never leaves your device. You can also copy the results and paste them into a text or email.</p>
+<h2>What about utilities?</h2>
+<p>Utilities are trickier than rent because they fluctuate. Most people split them evenly, but if someone has a window AC unit or works from home, consider splitting by usage. See the blog post on <a href="blog/i-tracked-every-utility-bill-for-a-year.html" class="rs-legal-link">tracking utility bills</a>.</p>
+<h2>Who built this?</h2>
+<p>Me. Jake. A 31-year-old UX designer in Portland who has lived with roommates for 8 years and made every mistake possible. Read more on the <a href="about.html" class="rs-legal-link">About page</a>.</p>
     </div>
-  </div>
-
-  <div class="rs-ad-slot" data-ad="faq-bottom">
-    <span class="rs-ad-label">Advertisement</span>
   </div>
 </main>
 
 <footer class="rs-footer">
-  <div class="rs-footer-inner">
-    <p class="rs-footer-copy">© 2026 RentSplitter. Built by someone who's been there.</p>
-    <div class="rs-footer-links">
-      <a href="privacy.html" class="rs-footer-link">Privacy</a>
-      <a href="terms.html" class="rs-footer-link">Terms</a>
-      <a href="contact.html" class="rs-footer-link">Contact</a>
+  <div class="rs-footer-grid">
+    <div>
+      <h4>Tools</h4>
+      <a href="tools/rent-split.html">Rent Split Calculator</a>
+      <a href="tools/utility-split.html">Utility Split Calculator</a>
+      <a href="tools/move-cost.html">Moving Cost Estimator</a>
+      <a href="tools/roommate-compatibility.html">Roommate Compatibility</a>
+      <a href="tools/deposit-calc.html">Security Deposit Calculator</a>
+      <a href="tools/budget-share.html">Shared Budget Planner</a>
+    </div>
+    <div>
+      <h4>Blog & Resources</h4>
+      <a href="index.html">Home</a>
+      <a href="blog/index.html">All Articles</a>
+      <a href="faq.html">FAQ</a>
+      <a href="sitemap.html">Sitemap</a>
+    </div>
+    <div>
+      <h4>Legal</h4>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="disclaimer.html">Disclaimer</a>
+      <a href="disclosure.html">Ad Disclosure</a>
+    </div>
+    <div>
+      <h4>About</h4>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+      <p>For educational purposes only. Not professional advice.</p>
     </div>
   </div>
+  <div class="rs-footer-bottom">
+    <p>&copy; 2026 RentSplitter. Built by someone who&apos;s been there.</p>
+    <p>This site contains affiliate links and advertisements.</p>
+  </div>
 </footer>
-
 <script>
 function toggleMenu() {
   document.querySelector('.rs-nav').classList.toggle('active');
 }
 </script>
+
 </body>
 </html>

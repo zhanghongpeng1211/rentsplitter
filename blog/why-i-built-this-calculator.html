@@ -7,23 +7,78 @@
 <meta name="description" content="It started as a Google Sheet in a no-closet room at 2am. Now it's a website. Here's the story.">
 <meta name="author" content="Jake Morrison">
 <link rel="canonical" href="https://rentsplitter.org/blog/why-i-built-this-calculator.html">
+<link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Why I Built This Calculator (And Why It Almost Didn't Happen) | RentSplitter">
+<meta property="og:description" content="It started as a Google Sheet in a no-closet room at 2am. Now it's a website. Here's the story.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://rentsplitter.org/blog/why-i-built-this-calculator.html">
+<meta property="og:image" content="https://rentsplitter.org/images/blog/why-i-built-this-calculator.jpg">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Why I Built This Calculator (And Why It Almost Didn't Happen) | RentSplitter">
+<meta name="twitter:description" content="It started as a Google Sheet in a no-closet room at 2am. Now it's a website. Here's the story.">
+<meta name="twitter:image" content="https://rentsplitter.org/images/blog/why-i-built-this-calculator.jpg">
+
 <link rel="stylesheet" href="../style.css">
+
+<!-- Article Schema -->
 <script type="application/ld+json">
-{
+{{
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Why I Built This Calculator (And Why It Almost Didn't Happen)",
   "description": "It started as a Google Sheet in a no-closet room at 2am. Now it's a website. Here's the story.",
-  "author": {
+  "image": "https://rentsplitter.org/images/blog/why-i-built-this-calculator.jpg",
+  "author": {{
     "@type": "Person",
-    "name": "Jake Morrison"
-  },
+    "name": "Jake Morrison",
+    "jobTitle": "Freelance UX Designer",
+    "url": "https://rentsplitter.org/about.html"
+  }},
   "datePublished": "2026-05-20",
-  "publisher": {
+  "dateModified": "2026-05-20",
+  "publisher": {{
     "@type": "Organization",
-    "name": "RentSplitter"
-  }
-}
+    "name": "RentSplitter",
+    "url": "https://rentsplitter.org/"
+  }},
+  "mainEntityOfPage": {{
+    "@type": "WebPage",
+    "@id": "https://rentsplitter.org/blog/why-i-built-this-calculator.html"
+  }}
+}}
+</script>
+
+<!-- BreadcrumbList Schema -->
+<script type="application/ld+json">
+{{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://rentsplitter.org/"}},
+    {{"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://rentsplitter.org/blog/"}},
+    {{"@type": "ListItem", "position": 3, "name": "Stories", "item": "https://rentsplitter.org/blog/index.html"}},
+    {{"@type": "ListItem", "position": 4, "name": "Why I Built This Calculator (And Why It Almost Didn't Happen)", "item": "https://rentsplitter.org/blog/why-i-built-this-calculator.html"}}
+  ]
+}}
+</script>
+
+<!-- SearchAction Schema -->
+<script type="application/ld+json">
+{{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "url": "https://rentsplitter.org/",
+  "name": "RentSplitter",
+  "potentialAction": {{
+    "@type": "SearchAction",
+    "target": "https://rentsplitter.org/blog/index.html?q={{search_term_string}}",
+    "query-input": "required name=search_term_string"
+  }}
+}}
 </script>
 </head>
 <body class="rs-body">
@@ -32,29 +87,49 @@
     <a href="../index.html" class="rs-logo">RentSplitter</a>
     <nav class="rs-nav">
       <a href="../index.html" class="rs-nav-link">Home</a>
-      <a href="../tools/rent-split.html" class="rs-nav-link">Calculator</a>
+      <div class="rs-nav-dropdown">
+        <a href="../tools/index.html" class="rs-nav-link">Tools</a>
+        <div class="rs-dropdown-menu">
+          <a href="../tools/rent-split.html">Rent Split Calculator</a>
+          <a href="../tools/utility-split.html">Utility Split Calculator</a>
+          <a href="../tools/move-cost.html">Moving Cost Estimator</a>
+          <a href="../tools/roommate-compatibility.html">Roommate Compatibility</a>
+          <a href="../tools/deposit-calc.html">Security Deposit Calculator</a>
+          <a href="../tools/budget-share.html">Shared Budget Planner</a>
+        </div>
+      </div>
       <a href="./index.html" class="rs-nav-link active">Blog</a>
       <a href="../about.html" class="rs-nav-link">About</a>
       <a href="../faq.html" class="rs-nav-link">FAQ</a>
+      <a href="../contact.html" class="rs-nav-link">Contact</a>
     </nav>
-    <button class="rs-menu-btn" onclick="toggleMenu()" aria-label="Menu">☰</button>
+    <button class="rs-menu-btn" onclick="toggleMenu()" aria-label="Menu">&#9776;</button>
   </div>
 </header>
 
 <main class="rs-main">
+  <div class="rs-breadcrumb">
+    <a href="../index.html">Home</a> <span>/</span> <a href="./index.html">Blog</a> <span>/</span> <span aria-current="page">Stories</span>
+  </div>
+
+  <div class="rs-ad-slot" data-ad-slot="article_top">
+    <span class="rs-ad-label">Advertisement</span>
+  </div>
+
   <article class="rs-article">
     <header class="rs-article-header">
       <span class="rs-article-category">Stories</span>
       <h1 class="rs-article-title">Why I Built This Calculator (And Why It Almost Didn't Happen)</h1>
       <div class="rs-article-meta">
-        <span class="rs-article-author">By Jake Morrison</span>
-        <span class="rs-article-date">2026-05-20</span>
-        <span class="rs-article-read">5 min read</span>
+        <span>By Jake Morrison</span>
+        <span>2026-05-20</span>
+        <span>5 min read</span>
       </div>
     </header>
 
     <div class="rs-article-body">
-      <p class="rs-article-p">Okay, so here's the story of this website. Because I think it's relevant, and because I want you to know that this wasn't some corporate product plan. This was a guy in a small room at 2am, tired of having awkward conversations about money.</p>
+<p class="rs-article-p">Okay, so here's the story of this website. Because I think it's relevant, and because I want you to know that this wasn't some corporate product plan. This was a guy in a small room at 2am, tired of having awkward conversations about money.</p></p>
+<img src="../images/blog/why-i-built-this-calculator.jpg" alt="Why I Built This Calculator (And Why It Almost Didn't Happen)" width="800" height="450" loading="lazy" style="width:100%;border-radius:12px;margin:24px 0;">
 <p class="rs-article-p">It started in Apartment 4. The "no closet" apartment. The garbage truck apartment. I was lying in bed at 2am, listening to the truck hit the dumpster, thinking about how I was paying $800 for a room that was objectively worse than the master suite someone else was paying $800 for.</p>
 <p class="rs-article-p">I opened my laptop. I made a Google Sheet. I called it "Rent Math" because I'm not creative with names.</p>
 <p class="rs-article-p">The sheet had four columns: Roommate, Room Size, Amenities, Rent Share. I put in our numbers. Room 1: 220 sq ft, private bath, $1,005. Room 2: 160 sq ft, shared bath, $733. Room 3 (me): 140 sq ft, no closet, shared bath, $640. Room 4: 180 sq ft, shared bath, $822.</p>
@@ -63,11 +138,14 @@
 <p class="rs-article-p">But the sheet was ugly. It was a spreadsheet. You had to know how to use it. You had to make a copy, modify it, understand formulas. Most people don't want to do that. Most people want a website where they put in numbers and get an answer.</p>
 <p class="rs-article-p">So I learned to code. Not well, at first. I made a terrible version of this calculator in vanilla JavaScript. It had one input field and it broke if you put in a letter. But it worked for basic square footage splits.</p>
 <p class="rs-article-p">Then I showed it to a friend who actually knows how to code. He laughed at it. Then he helped me rebuild it properly. Added income-based splitting. Added amenity adjustments. Added the couple settings. Made it not break when you type letters.</p>
-<div class="rs-tool-rec">
-<h4 class="rs-tool-rec-title">💰 Try the Rent Split Calculator</h4>
-<p class="rs-tool-rec-text">Split rent fairly by room size, income, or custom weights. No signup required.</p>
-<a href="/tools/rent-split.html" class="rs-tool-rec-btn">Open Calculator</a>
-</div>
+<a href="../tools/rent-split.html" class="rs-inline-tool">
+  <div class="rs-inline-tool-icon">&#127968;</div>
+  <div class="rs-inline-tool-content">
+    <div class="rs-inline-tool-title">Rent Split Calculator</div>
+    <div class="rs-inline-tool-desc">Split rent fairly by room size, income, or custom weights. No signup required.</div>
+    <div class="rs-inline-tool-privacy"><em>All data stays in your browser &mdash; we never see it.</em></div>
+  </div>
+</a>
 <p class="rs-article-p">Then I thought: this should be a website. Not just a calculator on my laptop. A real website that anyone can use. Because the problem I had — unfair rent splits — isn't unique to me. It's universal. Every roommate situation has this problem.</p>
 <p class="rs-article-p">So I bought a domain. Rentsplitter.org. It was available and it was perfect. I built the site in a weekend. It had the calculator, three blog posts, and a contact page that went to my Gmail.</p>
 <p class="rs-article-p">That was two years ago. The site has grown since then. More calculators. More blog posts. More features. But the core idea is the same: remove the awkwardness from rent conversations by letting math do the talking.</p>
@@ -76,7 +154,6 @@
 <p class="rs-article-p">If you're using this calculator for the first time: welcome. I hope it helps. I hope it saves you an awkward conversation. I hope it saves you money. And if it does, tell a friend. That's all I ask.</p>
 <p class="rs-article-p">— Jake</p>
 <p class="rs-article-p">P.S. — The Google Sheet still exists. It's in my Google Drive, labeled "Rent Math v1 (archived)." I open it sometimes when I need to remember why I started this. It's terrible. The formulas are broken. The formatting is ugly. But it's where everything began. And I keep it because sometimes the ugly first draft is the most important one.</p>
-
     </div>
 
     <div class="rs-article-footer">
@@ -87,51 +164,213 @@
       <div class="rs-author-box">
         <div class="rs-author-info">
           <strong class="rs-author-name">Jake Morrison</strong>
-          <p class="rs-author-bio">Relatable roommate veteran. 8 years of shared housing disasters. Not an expert, just someone who's made every mistake so you don't have to. Based in Portland, Oregon.</p>
+          <p class="rs-author-bio">Relatable roommate veteran. 8 years of shared housing disasters. Not an expert, just someone who&apos;s made every mistake so you don&apos;t have to. Based in Portland, Oregon.</p>
         </div>
       </div>
     </div>
 
-    <div class="rs-related-section">
-      <h3 class="rs-related-title">More from the blog</h3>
-      <div class="rs-related-grid">
-        <div class="rs-related-card">
-<a href="./i-lived-in-8-apartments-in-8-years.html" class="rs-related-link">I Lived in 8 Apartments in 8 Years. Here's What I Learned About Rent.</a>
-<p class="rs-related-excerpt">From $450 rooms in shared houses to $1,200 studios. The full spectrum of Portland rental hell.</p>
-</div><div class="rs-related-card">
-<a href="./i-tracked-every-utility-bill-for-a-year.html" class="rs-related-link">I Tracked Every Utility Bill for a Year. Here's What Actually Costs Money.</a>
-<p class="rs-related-excerpt">Spoiler: the person with the window AC unit was costing us $47 a month and didn't even know it.</p>
-</div><div class="rs-related-card">
-<a href="./security-deposits-are-a-scam.html" class="rs-related-link">Security Deposits Are a Scam (And How to Get Yours Back Anyway)</a>
-<p class="rs-related-excerpt">I've lost $400 in deposits and fought for $1,200. Here's what landlords don't want you to know.</p>
-</div>
+    <div class="rs-ad-slot" data-ad-slot="article_middle">
+      <span class="rs-ad-label">Advertisement</span>
+    </div>
+
+    <div class="rs-tail-section">
+      <div class="rs-tail-grid">
+        <div class="rs-tail-col" id="related-articles-static">
+          <h3 class="rs-tail-title">Related Articles</h3>
+<a href="./why-i-stopped-splitting-rent-evenly.html" class="rs-tail-card">
+  <div class="rs-tail-card-title">Why I Stopped Splitting Rent Evenly (And Why You Probably Should Too)</div>
+  <div class="rs-tail-card-desc">Equal splits only work if every room is identical. Spoiler: they never are.</div>
+</a>
+<a href="./my-worst-roommate-ever-cost-me-800.html" class="rs-tail-card">
+  <div class="rs-tail-card-title">My Worst Roommate Ever Cost Me $800 — And I Still Don't Know How</div>
+  <div class="rs-tail-card-desc">The story of the roommate who 'borrowed' the rent money, disappeared for three days, and c...</div>
+</a>
+<a href="./security-deposits-are-a-scam.html" class="rs-tail-card">
+  <div class="rs-tail-card-title">Security Deposits Are a Scam (And How to Get Yours Back Anyway)</div>
+  <div class="rs-tail-card-desc">I've lost $400 in deposits and fought for $1,200. Here's what landlords don't want you to ...</div>
+</a>
+        </div>
+        <div class="rs-tail-col" id="recommended-tools-static">
+          <h3 class="rs-tail-title">Recommended Tools</h3>
+<a href="../tools/rent-split.html" class="rs-tail-card">
+  <div class="rs-tail-card-title">Rent Split Calculator</div>
+  <div class="rs-tail-card-desc">Split rent fairly by room size, income, or custom weights. No signup required.</div>
+</a>
+<a href="../tools/move-cost.html" class="rs-tail-card">
+  <div class="rs-tail-card-title">Moving Cost Estimator</div>
+  <div class="rs-tail-card-desc">Estimate total moving expenses including truck, boxes, deposits, and hidden fees.</div>
+</a>
+<a href="../tools/roommate-compatibility.html" class="rs-tail-card">
+  <div class="rs-tail-card-title">Roommate Compatibility Quiz</div>
+  <div class="rs-tail-card-desc">12 questions to check if you and your potential roommate are actually compatible.</div>
+</a>
+        </div>
       </div>
     </div>
   </article>
 
-  <div class="rs-ad-slot" data-ad="article-bottom">
+  <div class="rs-ad-slot" data-ad-slot="article_bottom">
     <span class="rs-ad-label">Advertisement</span>
   </div>
 </main>
 
 <footer class="rs-footer">
-  <div class="rs-footer-inner">
-    <p class="rs-footer-copy">© 2026 RentSplitter. Built by someone who's been there.</p>
-    <div class="rs-footer-links">
-      <a href="../privacy.html" class="rs-footer-link">Privacy</a>
-      <a href="../terms.html" class="rs-footer-link">Terms</a>
-      <a href="../contact.html" class="rs-footer-link">Contact</a>
+  <div class="rs-footer-grid">
+    <div>
+      <h4>Tools</h4>
+      <a href="../tools/rent-split.html">Rent Split Calculator</a>
+      <a href="../tools/utility-split.html">Utility Split Calculator</a>
+      <a href="../tools/move-cost.html">Moving Cost Estimator</a>
+      <a href="../tools/roommate-compatibility.html">Roommate Compatibility</a>
+      <a href="../tools/deposit-calc.html">Security Deposit Calculator</a>
+      <a href="../tools/budget-share.html">Shared Budget Planner</a>
+    </div>
+    <div>
+      <h4>Blog & Resources</h4>
+      <a href="../index.html">Home</a>
+      <a href="../blog/index.html">All Articles</a>
+      <a href="../faq.html">FAQ</a>
+      <a href="../sitemap.html">Sitemap</a>
+    </div>
+    <div>
+      <h4>Legal</h4>
+      <a href="../privacy.html">Privacy Policy</a>
+      <a href="../terms.html">Terms of Use</a>
+      <a href="../disclaimer.html">Disclaimer</a>
+      <a href="../disclosure.html">Ad Disclosure</a>
+    </div>
+    <div>
+      <h4>About</h4>
+      <a href="../about.html">About Us</a>
+      <a href="../contact.html">Contact</a>
+      <p>For educational purposes only. Not professional advice.</p>
     </div>
   </div>
+  <div class="rs-footer-bottom">
+    <p>&copy; 2026 RentSplitter. Built by someone who&apos;s been there.</p>
+    <p>This site contains affiliate links and advertisements.</p>
+  </div>
 </footer>
-
 <script>
 function toggleMenu() {
   document.querySelector('.rs-nav').classList.toggle('active');
 }
+</script>
+<script src="../ads-loader.js"></script>
+<script>
 function copyLink() {
-  navigator.clipboard.writeText(window.location.href).then(() => alert('Link copied!'));
+  navigator.clipboard.writeText(window.location.href).then(function(){
+    alert('Link copied!');
+  });
 }
+
+// ===== Related Articles: JS Dynamic Fallback =====
+(function() {
+  var staticContainer = document.getElementById('related-articles-static');
+  var dynamicContainer = document.getElementById('related-articles-dynamic');
+  if (!staticContainer) return;
+  var staticCards = staticContainer.querySelectorAll('.rs-tail-card').length;
+  if (staticCards >= 3) return;
+
+  fetch('../articles.json')
+    .then(function(r) { return r.json(); })
+    .then(function(articles) {
+      if (!articles || articles.length === 0) return;
+      var currentSlug = 'why-i-built-this-calculator';
+      var current = null;
+      for (var i = 0; i < articles.length; i++) {
+        if (articles[i].slug === currentSlug) { current = articles[i]; break; }
+      }
+      var related = [];
+      if (current) {
+        for (var i = 0; i < articles.length; i++) {
+          if (articles[i].slug !== currentSlug && articles[i].category === current.category) {
+            related.push(articles[i]);
+          }
+        }
+        if (related.length < 3) {
+          for (var i = 0; i < articles.length; i++) {
+            if (articles[i].slug !== currentSlug) {
+              var dup = false;
+              for (var j = 0; j < related.length; j++) {
+                if (related[j].slug === articles[i].slug) { dup = true; break; }
+              }
+              if (!dup) related.push(articles[i]);
+            }
+          }
+        }
+      } else {
+        related = articles.slice(0, 3);
+      }
+
+      var html = '';
+      for (var i = 0; i < Math.min(3, related.length); i++) {
+        var a = related[i];
+        html += '<a href="./' + a.slug + '.html" class="rs-tail-card">' +
+          '<div class="rs-tail-card-title">' + a.title + '</div>' +
+          '<div class="rs-tail-card-desc">' + (a.excerpt || a.description || '') + '</div></a>';
+      }
+      if (html) {
+        if (!dynamicContainer) {
+          dynamicContainer = document.createElement('div');
+          dynamicContainer.id = 'related-articles-dynamic';
+          dynamicContainer.className = 'rs-tail-col';
+          staticContainer.parentNode.appendChild(dynamicContainer);
+        }
+        dynamicContainer.innerHTML = '<h3 class="rs-tail-title">Related Articles</h3>' + html;
+        dynamicContainer.style.display = 'block';
+        staticContainer.style.display = 'none';
+      }
+    })
+    .catch(function() {});
+})();
+
+// ===== Recommended Tools: JS Dynamic Fallback =====
+(function() {
+  var staticContainer = document.getElementById('recommended-tools-static');
+  var dynamicContainer = document.getElementById('recommended-tools-dynamic');
+  if (!staticContainer) return;
+  var staticCards = staticContainer.querySelectorAll('.rs-tail-card').length;
+  if (staticCards >= 2) return;
+
+  var toolMap = {{
+    'Stories': [
+      ['../tools/rent-split.html', 'Rent Split Calculator', 'Split rent fairly by room size, income, or custom weights.'],
+      ['../tools/move-cost.html', 'Moving Cost Estimator', 'Estimate total moving expenses including truck, boxes, deposits, and hidden fees.']
+    ],
+    'Guides': [
+      ['../tools/rent-split.html', 'Rent Split Calculator', 'Split rent fairly by room size, income, or custom weights.'],
+      ['../tools/deposit-calc.html', 'Security Deposit Calculator', 'Track what your landlord can and can't deduct.']
+    ],
+    'Data': [
+      ['../tools/rent-split.html', 'Rent Split Calculator', 'Split rent fairly by room size, income, or custom weights.'],
+      ['../tools/utility-split.html', 'Utility Split Calculator', 'Fairly divide electricity, water, gas, and internet bills.']
+    ],
+    'Tools': [
+      ['../tools/rent-split.html', 'Rent Split Calculator', 'Split rent fairly by room size, income, or custom weights.'],
+      ['../tools/budget-share.html', 'Shared Budget Planner', 'Plan monthly shared expenses before you move in.']
+    ]
+  }};
+  var tools = toolMap['Stories'] || toolMap['Guides'];
+  var html = '';
+  for (var i = 0; i < tools.length; i++) {
+    var t = tools[i];
+    html += '<a href="' + t[0] + '" class="rs-tail-card">' +
+      '<div class="rs-tail-card-title">' + t[1] + '</div>' +
+      '<div class="rs-tail-card-desc">' + t[2] + '</div></a>';
+  }
+  if (html) {
+    if (!dynamicContainer) {
+      dynamicContainer = document.createElement('div');
+      dynamicContainer.id = 'recommended-tools-dynamic';
+      dynamicContainer.className = 'rs-tail-col';
+      staticContainer.parentNode.appendChild(dynamicContainer);
+    }
+    dynamicContainer.innerHTML = '<h3 class="rs-tail-title">Recommended Tools</h3>' + html;
+    dynamicContainer.style.display = 'block';
+    staticContainer.style.display = 'none';
+  }
+})();
 </script>
 </body>
 </html>

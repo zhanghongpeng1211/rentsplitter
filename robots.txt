@@ -1,9 +1,3 @@
 User-agent: *
 Allow: /
-Disallow: /tools/utility-split.html
-Disallow: /tools/move-cost.html
-Disallow: /tools/roommate-compatibility.html
-Disallow: /tools/deposit-calc.html
-Disallow: /tools/budget-share.html
-
 Sitemap: https://rentsplitter.org/sitemap.xml

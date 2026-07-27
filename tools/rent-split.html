@@ -17,16 +17,27 @@
     <a href="../index.html" class="rs-logo">RentSplitter</a>
     <nav class="rs-nav">
       <a href="../index.html" class="rs-nav-link">Home</a>
-      <a href="rent-split.html" class="rs-nav-link active">Calculator</a>
+      <div class="rs-nav-dropdown">
+        <a href="./index.html" class="rs-nav-link active">Tools</a>
+        <div class="rs-dropdown-menu">
+          <a href="./rent-split.html">Rent Split Calculator</a>
+          <a href="./utility-split.html">Utility Split Calculator</a>
+          <a href="./move-cost.html">Moving Cost Estimator</a>
+          <a href="./roommate-compatibility.html">Roommate Compatibility</a>
+          <a href="./deposit-calc.html">Security Deposit Calculator</a>
+          <a href="./budget-share.html">Shared Budget Planner</a>
+        </div>
+      </div>
       <a href="../blog/index.html" class="rs-nav-link">Blog</a>
       <a href="../about.html" class="rs-nav-link">About</a>
       <a href="../faq.html" class="rs-nav-link">FAQ</a>
+      <a href="../contact.html" class="rs-nav-link">Contact</a>
     </nav>
-    <button class="rs-menu-btn" onclick="toggleMenu()" aria-label="Menu">☰</button>
+    <button class="rs-menu-btn" onclick="toggleMenu()" aria-label="Menu">&#9776;</button>
   </div>
 </header>
-
 <main class="rs-main">
+  <div class="rs-ad-slot" data-ad-slot="tool_top"><span class="rs-ad-label">Advertisement</span></div>
   <div class="rs-tool-page">
     <h1 class="rs-tool-page-title">Rent Split Calculator</h1>
     <p class="rs-tool-page-desc">Split rent by room size, income, or custom weights. Add rooms, set amenities, and get fair numbers instantly.</p>
@@ -111,11 +122,13 @@
     </div>
 
     <!-- 广告位 -->
-    <div class="rs-ad-slot" data-ad="tool-bottom">
+    <div class="rs-ad-slot" data-ad-slot="tool_bottom">
       <span class="rs-ad-label">Advertisement</span>
     </div>
 
-    <div class="rs-tool-info">
+      <div class="rs-ad-slot" data-ad-slot="tool_middle"><span class="rs-ad-label">Advertisement</span></div>
+
+  <div class="rs-tool-info">
       <h3 class="rs-tool-info-title">How It Works</h3>
       <div class="rs-tool-info-grid">
         <div class="rs-tool-info-card">
@@ -159,186 +172,49 @@
 </div>
 
 <footer class="rs-footer">
-  <div class="rs-footer-inner">
-    <p class="rs-footer-copy">© 2026 RentSplitter. Built by someone who's been there.</p>
-    <div class="rs-footer-links">
-      <a href="../privacy.html" class="rs-footer-link">Privacy</a>
-      <a href="../terms.html" class="rs-footer-link">Terms</a>
-      <a href="../contact.html" class="rs-footer-link">Contact</a>
+  <div class="rs-footer-grid">
+    <div>
+      <h4>Tools</h4>
+      <a href="../tools/rent-split.html">Rent Split Calculator</a>
+      <a href="../tools/utility-split.html">Utility Split Calculator</a>
+      <a href="../tools/move-cost.html">Moving Cost Estimator</a>
+      <a href="../tools/roommate-compatibility.html">Roommate Compatibility</a>
+      <a href="../tools/deposit-calc.html">Security Deposit Calculator</a>
+      <a href="../tools/budget-share.html">Shared Budget Planner</a>
+    </div>
+    <div>
+      <h4>Blog & Resources</h4>
+      <a href="../index.html">Home</a>
+      <a href="../blog/index.html">All Articles</a>
+      <a href="../faq.html">FAQ</a>
+      <a href="../sitemap.html">Sitemap</a>
+    </div>
+    <div>
+      <h4>Legal</h4>
+      <a href="../privacy.html">Privacy Policy</a>
+      <a href="../terms.html">Terms of Use</a>
+      <a href="../disclaimer.html">Disclaimer</a>
+      <a href="../disclosure.html">Ad Disclosure</a>
+    </div>
+    <div>
+      <h4>About</h4>
+      <a href="../about.html">About Us</a>
+      <a href="../contact.html">Contact</a>
+      <p>For educational purposes only. Not professional advice.</p>
     </div>
   </div>
+  <div class="rs-footer-bottom">
+    <p>&copy; 2026 RentSplitter. Built by someone who&apos;s been there.</p>
+    <p>This site contains affiliate links and advertisements.</p>
+  </div>
 </footer>
-
 <script>
-let currentMode = 'sqft';
-let roomCount = 2;
-
-function setMode(mode) {
-  currentMode = mode;
-  document.querySelectorAll('.rs-mode-btn').forEach(b => b.classList.remove('active'));
-  document.getElementById('mode-' + mode).classList.add('active');
-
-  const rooms = document.querySelectorAll('.rs-room-card');
-  rooms.forEach(room => {
-    const sizeInput = room.querySelector('.room-size');
-    const label = sizeInput.parentElement.querySelector('label');
-    if (mode === 'income') {
-      label.textContent = 'Annual Income ($)';
-      sizeInput.value = sizeInput.value > 1000 ? sizeInput.value : '50000';
-      sizeInput.disabled = false;
-    } else if (mode === 'equal') {
-      label.textContent = 'Share (equal)';
-      sizeInput.value = '1';
-      sizeInput.disabled = true;
-    } else {
-      label.textContent = 'Size (sq ft)';
-      sizeInput.value = sizeInput.value > 1000 ? '180' : sizeInput.value;
-      sizeInput.disabled = false;
-    }
-  });
-}
-
-function addRoom() {
-  roomCount++;
-  const container = document.getElementById('roomsContainer');
-  const div = document.createElement('div');
-  div.className = 'rs-room-card';
-  div.setAttribute('data-room', roomCount - 1);
-  let labelText, defaultVal, disabled;
-  if (currentMode === 'income') { labelText = 'Annual Income ($)'; defaultVal = '50000'; disabled = ''; }
-  else if (currentMode === 'equal') { labelText = 'Share (equal)'; defaultVal = '1'; disabled = 'disabled'; }
-  else { labelText = 'Size (sq ft)'; defaultVal = '150'; disabled = ''; }
-
-  div.innerHTML = '<h4 class="rs-room-title">Room ' + roomCount + '</h4>' +
-    '<div class="rs-room-grid">' +
-      '<div><label class="rs-calc-label">' + labelText + '</label>' +
-      '<input type="number" class="rs-calc-input room-size" value="' + defaultVal + '" min="1" ' + disabled + '></div>' +
-      '<div><label class="rs-calc-label">Private Bath?</label>' +
-      '<select class="rs-calc-select room-bath"><option value="0">No</option><option value="1">Yes (+20%)</option></select></div>' +
-      '<div><label class="rs-calc-label">People</label>' +
-      '<input type="number" class="rs-calc-input room-people" value="1" min="1" max="4"></div>' +
-      '<div><label class="rs-calc-label">Name (optional)</label>' +
-      '<input type="text" class="rs-calc-input room-name" placeholder="e.g. Roommate"></div>' +
-    '</div>' +
-    '<button class="rs-remove-room" onclick="this.parentElement.remove()">× Remove</button>';
-  container.appendChild(div);
-}
-
-function calculate() {
-  const totalRent = parseFloat(document.getElementById('totalRent').value) || 0;
-  if (totalRent <= 0) return alert('Please enter a valid rent amount');
-
-  const rooms = document.querySelectorAll('.rs-room-card');
-  const roomData = [];
-  let totalWeight = 0;
-
-  rooms.forEach(room => {
-    const size = parseFloat(room.querySelector('.room-size').value) || 0;
-    const hasBath = parseInt(room.querySelector('.room-bath').value);
-    const people = parseInt(room.querySelector('.room-people').value) || 1;
-    const name = room.querySelector('.room-name').value || 'Room ' + (roomData.length + 1);
-
-    let weight = size;
-    if (currentMode === 'sqft' && hasBath) weight *= 1.2;
-    if (currentMode === 'equal') weight = 1;
-
-    roomData.push({ size: size, hasBath: hasBath, people: people, name: name, weight: weight });
-    totalWeight += weight;
-  });
-
-  if (totalWeight === 0) return alert('Please enter valid values');
-
-  let html = '<div class="rs-results-table">';
-  let totalCheck = 0;
-
-  roomData.forEach(r => {
-    const share = (r.weight / totalWeight) * totalRent;
-    const perPerson = share / r.people;
-    totalCheck += share;
-
-    let detailText = '';
-    if (currentMode === 'sqft') detailText = r.size + ' sq ft';
-    else if (currentMode === 'income') detailText = '$' + r.size.toLocaleString() + '/year';
-    else detailText = 'Equal share';
-
-    let bathTag = r.hasBath ? ' &bull; Private bath' : '';
-    let peopleTag = r.people > 1 ? ' &bull; ' + r.people + ' people' : '';
-    let perPersonTag = r.people > 1 ? '<div class="rs-result-per">$' + perPerson.toFixed(2) + ' per person</div>' : '';
-
-    html += '<div class="rs-result-row">' +
-      '<div class="rs-result-name">' + r.name + '</div>' +
-      '<div class="rs-result-details">' + detailText + bathTag + peopleTag + '</div>' +
-      '<div class="rs-result-amount">' +
-        '<div class="rs-result-total">$' + share.toFixed(2) + '/month</div>' +
-        perPersonTag +
-      '</div>' +
-    '</div>';
-  });
-
-  html += '</div>';
-  html += '<div class="rs-result-total-row">Total: $' + totalCheck.toFixed(2) + '</div>';
-
-  document.getElementById('resultsContent').innerHTML = html;
-  document.getElementById('results').style.display = 'block';
-
-  saveToHistory(totalRent, roomData, currentMode);
-}
-
-function saveToHistory(rent, rooms, mode) {
-  const history = JSON.parse(localStorage.getItem('rs_history') || '[]');
-  history.unshift({
-    date: new Date().toISOString(),
-    rent: rent,
-    mode: mode,
-    rooms: rooms.length
-  });
-  if (history.length > 10) history.pop();
-  localStorage.setItem('rs_history', JSON.stringify(history));
-}
-
-function copyResults() {
-  const text = document.getElementById('resultsContent').innerText;
-  navigator.clipboard.writeText(text).then(() => alert('Results copied to clipboard!'));
-}
-
-function shareLink() {
-  const url = window.location.href;
-  navigator.clipboard.writeText(url).then(() => alert('Link copied! Share with your roommates.'));
-}
-
 function toggleMenu() {
   document.querySelector('.rs-nav').classList.toggle('active');
 }
-
-/* ===== Sticky Features ===== */
-function saveCalculation() {
-  const saved = JSON.parse(localStorage.getItem('rs_saved') || '[]');
-  const item = {
-    date: new Date().toISOString(),
-    type: 'rent-split',
-    url: window.location.href,
-    data: 'Rent Split Calculator'
-  };
-  saved.push(item);
-  localStorage.setItem('rs_saved', JSON.stringify(saved.slice(-20)));
-  alert('Saved! You have ' + saved.length + ' saved calculations.');
-}
-
-function shareResult() {
-  navigator.clipboard.writeText(window.location.href).then(() => alert('Link copied! Share with your roommates.'));
-}
-
-function exportReport() {
-  const results = document.getElementById('resultsContent');
-  const resultsText = results ? results.innerText : 'No calculation yet';
-  const html = `<!DOCTYPE html><html><head><title>Rent Split Report</title></head>
-  <body style="font-family:system-ui,sans-serif; max-width:600px; margin:40px auto; padding:20px;">
-  <h1 style="color:#4f46e5;">Rent Split Report</h1>
-  <p><strong>Generated:</strong> ${new Date().toLocaleDateString()}</p>
-  <p><strong>Tool:</strong> Rent Split Calculator</p>
-  <pre style="background:#f8fafc; padding:16px; border-radius:8px; line-height:1.6;">${resultsText}</pre>
-  <hr><p style="color:#666; font-size:0.9rem;">Generated by rentsplitter.org</p>
-  </body></html>`;
+</script>
+<script src="../ads-loader.js"></script>
+</body></html>`;
   const blob = new Blob([html], {type:'text/html'});
   const a = document.createElement('a');
   a.href = URL.createObjectURL(blob);

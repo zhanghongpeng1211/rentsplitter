@@ -1,0 +1,15 @@
+{
+  "domain": "rentsplitter.org",
+  "prefix": "rs",
+  "site_name": "RentSplitter",
+  "author": "Jake Morrison",
+  "author_job": "Freelance UX Designer",
+  "author_location": "Portland, Oregon",
+  "language": "en",
+  "timezone": "America/Los_Angeles",
+  "favicon": "images/favicon.ico",
+  "og_image": "images/og-default.jpg",
+  "articles_per_page": 20,
+  "home_articles_count": 6,
+  "tools_articles_count": 6
+}

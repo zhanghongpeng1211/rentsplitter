@@ -1,29 +1,53 @@
 # RentSplitter
 
-> Split rent without the awkward conversation
+Free online calculators and educational content. Not professional advice.
 
-## Overview
+## Pages
+- Home: https://rentsplitter.org/
+- Tools: https://rentsplitter.org/tools/
+- Blog: https://rentsplitter.org/blog/
+- About: https://rentsplitter.org/about.html
+- Contact: https://rentsplitter.org/contact.html
+- FAQ: https://rentsplitter.org/faq.html
+- Sitemap: https://rentsplitter.org/sitemap.html
 
-RentSplitter provides free tools to split rent fairly among roommates. Built by Jake Morrison, a Portland-based UX designer with 8 years of shared housing experience.
+## Tools
+- Rent Split Calculator: https://rentsplitter.org/tools/rent-split.html
+- Utility Split Calculator: https://rentsplitter.org/tools/utility-split.html
+- Moving Cost Estimator: https://rentsplitter.org/tools/move-cost.html
+- Roommate Compatibility Quiz: https://rentsplitter.org/tools/roommate-compatibility.html
+- Security Deposit Calculator: https://rentsplitter.org/tools/deposit-calc.html
+- Shared Budget Planner: https://rentsplitter.org/tools/budget-share.html
 
-## Key Tools
-
-- Rent Split Calculator — Split by room size, income, or equal shares
-- Utility Split Calculator — Divide bills fairly (coming soon)
-- Moving Cost Estimator — Plan your move budget (coming soon)
-- Roommate Compatibility Quiz — Check compatibility before moving in (coming soon)
-
-## Blog Topics
-
-- Roommate horror stories and lessons learned
-- How to split rent fairly (square footage, income-based, custom weights)
-- Utility bill tracking and fair division
-- Security deposit rights and recovery
-- Moving checklists and first-apartment guides
-- Money conversations with roommates
-
-## Contact
-
-- Email: hello@rentsplitter.org
-- Author: Jake Morrison, Portland Oregon
-- Site: https://rentsplitter.org/
+## Articles
+- The Landlord Who Raised Our Rent $400 And What We Did (the-landlord-who-raised-our-rent-400-and-what-we-did) -- $400. That was the number staring back at me from my phone screen at 7:42 on a Tuesday morning. Not a typo. Not a prank. Just a single line in an email from our landlord saying that starting next mont -- 2026-12-29
+- I Tracked My Roommate's Electricity Usage for a Month. The Results Were Shocking. (i-tracked-my-roommates-electricity-usage-for-a-month) -- I put a smart plug on every major appliance and tracked usage for 30 days. One roommate was using 47% more electricity than the rest of us combined. -- 2026-12-15
+- What Happens When One Roommate Wants to Move Out Early? (A Survival Guide) (what-happens-when-one-roommate-wants-to-move-out-early) -- Sarah wanted to move out four months before the lease ended. Here's how we handled it without anyone going broke or ending up in small claims court. -- 2026-12-01
+- The 5 Apps That Actually Help Roommates Communicate (And 3 That Don't) (the-best-apps-for-roommate-communication) -- I've tested every roommate app on the market. Most are overcomplicated. These five actually made my shared housing life easier. -- 2026-11-21
+- How to Split Groceries Fairly With Roommates (Without a Spreadsheet War) (how-to-split-groceries-fairly-with-roommates) -- We tried splitting groceries evenly, by person, and by a shared fund. Here's the system that actually worked for three very different eaters. -- 2026-11-12
+- 15 Roommate Red Flags You Should Never Ignore (I Ignored 6 of Them) (roommate-red-flags-you-should-never-ignore) -- Looking back at my worst roommate experiences, the warning signs were always there. Here are the red flags I wish I'd seen sooner. -- 2026-10-27
+- I Lived With a Couple for a Year. Here's the Real Math on What They Should Pay. (i-lived-with-a-couple-for-a-year-heres-the-real-math) -- Couples as roommates are controversial. I lived with one for 12 months and tracked every dollar. Here are the actual numbers. -- 2026-10-13
+- How Much Should You Budget for Move-In Costs? (The Real Numbers) (how-much-should-you-budget-for-move-in-costs) -- First month's rent plus deposit is just the beginning. I tracked every move-in cost for my last three apartments. Here's the real total. -- 2026-10-07
+- The Truth About Craigslist Roommate Ads (From Someone Who's Read 500 of Them) (the-truth-about-craigslist-roommate-ads) -- I've read 500+ Craigslist roommate ads. Here's what the language actually means, and how to spot a bad situation before you waste your time. -- 2026-09-21
+- What to Do When Your Roommate Brings Home a Pet (Without Losing Your Mind) (what-to-do-when-your-roommate-brings-home-a-pet) -- My roommate brought home a dog without asking. Here's how we handled it without anyone moving out. -- 2026-09-08
+- I Made a Roommate Schedule and It Changed Everything (Even the Bathroom) (i-made-a-roommate-schedule-and-it-changed-everything) -- We were fighting about the bathroom every morning. A simple Google Calendar fixed it in a week. -- 2026-08-29
+- How to Break a Lease Without Losing Everything (I've Done It Twice) (how-to-break-a-lease-without-losing-everything) -- Breaking a lease doesn't have to mean losing your deposit and paying penalties. Here's what actually worked when I had to leave early. -- 2026-08-16
+- The Real Cost of Living Alone vs. With Roommates: A Year of Data (the-real-cost-of-living-alone-vs-with-roommates) -- I tracked every dollar for a year of living alone and a year with roommates. The difference was bigger than I expected. -- 2026-08-05
+- Is It Legal to Charge Different Rent for Different Rooms? (I Asked a Lawyer) (is-it-legal-to-charge-different-rent-for-different-rooms) -- I always wondered if proportional rent splitting was actually legal. So I paid $150 for a 30-minute consultation with a landlord-tenant lawyer. -- 2026-07-21
+- My Roommate Stole My Food for 3 Months and I Only Caught Him Because of a Spreadsheet (my-roommate-stole-my-food-for-3-months) -- I'm not proud of making a food theft spreadsheet. But I'm also not sorry, because the data was undeniable. -- 2026-07-11
+- How to Handle a Roommate Who Won't Clean (Without Starting a War) (how-to-handle-a-roommate-who-wont-clean) -- The dishes have been in the sink for five days. Here's the script that actually worked when I confronted my roommate about cleaning. -- 2026-06-30
+- The 12 Roommate Interview Questions I Wish I'd Asked Before Moving In (the-ultimate-roommate-interview-questions) -- Finding a roommate is like speed dating with higher stakes. These 12 questions would have saved me from two terrible situations. -- 2026-06-16
+- I Tried Splitting Rent by Income for 6 Months. Here's What Actually Happened. (i-tried-splitting-rent-by-income-heres-what-happened) -- Everyone says income-based rent splits are "fair." I ran the numbers for six months with three roommates. The results were... complicated. -- 2026-06-09
+- Why You Should Never Venmo Rent Money (And What Happened When I Did) (why-you-should-never-venmo-rent-money) -- Venmo rent money seems convenient until someone "accidentally" hits the wrong button. Here's why I switched to Zelle and never looked back. -- 2026-05-23
+- The Guest Policy That Saved Our Friendship (And Our Security Deposit) (the-guest-policy-that-saved-our-friendship) -- We almost broke up as roommates over a boyfriend who "wasn't really living here." Here's the one-page guest policy that fixed everything. -- 2026-05-14
+- How I Got My $1,200 Deposit Back in 5 Steps (And Why Most People Don't Even Try) (how-i-got-my-1200-deposit-back-5-steps) -- I've lost deposits. I've fought for deposits. Here's the exact 5-step process that got me $1,200 back when my landlord said I owed $400 in damages. -- 2026-05-01
+- My Worst Roommate Ever Cost Me $800 — And I Still Don't Know How (my-worst-roommate-ever-cost-me-800) -- The story of the roommate who 'borrowed' the rent money, disappeared for three days, and came back with a new tattoo. -- 2026-04-18
+- Why I Stopped Splitting Rent Evenly (And Why You Probably Should Too) (why-i-stopped-splitting-rent-evenly) -- Equal splits only work if every room is identical. Spoiler: they never are. -- 2026-04-09
+- The Couple Problem: When Two People Share One Room (And One Bathroom) (the-couple-problem-roommate-edition) -- Do they pay double? 1.5x? The same? Here's what actually works after 8 years of trial and error. -- 2026-03-25
+- I Lived in 8 Apartments in 8 Years. Here's What I Learned About Rent. (i-lived-in-8-apartments-in-8-years) -- From $450 rooms in shared houses to $1,200 studios. The full spectrum of Portland rental hell. -- 2026-03-13
+- I Tracked Every Utility Bill for a Year. Here's What Actually Costs Money. (i-tracked-every-utility-bill-for-a-year) -- Spoiler: the person with the window AC unit was costing us $47 a month and didn't even know it. -- 2026-02-27
+- The Moving-In Checklist: 47 Things People Forget (I Forgot 12 of Them) (moving-in-checklist-47-things) -- From measuring doorframes to buying toilet paper before you need it. The practical guide to not screwing up move-in day. -- 2026-02-18
+- The Roommate Agreement Template I Wish I'd Had on Day One (roommate-agreement-template) -- Not legally binding, but it'll save your friendship. Here's what to include and what to skip. -- 2026-02-06
+- Security Deposits Are a Scam (And How to Get Yours Back Anyway) (security-deposits-are-a-scam) -- I've lost $400 in deposits and fought for $1,200. Here's what landlords don't want you to know. -- 2026-01-28
+- How to Talk About Money With Roommates (Without Anyone Crying) (how-to-talk-about-money-without-crying) -- Scripts, timing tips, and how to bring up awkward financial topics without destroying the friendship. -- 2026-01-12
+- Why I Built This Calculator (And Why It Almost Didn't Happen) (why-i-built-this-calculator) -- It started as a Google Sheet in a no-closet room at 2am. Now it's a website. Here's the story. -- 2026-01-04
